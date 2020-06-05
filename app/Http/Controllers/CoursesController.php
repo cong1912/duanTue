@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Courses;
 use Illuminate\Http\Request;
 
 class CoursesController extends Controller
@@ -13,7 +14,8 @@ class CoursesController extends Controller
      */
     public function index()
     {
-        //
+        $course =Courses::get();
+        return view('back-end.pages.courses.index',compact('course'));
     }
 
     /**
@@ -23,7 +25,7 @@ class CoursesController extends Controller
      */
     public function create()
     {
-        //
+        return view('back-end.pages.courses.create');
     }
 
     /**
@@ -34,7 +36,13 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'content' => 'required',
+        ]);
+
+        Courses::create($request->all());
+        return redirect()->route('courses.index')->withStatus(__('Khóa học được tạo thành công'));
     }
 
     /**
@@ -56,7 +64,8 @@ class CoursesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $course=Courses::find($id);
+        return view('back-end.pages.courses.edit',compact('course'));
     }
 
     /**
@@ -68,7 +77,12 @@ class CoursesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'content' => 'required',
+        ]);
+        Courses::whereId($id)->update($request->all());
+        return redirect()->route('courses.index')->withStatus(__('Cập nhật khóa học thành công .'));
     }
 
     /**

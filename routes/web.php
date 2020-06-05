@@ -38,6 +38,11 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 
-Route::get('test', function () {
-    return view('back-end.pages.news.create');
-});
+//doccument
+Route::get('/courses/index', 'CoursesController@index')->name('courses.index');
+Route::get('/courses/create', 'CoursesController@create')->name('courses.create');
+Route::post('/courses', 'CoursesController@store')->name('courses.store');
+Route::get('/courses/{id}/edit', 'CoursesController@edit')->name('courses.edit');
+Route::put('/courses/{id}', 'CoursesController@update')->name('courses.update');
+Route::delete('/courses/{id}/delete', 'CoursesController@destroy')->name('courses.destroy');
+Route::get('/courses/{id}/delete', 'CoursesController@deleteFile')->name('courses.deleteFile');
