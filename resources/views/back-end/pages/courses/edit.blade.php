@@ -21,10 +21,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <form  method="post" action="{{ route('courses.update') }}" autocomplete="off" enctype="multipart/form-data">
+                            <form  method="post" action="{{ route('courses.update',$course )}}" autocomplete="off" enctype="multipart/form-data">
+                                @csrf
+                                @method('put')
+
                                 <div class="widget-content widget-content-area container">
-                                    {{ csrf_field() }}
-                                    {{ method_field('PUT') }}
+
                                     <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }} ">
                                         <p>tên khóa học</p>
                                         <label for="t-text" class="sr-only">Text</label>

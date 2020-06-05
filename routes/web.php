@@ -45,4 +45,4 @@ Route::post('/courses', 'CoursesController@store')->name('courses.store');
 Route::get('/courses/{id}/edit', 'CoursesController@edit')->name('courses.edit');
 Route::put('/courses/{id}', 'CoursesController@update')->name('courses.update');
 Route::delete('/courses/{id}/delete', 'CoursesController@destroy')->name('courses.destroy');
-Route::get('/courses/{id}/delete', 'CoursesController@deleteFile')->name('courses.deleteFile');
+

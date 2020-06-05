@@ -77,11 +77,12 @@ class CoursesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
+        //dd($request->all());
+        $res=$request->validate([
             'name' => 'required',
             'content' => 'required',
         ]);
-        Courses::whereId($id)->update($request->all());
+        Courses::whereId($id)->update($res);
         return redirect()->route('courses.index')->withStatus(__('Cập nhật khóa học thành công .'));
     }
 
@@ -93,6 +94,9 @@ class CoursesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $course = Courses::find($id);
+        $course->delete();
+
+        return redirect()->route('courses.index')->withStatus(__('xóa khóa học thành công.'));
     }
 }
