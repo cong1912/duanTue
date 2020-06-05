@@ -35,3 +35,9 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+
+Route::get('test', function () {
+    return view('back-end.pages.news.create');
+});
