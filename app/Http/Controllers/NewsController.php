@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Illuminate\Http\Request;
 
 class NewsController extends Controller
@@ -13,7 +14,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $new =News::get();
+        return view('back-end.pages.news.index',compact('new'));
     }
 
     /**
@@ -23,7 +25,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('back-end.pages.news.create');
     }
 
     /**
@@ -34,7 +36,21 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->all());
+        $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        //dd($request->all());
+        $imageName = time().'.'.$request->image->extension();
+        $request->image->move(public_path('images'), $imageName);
+        $data = $request->all();
+        News::create([
+            'title' => $data['title'],
+            'category'=>$data['category'],
+            'image'=>$imageName,
+            'content'=>$data['content'],
+        ]);
+        return redirect()->route('news.index')->withStatus(__('tạo bài viết thành công'));
     }
 
     /**

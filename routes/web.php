@@ -61,3 +61,11 @@ Route::post('/software', 'SoftwaresController@store')->name('software.store');
 Route::get('/software/{id}/edit', 'SoftwaresController@edit')->name('software.edit');
 Route::put('/software/{id}', 'SoftwaresController@update')->name('software.update');
 Route::delete('/software/{id}/delete', 'SoftwaresController@destroy')->name('software.destroy');
+
+//Softwares
+Route::get('/news/index', 'NewsController@index')->name('news.index');
+Route::get('/news/create', 'NewsController@create')->name('news.create');
+Route::post('/news', 'NewsController@store')->name('news.store');
+Route::get('/news/{id}/edit', 'NewsController@edit')->name('news.edit');
+Route::put('/news/{id}', 'NewsController@update')->name('news.update');
+Route::delete('/news/{id}/delete', 'NewsController@destroy')->name('news.destroy');
