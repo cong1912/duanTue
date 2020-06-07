@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Introduces;
 use Illuminate\Http\Request;
 
 class IntroducesController extends Controller
@@ -13,7 +14,8 @@ class IntroducesController extends Controller
      */
     public function index()
     {
-        //
+        $introduce =Introduces::get();
+        return view('back-end.pages.introduces.index',compact('introduce'));
     }
 
     /**
@@ -23,7 +25,7 @@ class IntroducesController extends Controller
      */
     public function create()
     {
-        //
+        return view('back-end.pages.introduces.create');
     }
 
     /**
@@ -34,7 +36,11 @@ class IntroducesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'content' => 'required',
+        ]);
+        Introduces::create($request->all());
+        return redirect()->route('introduces.index')->withStatus(__('câu giới thiệu được tạo thành công'));
     }
 
     /**
@@ -56,7 +62,8 @@ class IntroducesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $introduce=Introduces::find($id);
+        return view('back-end.pages.introduces.edit',compact('introduce'));
     }
 
     /**
@@ -68,7 +75,11 @@ class IntroducesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $res= $request->validate([
+            'content' => 'required',
+        ]);
+        Introduces::whereId($id)->update($res);
+        return redirect()->route('introduces.index')->withStatus(__('Cập nhật lời giới thiệu thành công .'));
     }
 
     /**
@@ -79,6 +90,9 @@ class IntroducesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $introduce = Introduces::find($id);
+        $introduce->delete();
+
+        return redirect()->route('introduces.index')->withStatus(__('xóa lời dẫn thành công.'));
     }
 }

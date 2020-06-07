@@ -38,7 +38,7 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 
-//doccument
+//course
 Route::get('/courses/index', 'CoursesController@index')->name('courses.index');
 Route::get('/courses/create', 'CoursesController@create')->name('courses.create');
 Route::post('/courses', 'CoursesController@store')->name('courses.store');
@@ -46,3 +46,10 @@ Route::get('/courses/{id}/edit', 'CoursesController@edit')->name('courses.edit')
 Route::put('/courses/{id}', 'CoursesController@update')->name('courses.update');
 Route::delete('/courses/{id}/delete', 'CoursesController@destroy')->name('courses.destroy');
 
+//Introduces
+Route::get('/introduces/index', 'IntroducesController@index')->name('introduces.index');
+Route::get('/introduces/create', 'IntroducesController@create')->name('introduces.create');
+Route::post('/introduces', 'IntroducesController@store')->name('introduces.store');
+Route::get('/introduces/{id}/edit', 'IntroducesController@edit')->name('introduces.edit');
+Route::put('/introduces/{id}', 'IntroducesController@update')->name('introduces.update');
+Route::delete('/introduces/{id}/delete', 'IntroducesController@destroy')->name('introduces.destroy');

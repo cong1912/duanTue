@@ -20,7 +20,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <form  method="post" action="{{ route('user.store') }}" autocomplete="off" enctype="multipart/form-data">
+                            <form  method="post" action="{{ route('introduces.store') }}" autocomplete="off" enctype="multipart/form-data">
                                 <div class="widget-content widget-content-area container">
                                     @csrf
                                     <div class="form-group{{ $errors->has('content') ? ' has-danger' : '' }} ">
