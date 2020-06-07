@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Softwares;
 use Illuminate\Http\Request;
 
 class SoftwaresController extends Controller
@@ -13,7 +14,8 @@ class SoftwaresController extends Controller
      */
     public function index()
     {
-        //
+        $software =Softwares::get();
+        return view('back-end.pages.softwares.index',compact('software'));
     }
 
     /**
@@ -23,7 +25,7 @@ class SoftwaresController extends Controller
      */
     public function create()
     {
-        //
+        return view('back-end.pages.softwares.create');
     }
 
     /**
@@ -34,7 +36,21 @@ class SoftwaresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        //dd($request->all());
+        $imageName = time().'.'.$request->image->extension();
+        $request->image->move(public_path('images'), $imageName);
+        $data = $request->all();
+        Softwares::create([
+            'name' => $data['name'],
+            'image'=>$imageName,
+            'content'=>$data['content'],
+            'link_android'=>$data['link_android'],
+            'link_ios'=>$data['link_ios'],
+        ]);
+        return redirect()->route('software.index')->withStatus(__('địa chỉ phần mềm thành công'));
     }
 
     /**
@@ -56,7 +72,8 @@ class SoftwaresController extends Controller
      */
     public function edit($id)
     {
-        //
+        $software=Softwares::find($id);
+        return view('back-end.pages.softwares.edit',compact('software'));
     }
 
     /**
@@ -68,7 +85,32 @@ class SoftwaresController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        if ($request->hasFile('image')) {
+            $imageName = time().'.'.$request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+            $data = $request->all();
+            Softwares::find($id)->update([
+                'name' => $data['name'],
+                'image'=>$imageName,
+                'content'=>$data['content'],
+                'link_android'=>$data['link_android'],
+                'link_ios'=>$data['link_ios'],
+            ]);
+            return redirect()->route('software.index')->withStatus(__('địa chỉ phần mềm thành công'));
+        }
+        else{
+            $data = $request->all();
+            Softwares::find($id)->update([
+                'name' => $data['name'],
+                'content'=>$data['content'],
+                'link_android'=>$data['link_android'],
+                'link_ios'=>$data['link_ios'],
+            ]);
+            return redirect()->route('software.index')->withStatus(__('địa chỉ phần mềm thành công'));
+        }
     }
 
     /**

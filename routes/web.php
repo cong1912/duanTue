@@ -53,3 +53,11 @@ Route::post('/introduces', 'IntroducesController@store')->name('introduces.store
 Route::get('/introduces/{id}/edit', 'IntroducesController@edit')->name('introduces.edit');
 Route::put('/introduces/{id}', 'IntroducesController@update')->name('introduces.update');
 Route::delete('/introduces/{id}/delete', 'IntroducesController@destroy')->name('introduces.destroy');
+
+//Softwares
+Route::get('/software/index', 'SoftwaresController@index')->name('software.index');
+Route::get('/software/create', 'SoftwaresController@create')->name('software.create');
+Route::post('/software', 'SoftwaresController@store')->name('software.store');
+Route::get('/software/{id}/edit', 'SoftwaresController@edit')->name('software.edit');
+Route::put('/software/{id}', 'SoftwaresController@update')->name('software.update');
+Route::delete('/software/{id}/delete', 'SoftwaresController@destroy')->name('software.destroy');
