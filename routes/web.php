@@ -77,3 +77,17 @@ Route::post('/keywords', 'KeywordsController@store')->name('keywords.store');
 Route::get('/keywords/{id}/edit', 'KeywordsController@edit')->name('keywords.edit');
 Route::put('/keywords/{id}', 'KeywordsController@update')->name('keywords.update');
 Route::delete('/keywords/{id}/delete', 'KeywordsController@destroy')->name('keywords.destroy');
+
+//contact
+Route::get('contact/index', 'ContactsController@index')->name('contact.index');
+//Route::get('/contact/create', 'ContactsController@create')->name('contact.create');
+Route::post('/contact', 'ContactsController@store')->name('contact.store');
+Route::get('/contact/{id}/edit', 'ContactsController@edit')->name('contact.edit');
+Route::put('/contact/{id}', 'ContactsController@update')->name('contact.update');
+Route::delete('/contact/{id}/delete', 'ContactsController@destroy')->name('contact.destroy');
+
+
+
+Route::get('analytics', function () {
+    return view('back-end.pages.analytics.index');
+})->name('analytics');
