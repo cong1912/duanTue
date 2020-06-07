@@ -16,20 +16,20 @@
                             <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Form upload keyword</h4>
+                                        <h4>Form tạo keyword</h4>
                                     </div>
                                 </div>
                             </div>
-                            <form  method="post" action="{{ route('user.store') }}" autocomplete="off" enctype="multipart/form-data">
+                            <form  method="post" action="{{ route('keywords.store') }}" autocomplete="off" enctype="multipart/form-data">
                                 <div class="widget-content widget-content-area container">
                                     @csrf
                                     <div class="form-group{{ $errors->has('keyword') ? ' has-danger' : '' }} ">
-                                        <p>keyword</p>
-                                        <label for="t-text" class="sr-only">Text</label>
-                                        <input id="t-text" type="text" name="keyword" placeholder="keyword" class="form-control{{ $errors->has('keyword') ? ' is-invalid' : '' }}" required="">
+                                        <p>nội dung </p>
+                                        <input class="form-control" type="text" name="keyword" required id="aboutBio" placeholder="keyword ">
                                     </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>
+
                             </form>
                         </div>
                     </div>
@@ -45,6 +45,7 @@
                 <p class="">Coded with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></p>
             </div>
         </div>
+    </div>
     </div>
 @endsection
 @section('script')

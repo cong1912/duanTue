@@ -69,3 +69,11 @@ Route::post('/news', 'NewsController@store')->name('news.store');
 Route::get('/news/{id}/edit', 'NewsController@edit')->name('news.edit');
 Route::put('/news/{id}', 'NewsController@update')->name('news.update');
 Route::delete('/news/{id}/delete', 'NewsController@destroy')->name('news.destroy');
+
+//keywords
+Route::get('keywords/index', 'KeywordsController@index')->name('keywords.index');
+Route::get('/keywords/create', 'KeywordsController@create')->name('keywords.create');
+Route::post('/keywords', 'KeywordsController@store')->name('keywords.store');
+Route::get('/keywords/{id}/edit', 'KeywordsController@edit')->name('keywords.edit');
+Route::put('/keywords/{id}', 'KeywordsController@update')->name('keywords.update');
+Route::delete('/keywords/{id}/delete', 'KeywordsController@destroy')->name('keywords.destroy');

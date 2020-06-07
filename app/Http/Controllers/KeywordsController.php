@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Keywords;
 use Illuminate\Http\Request;
 
 class KeywordsController extends Controller
@@ -13,7 +14,8 @@ class KeywordsController extends Controller
      */
     public function index()
     {
-        //
+        $keyword =Keywords::get();
+        return view('back-end.pages.keywords.index',compact('keyword'));
     }
 
     /**
@@ -23,7 +25,7 @@ class KeywordsController extends Controller
      */
     public function create()
     {
-        //
+        return view('back-end.pages.keywords.create');
     }
 
     /**
@@ -34,7 +36,11 @@ class KeywordsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $res=$request->validate([
+            'keyword' => 'unique:keywords,keyword|required|max:255|string|',
+        ]);
+        Keywords::create($res);
+        return redirect()->route('keywords.index')->withStatus(__('từ khóa được tạo thành công'));
     }
 
     /**
@@ -56,7 +62,8 @@ class KeywordsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $keyword=Keywords::find($id);
+        return view('back-end.pages.keywords.edit',compact('keyword'));
     }
 
     /**
@@ -68,7 +75,12 @@ class KeywordsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $res=$request->validate([
+            'keyword' => 'unique:keywords,keyword|required|max:255|string|',
+        ]);
+
+        Keywords::whereId($id)->update($res);
+        return redirect()->route('keywords.index')->withStatus(__('Cập nhật keyword thành công .'));
     }
 
     /**
@@ -79,6 +91,9 @@ class KeywordsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $keyword = Keywords::find($id);
+        $keyword->delete();
+
+        return redirect()->route('keywords.index')->withStatus(__('xóa từ khóa thành công.'));
     }
 }
