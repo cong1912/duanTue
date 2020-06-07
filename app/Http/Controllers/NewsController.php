@@ -38,7 +38,9 @@ class NewsController extends Controller
     {
         //dd($request->all());
         $request->validate([
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'title' => "required",
+            'content'=>"required",
         ]);
         //dd($request->all());
         $imageName = time().'.'.$request->image->extension();
@@ -72,7 +74,8 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $new=News::find($id);
+        return view('back-end.pages.news.edit',compact('new'));
     }
 
     /**
@@ -84,7 +87,30 @@ class NewsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+        if ($request->hasFile('image')) {
+            $imageName = time().'.'.$request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+            $data = $request->all();
+            News::find($id)->update([
+                'title' => $data['title'],
+                'category'=>$data['category'],
+                'image'=>$imageName,
+                'content'=>$data['content'],
+            ]);
+            return redirect()->route('news.index')->withStatus(__('cập nhật bài viết thành công'));
+        }
+        else{
+            $data = $request->all();
+            News::find($id)->update([
+                'title' => $data['title'],
+                'category'=>$data['category'],
+                'content'=>$data['content'],
+            ]);
+            return redirect()->route('news.index')->withStatus(__('cập nhật bài viết thành công'));
+        }
     }
 
     /**
@@ -95,6 +121,9 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $new = News::find($id);
+        $new->delete();
+
+        return redirect()->route('news.index')->withStatus(__('xóa bài viết thành công.'));
     }
 }

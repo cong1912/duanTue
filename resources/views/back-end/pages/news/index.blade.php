@@ -29,15 +29,18 @@
                                 <tbody>
                                 <?php
                                 $i = 0;
-
                                 ?>
                                 @foreach ($new as $new)
                                     <tr>
                                         <?php $i=$i+1 ?>
                                         <td><?php echo $i ?></td>
                                         <td>{{ $new->title }}</td>
-                                        <td><img src="/images/{{ $new->image }}" style="width: 100px"></td>
-                                        <td>{{ $new->cartegory }}</td>
+                                            <td><img src="/images/{{$new->image}}" width="100px"></td>
+                                            @if( $new->category ==1)
+                                            <td>{{ __('tin tức')}}</td>
+                                            @else
+                                                <td>{{__('tuyển dụng') }}</td>
+                                            @endif
                                         <td>
                                             <div class="btn-group">
                                                 <button type="button" class="btn btn-dark btn-sm">Action</button>
@@ -45,7 +48,7 @@
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuReference1">
-                                                    <form action="{{ route('news.destroy', $new) }}"
+                                                    <form action="{{ route('news.destroy', $new)}}"
                                                           method="post">
                                                         @csrf
                                                         @method('delete')

@@ -41,19 +41,19 @@
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                                                                         <label for="title">Tên phần mềm</label>
-                                                                        <input type="text" class="form-control mb-6" name="name" value="{{$software->name}}" id="title" placeholder="tên phần mềm">
+                                                                        <input type="text" class="form-control mb-6" name="name" required value="{{$software->name}}" id="title" placeholder="tên phần mềm">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
-                                                                <textarea class="form-control" name="content" id="aboutBio" placeholder="nội dung bài viết" rows="10" > {{$software->content}}</textarea>
+                                                                <textarea class="form-control" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" > {{$software->content}}</textarea>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group{{ $errors->has('link_android') ? ' has-danger' : '' }}">
                                                                         <label for="android">link app androi</label>
-                                                                        <input type="text" class="form-control mb-6" name="link_android" id="android" value="{{$software->link_android}}" placeholder="link app android">
+                                                                        <input type="text" class="form-control mb-6" required name="link_android" id="android" value="{{$software->link_android}}" placeholder="link app android">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -61,7 +61,7 @@
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group{{ $errors->has('link_ios') ? ' has-danger' : '' }}">
                                                                         <label for="ios">Tên app ios</label>
-                                                                        <input type="text" class="form-control mb-6" name="link_ios" id="ios" value="{{$software->link_ios}}" placeholder="link app ios">
+                                                                        <input type="text" class="form-control mb-6" required name="link_ios" id="ios" value="{{$software->link_ios}}" placeholder="link app ios">
                                                                     </div>
                                                                 </div>
                                                             </div>

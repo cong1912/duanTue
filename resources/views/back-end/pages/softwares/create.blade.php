@@ -29,7 +29,7 @@
                                                 <div class="row">
                                                     <div class="col-xl-2 col-lg-12 col-md-4">
                                                         <div class="upload mt-4 pr-md-4 {{ $errors->has('image') ? ' has-danger' : '' }}">
-                                                            <input type="file" id="input-file-max-fs" name="image" class="dropify{{ $errors->has('image') ? ' is-invalid' : '' }}" data-default-file="assets/img/user-profile.jpeg" data-max-file-size="2M">
+                                                            <input type="file" id="input-file-max-fs" name="image" required class="dropify{{ $errors->has('image') ? ' is-invalid' : '' }}" data-default-file="assets/img/user-profile.jpeg" data-max-file-size="2M">
                                                             <p class="mt-2"><i class="flaticon-cloud-upload mr-1"></i> Upload Picture</p>
                                                             @include('alerts.feedback', ['field' => 'image'])
                                                         </div>
@@ -40,19 +40,19 @@
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                                                                         <label for="title">Tên phần mềm</label>
-                                                                        <input type="text" class="form-control mb-6" name="name" id="title" placeholder="tên phần mềm">
+                                                                        <input type="text" class="form-control mb-6" required name="name" id="title" placeholder="tên phần mềm">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
-                                                                <textarea class="form-control" name="content" id="aboutBio" placeholder="nội dung bài viết" rows="10" ></textarea>
+                                                                <textarea class="form-control" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" ></textarea>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group{{ $errors->has('link_android') ? ' has-danger' : '' }}">
                                                                         <label for="android">link app androi</label>
-                                                                        <input type="text" class="form-control mb-6" name="link_android" id="android" placeholder="link app android">
+                                                                        <input type="text" class="form-control mb-6" required name="link_android" id="android" placeholder="link app android">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -60,7 +60,7 @@
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group{{ $errors->has('link_ios') ? ' has-danger' : '' }}">
                                                                         <label for="ios">Tên phần mềm</label>
-                                                                        <input type="text" class="form-control mb-6" name="link_ios" id="ios" placeholder="link app ios">
+                                                                        <input type="text" class="form-control mb-6" required name="link_ios" id="ios" placeholder="link app ios">
                                                                     </div>
                                                                 </div>
                                                             </div>
