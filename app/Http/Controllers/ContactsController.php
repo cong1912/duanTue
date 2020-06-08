@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Contacts;
 use Illuminate\Http\Request;
 
 class ContactsController extends Controller
@@ -13,7 +14,8 @@ class ContactsController extends Controller
      */
     public function index()
     {
-        //
+        $contacts =Contacts::get();
+        return view('back-end.pages.contacts.index',compact('contacts'));
     }
 
     /**
