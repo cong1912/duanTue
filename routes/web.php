@@ -14,6 +14,14 @@
 
 Auth::routes();
 
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('user', 'UserController', ['except' => ['show']]);
+    Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
+    Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+    Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+});
+
+
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 Route::group(['middleware' => 'auth'], function () {
@@ -70,6 +78,9 @@ Route::group(['middleware' => 'auth'], function () {
         return view('back-end.pages.analytics.index');
     })->name('analytics');
 });
+
+
+
 
 Route::get('/',function(){
 	return view('front-end.home');

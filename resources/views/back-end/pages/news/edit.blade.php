@@ -56,7 +56,7 @@
                                                             </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
-                                                                <textarea class="form-control" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" >{{$new->content}}</textarea>
+                                                                <textarea class="ckeditor" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" >{{$new->content}}</textarea>
                                                                 @include('alerts.feedback', ['field' => 'content'])
                                                             </div>
                                                             <div class="row">

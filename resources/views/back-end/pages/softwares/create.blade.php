@@ -46,7 +46,7 @@
                                                             </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
-                                                                <textarea class="form-control" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" ></textarea>
+                                                                <textarea class="ckeditor" name="content" id="aboutBio" required placeholder="nội dung bài viết" cols="80" rows="10" ></textarea>
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-sm-6">
@@ -59,7 +59,7 @@
                                                             <div class="row">
                                                                 <div class="col-sm-6">
                                                                     <div class="form-group{{ $errors->has('link_ios') ? ' has-danger' : '' }}">
-                                                                        <label for="ios">Tên phần mềm</label>
+                                                                        <label for="ios">link app ios</label>
                                                                         <input type="text" class="form-control mb-6" required name="link_ios" id="ios" placeholder="link app ios">
                                                                     </div>
                                                                 </div>

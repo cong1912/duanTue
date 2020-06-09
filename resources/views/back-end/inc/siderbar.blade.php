@@ -117,7 +117,7 @@
                     </a>
                     <ul class="collapse submenu list-unstyled" id="pages" data-parent="#accordionExample">
                         <li>
-                            <a href="{{route('news.create')}}"> Danh sách bài viết </a>
+                            <a href="{{route('news.index')}}"> Danh sách bài viết </a>
                         </li>
                         <li>
                             <a href="{{route('news.create')}}"> Tạo bài viết </a>
