@@ -91,3 +91,32 @@ Route::delete('/contact/{id}/delete', 'ContactsController@destroy')->name('conta
 Route::get('analytics', function () {
     return view('back-end.pages.analytics.index');
 })->name('analytics');
+
+Route::get('/home',function(){
+	return view('front-end.home');
+});
+
+Route::get('/contact',function(){
+	return view('front-end.contact');
+});
+
+Route::get('/course',function(){
+	return view('front-end.course');
+});
+
+Route::get('/introduce',function(){
+	return view('front-end.introduce');
+});
+
+Route::get('/news',function(){
+	return view('front-end.new');
+});
+
+Route::get('/recruitment',function(){
+	return view('front-end.recruitment');
+});
+
+Route::get('/search',function(){
+	return view('front-end.search');
+});
+
