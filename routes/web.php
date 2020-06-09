@@ -26,19 +26,7 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::get('tables', ['as' => 'pages.tables', 'uses' => 'PageController@tables']);
 		Route::get('typography', ['as' => 'pages.typography', 'uses' => 'PageController@typography']);
 		Route::get('upgrade', ['as' => 'pages.upgrade', 'uses' => 'PageController@upgrade']);
-});
-
-Route::group(['middleware' => 'auth'], function () {
-	Route::resource('user', 'UserController', ['except' => ['show']]);
-	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
-	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-});
-
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
-
-
-//course
+		//course
 Route::get('/courses/index', 'CoursesController@index')->name('courses.index');
 Route::get('/courses/create', 'CoursesController@create')->name('courses.create');
 Route::post('/courses', 'CoursesController@store')->name('courses.store');
@@ -91,3 +79,16 @@ Route::delete('/contact/{id}/delete', 'ContactsController@destroy')->name('conta
 Route::get('analytics', function () {
     return view('back-end.pages.analytics.index');
 })->name('analytics');
+
+});
+
+Route::group(['middleware' => 'auth'], function () {
+	Route::resource('user', 'UserController', ['except' => ['show']]);
+	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
+	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+});
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+
