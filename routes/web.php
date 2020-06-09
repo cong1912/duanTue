@@ -77,7 +77,11 @@ Route::get('analytics', function () {
 })->name('analytics');
 });
 
+<<<<<<< HEAD
 Route::get('/',function(){
+=======
+Route::get('/trangchu',function(){
+>>>>>>> 384d973ef3107f4d6239b33785bbf47e86531393
 	return view('front-end.home');
 });
 
@@ -104,3 +108,7 @@ Route::get('/tuyendung',function(){
 Route::get('/tracuu',function(){
 	return view('front-end.search');
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 384d973ef3107f4d6239b33785bbf47e86531393
