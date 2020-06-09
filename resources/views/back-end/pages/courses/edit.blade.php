@@ -34,7 +34,7 @@
                                     </div>
                                     <div class="form-group{{ $errors->has('content') ? ' has-danger' : '' }}">
                                         <p>Nội dung </p>
-                                        <textarea id="textarea" name="content" class="form-control textarea{{ $errors->has('content') ? ' is-invalid' : '' }}" maxlength="225" rows="2" placeholder="This textarea has a limit of 225 chars.">{{$course->content}}</textarea>
+                                        <textarea id="textarea" name="content" class="ckeditor textarea{{ $errors->has('content') ? ' is-invalid' : '' }}" maxlength="225" rows="2" placeholder="This textarea has a limit of 225 chars.">{{$course->content}}</textarea>
                                     </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>

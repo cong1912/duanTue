@@ -25,7 +25,7 @@
                                     @csrf
                                     <div class="form-group{{ $errors->has('content') ? ' has-danger' : '' }} ">
                                         <p>nội dung </p>
-                                            <textarea class="form-control" name="content" required id="aboutBio" placeholder="nội dung " rows="10" ></textarea>
+                                            <textarea class="ckeditor" name="content" required id="aboutBio" placeholder="nội dung " rows="10" ></textarea>
                                         </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                     </div>

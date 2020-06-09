@@ -30,7 +30,7 @@
                                     </div>
                                     <div class="form-group{{ $errors->has('content') ? ' has-danger' : '' }}">
                                         <p>Nội dung </p>
-                                        <textarea id="textarea" name="content" class="form-control  textarea{{ $errors->has('content') ? ' is-invalid' : '' }}" required rows="2" placeholder="Nhập nội dung khóa học"></textarea>
+                                        <textarea id="textarea" name="content" class="ckeditor  textarea{{ $errors->has('content') ? ' is-invalid' : '' }}" required rows="2" placeholder="Nhập nội dung khóa học"></textarea>
                                     </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>

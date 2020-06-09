@@ -136,7 +136,7 @@
                     </a>
                     <ul class="collapse submenu list-unstyled" id="authentication" data-parent="#accordionExample">
                         <li>
-                            <a href="{{route('software.create')}}"> danh sách bài viết </a>
+                            <a href="{{route('software.index')}}"> danh sách bài viết </a>
                         </li>
                         <li>
                             <a href="{{route('software.create')}}"> tạo bài viết </a>
