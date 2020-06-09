@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
@@ -74,51 +72,35 @@ Route::get('/contact/{id}/edit', 'ContactsController@edit')->name('contact.edit'
 Route::put('/contact/{id}', 'ContactsController@update')->name('contact.update');
 Route::delete('/contact/{id}/delete', 'ContactsController@destroy')->name('contact.destroy');
 
-
-
 Route::get('analytics', function () {
     return view('back-end.pages.analytics.index');
 })->name('analytics');
+});
 
-<<<<<<< HEAD
-Route::get('/home',function(){
+Route::get('/',function(){
 	return view('front-end.home');
 });
 
-Route::get('/contact',function(){
+Route::get('/lienhe',function(){
 	return view('front-end.contact');
 });
 
-Route::get('/course',function(){
+Route::get('/khoahoc',function(){
 	return view('front-end.course');
 });
 
-Route::get('/introduce',function(){
+Route::get('/gioithieu',function(){
 	return view('front-end.introduce');
 });
 
-Route::get('/news',function(){
+Route::get('/tintuc',function(){
 	return view('front-end.new');
 });
 
-Route::get('/recruitment',function(){
+Route::get('/tuyendung',function(){
 	return view('front-end.recruitment');
 });
 
-Route::get('/search',function(){
+Route::get('/tracuu',function(){
 	return view('front-end.search');
 });
-=======
-});
-
-Route::group(['middleware' => 'auth'], function () {
-	Route::resource('user', 'UserController', ['except' => ['show']]);
-	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
-	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-});
-
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
-
->>>>>>> 1aaa570c84075ed5a4b5af118e5827bd26b9067c
-

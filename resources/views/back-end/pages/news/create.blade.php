@@ -5,6 +5,7 @@
     <!--  BEGIN CUSTOM STYLE FILE  -->
     <link href="{{asset('back-end\assets\css\scrollspyNav.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\editors\quill\quill.snow.css')}}">
+    <script src="{{asset('ck\ckeditor.js')}}"></script>
     <!--  END CUSTOM STYLE FILE  -->
 @endsection
 @section('content')
@@ -55,7 +56,7 @@
                                                             </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
-                                                                <textarea class="form-control" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" ></textarea>
+                                                                <textarea class="ckeditor" name="content" id="aboutBio" required placeholder="nội dung bài viết" cols="80" rows="10" ></textarea>
                                                                 @include('alerts.feedback', ['field' => 'content'])
                                                             </div>
                                                             <div class="row">
@@ -82,6 +83,7 @@
     <!--  END CONTENT AREA  -->
 @endsection
 @section('script')
+
     <!-- BEGIN PAGE LEVEL CUSTOM SCRIPTS -->
     <script src="{{asset('back-end\plugins\dropify\dropify.min.js')}}"></script>
     <script src="{{asset('back-end\plugins\blockui\jquery.blockUI.min.js')}}"></script>
