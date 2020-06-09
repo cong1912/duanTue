@@ -26,19 +26,7 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::get('tables', ['as' => 'pages.tables', 'uses' => 'PageController@tables']);
 		Route::get('typography', ['as' => 'pages.typography', 'uses' => 'PageController@typography']);
 		Route::get('upgrade', ['as' => 'pages.upgrade', 'uses' => 'PageController@upgrade']);
-});
-
-Route::group(['middleware' => 'auth'], function () {
-	Route::resource('user', 'UserController', ['except' => ['show']]);
-	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
-	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-});
-
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
-
-
-//course
+		//course
 Route::get('/courses/index', 'CoursesController@index')->name('courses.index');
 Route::get('/courses/create', 'CoursesController@create')->name('courses.create');
 Route::post('/courses', 'CoursesController@store')->name('courses.store');
@@ -92,6 +80,7 @@ Route::get('analytics', function () {
     return view('back-end.pages.analytics.index');
 })->name('analytics');
 
+<<<<<<< HEAD
 Route::get('/home',function(){
 	return view('front-end.home');
 });
@@ -119,4 +108,17 @@ Route::get('/recruitment',function(){
 Route::get('/search',function(){
 	return view('front-end.search');
 });
+=======
+});
+
+Route::group(['middleware' => 'auth'], function () {
+	Route::resource('user', 'UserController', ['except' => ['show']]);
+	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
+	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+});
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+
+>>>>>>> 1aaa570c84075ed5a4b5af118e5827bd26b9067c
 
