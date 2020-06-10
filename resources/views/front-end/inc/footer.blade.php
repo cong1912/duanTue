@@ -3,103 +3,103 @@
  footer -->
 
  <footer class="footer bg-3 bg-overlay-black-90">
-    <div class="container">
-      <div class="row">
-       <div class="col-md-12">
-        <div class="social">
-          <ul>
-            <li><a class="facebook" href="#">facebook <i class="fa fa-facebook"></i> </a></li>
-            <li><a class="twitter" href="#">twitter <i class="fa fa-twitter"></i> </a></li>
-            <li><a class="pinterest" href="#">pinterest <i class="fa fa-pinterest-p"></i> </a></li>
-            <li><a class="dribbble" href="#">dribbble <i class="fa fa-dribbble"></i> </a></li>
-            <li><a class="google-plus" href="#">google plus <i class="fa fa-google-plus"></i> </a></li>
-            <li><a class="behance" href="#">behance <i class="fa fa-behance"></i> </a></li>
-          </ul>
-         </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="about-content">
-            <h6 class="text-white">VỀ CHÚNG TÔI</h6>
-            <p>CÓ HỆ THỐNG CƠ SỞ NHIỀU NHẤT VIỆT NAM (5 CƠ SỞ) CÓ QUY MÔ ĐÀO TẠO LỚN NHẤT VIỆT NAM LÀ MỘT TRONG NHỮNG ĐƠN VỊ DUY NHẤT CÓ S N TẬP CÔNG NGHỆ SINGAPORE KIỂM SOÁT GIỜ TẬP BẰNG CÔNG NGHỆ V N TAY GIÁM SÁT TRỰC TUYẾN VIỆC DẠY, HỌC QUA CAMERA VÀ GPS</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="usefull-link">
-          <h6 class="text-white">TIN TỨC MỚI NHẤT</h6>
-            <ul>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i>4 Điều Bạn Cần Phải Biết Về Bảo Hiểm Xe Máy</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i> Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i> 600 câu hỏi thi sát hạch lái xe</a></li>
-              <li><a href="#"><i class="fa fa-angle-double-right"></i> Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a></li>
-            </ul>
-          </div> 
-        </div>
-        <div class="col-lg-3 col-md-6">
-         <div class="recent-post-block">
-          <h6 class="text-white">TỪ KHÓA </h6>
-            <div class="recent-post">
-              <div class="recent-post-image">
-                <img class="img-fluid" src="{{asset('front-end\images\car\01.jpg')}}" alt=""> 
-              </div>
-              <div class="recent-post-info">
-                  <a href="#">Time to change your </a>
-                  <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
-              </div>
-           </div>
-           <div class="recent-post">
-              <div class="recent-post-image">
-                <img class="img-fluid" src="{{asset('front-end\images\car\02.jpg')}}" alt=""> 
-              </div>
-              <div class="recent-post-info">
-                  <a href="#">The best time to </a>
-                  <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
-              </div>
-           </div>
-           <div class="recent-post">
-              <div class="recent-post-image">
-                <img class="img-fluid" src="{{asset('front-end\images\car\03.jpg')}}" alt=""> 
-              </div>
-              <div class="recent-post-info">
-                  <a href="#">Replacing a timing </a>
-                  <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
-              </div>
-           </div>
-         </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="news-letter">
-          <h6 class="text-white">THÔNG TIN 3T SÀI GÒN </h6>
-           <p>Địa Chỉ: 205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</p>
-           <p class="mt-3">Hotline: 0899.545.466</p>
-           <p> Email: hoclaitoanquoc@gmail.com</p>
-           <form class="news-letter">
-             <input type="email" placeholder="Email của bạn" class="form-control placeholder">
-             <a class="button red" href="#">Gửi</a>
-           </form>
-          </div> 
-        </div>
-      </div>
-      <hr>
-      <div class="copyright">
-       <div class="row">
-        <div class="col-lg-6 col-md-12">
-         <div class="text-lg-left text-center">
-          <p>Phát triển 2020 © <span class="text-light">Học lái toàn quốc </span></p>
-         </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <ul class="list-inline text-lg-right text-center">
-            <li><a href="#">privacy policy </a> | </li> 
-            <li><a href="#">terms and conditions </a> |</li> 
-            <li><a href="#">contact us </a></li>
-          </ul>
-        </div>
+  <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <div class="social">
+        <ul>
+          <li><a class="facebook" href="#">facebook <i class="fa fa-facebook"></i> </a></li>
+          <li><a class="twitter" href="#">twitter <i class="fa fa-twitter"></i> </a></li>
+          <li><a class="pinterest" href="#">pinterest <i class="fa fa-pinterest-p"></i> </a></li>
+          <li><a class="dribbble" href="#">dribbble <i class="fa fa-dribbble"></i> </a></li>
+          <li><a class="google-plus" href="#">google plus <i class="fa fa-google-plus"></i> </a></li>
+          <li><a class="behance" href="#">behance <i class="fa fa-behance"></i> </a></li>
+        </ul>
        </div>
       </div>
     </div>
-  </footer>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="about-content">
+          <h6 class="text-white">VỀ CHÚNG TÔI</h6>
+          <p>CÓ HỆ THỐNG CƠ SỞ NHIỀU NHẤT VIỆT NAM (5 CƠ SỞ) CÓ QUY MÔ ĐÀO TẠO LỚN NHẤT VIỆT NAM LÀ MỘT TRONG NHỮNG ĐƠN VỊ DUY NHẤT CÓ S N TẬP CÔNG NGHỆ SINGAPORE KIỂM SOÁT GIỜ TẬP BẰNG CÔNG NGHỆ V N TAY GIÁM SÁT TRỰC TUYẾN VIỆC DẠY, HỌC QUA CAMERA VÀ GPS</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="usefull-link">
+        <h6 class="text-white">TIN TỨC MỚI NHẤT</h6>
+          <ul>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>4 Điều Bạn Cần Phải Biết Về Bảo Hiểm Xe Máy</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i> Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i> 600 câu hỏi thi sát hạch lái xe</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i> Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a></li>
+          </ul>
+        </div> 
+      </div>
+      <div class="col-lg-3 col-md-6">
+       <div class="recent-post-block">
+        <h6 class="text-white">TỪ KHÓA </h6>
+          <div class="recent-post">
+            <div class="recent-post-image">
+              <img class="img-fluid" src="{{asset('front-end\images\car\01.jpg')}}" alt=""> 
+            </div>
+            <div class="recent-post-info">
+                <a href="#">Time to change your </a>
+                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
+            </div>
+         </div>
+         <div class="recent-post">
+            <div class="recent-post-image">
+              <img class="img-fluid" src="{{asset('front-end\images\car\02.jpg')}}" alt=""> 
+            </div>
+            <div class="recent-post-info">
+                <a href="#">The best time to </a>
+                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
+            </div>
+         </div>
+         <div class="recent-post">
+            <div class="recent-post-image">
+              <img class="img-fluid" src="{{asset('front-end\images\car\03.jpg')}}" alt=""> 
+            </div>
+            <div class="recent-post-info">
+                <a href="#">Replacing a timing </a>
+                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
+            </div>
+         </div>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="news-letter">
+        <h6 class="text-white">THÔNG TIN 3T SÀI GÒN </h6>
+         <p>Địa Chỉ: 205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</p>
+         <p class="mt-3">Hotline: 0899.545.466</p>
+         <p> Email: hoclaitoanquoc@gmail.com</p>
+         <form class="news-letter">
+           <input type="email" placeholder="Email của bạn" class="form-control placeholder">
+           <a class="button red" href="#">Gửi</a>
+         </form>
+        </div> 
+      </div>
+    </div>
+    <hr>
+    <div class="copyright">
+     <div class="row">
+      <div class="col-lg-6 col-md-12">
+       <div class="text-lg-left text-center">
+        <p>Phát triển 2020 © <span class="text-light">Học lái toàn quốc </span></p>
+       </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <ul class="list-inline text-lg-right text-center">
+          <li><a href="#">privacy policy </a> | </li> 
+          <li><a href="#">terms and conditions </a> |</li> 
+          <li><a href="#">contact us </a></li>
+        </ul>
+      </div>
+     </div>
+    </div>
+  </div>
+</footer>
    
   <!--=================================
    footer -->

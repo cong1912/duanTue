@@ -82,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- menu logo -->
         <ul class="menu-logo">
             <li>
-                <a href="index.html"><img id="logo_img" src="{{asset('front-end\images\logo-light.png')}}" alt="logo"> </a>
+                <a href="index.html"><img id="logo_img" src="{{asset('front-end/images/SaiGon.png')}}" alt="logo"> </a>
             </li>
         </ul>
        <!-- menu links -->
@@ -220,54 +220,79 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul>  <!-- SLIDE  -->
         <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="revolution/assets/100x50_3176d-road-bg.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
         <!-- MAIN IMAGE -->
-            <img src="{{asset('front-end\revolution\assets\3176d-road-bg.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+            <img src="{{asset('front-end/revolution/assets/3176d-road-bg.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
         <!-- LAYERS -->
 
         <!-- LAYER NR. 1 -->
-        <div class="tp-caption   tp-resizeme" id="slide-5-layer-6" data-x="center" data-hoffset="" data-y="270" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:800;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;" data-start="1400" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Welcome to the most stunning </div>
+        <div class="tp-caption   tp-resizeme" id="slide-5-layer-6" data-x="center" data-hoffset="" data-y="270" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:800;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;" data-start="1400" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 5; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Trung tâm dạy nghề lái xe sài gòn </div>
 
         <!-- LAYER NR. 2 -->
-        <div class="tp-caption   tp-resizeme" id="slide-5-layer-7" data-x="center" data-hoffset="" data-y="center" data-voffset="-140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:800;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1700" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 6; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Car dealer website</div>
+        <div class="tp-caption   tp-resizeme" id="slide-5-layer-7" data-x="center" data-hoffset="" data-y="center" data-voffset="-140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:800;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1700" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 6; white-space: nowrap; font-size: 55px; line-height: 70px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Tận tâm vì sự an toàn</div>
 
         <!-- LAYER NR. 3 -->
-        <div class="tp-caption button red tp-resizeme" id="slide-5-layer-10" data-x="center" data-hoffset="" data-y="bottom" data-voffset="130" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power0.easeIn;" data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:600;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="3300" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 14px; line-height: 18px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;text-transform:uppercase;background-color:rgba(219, 45, 46, 1.00);padding:12px 20px 12px 20px;border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">learn more </div>
+        <div class="tp-caption button red tp-resizeme" id="slide-5-layer-10" data-x="center" data-hoffset="" data-y="bottom" data-voffset="130" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power0.easeIn;" data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:600;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="3300" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 25px; line-height: 18px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;text-transform:uppercase;background-color:rgba(219, 45, 46, 1.00);padding:12px 20px 12px 20px;border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">ĐĂNG KÝ NGAY </div>
 
         <!-- LAYER NR. 4 -->
-        <div class="tp-caption   tp-resizeme" id="slide-5-layer-12" data-x="right" data-hoffset="70" data-y="center" data-voffset="135" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="620" data-responsive_offset="on" style="z-index: 8;"><img src="revolution\assets\4f45e-07-bmw-s2.png" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        <div class="tp-caption   tp-resizeme" id="slide-5-layer-12" data-x="right" data-hoffset="70" data-y="center" data-voffset="135" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="620" data-responsive_offset="on" style="z-index: 8;"><img src="{{asset('front-end/revolution/assets/4f45e-07-bmw-s2.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
 
         <!-- LAYER NR. 5 -->
-        <div class="tp-caption   tp-resizeme" id="slide-5-layer-11" data-x="120" data-y="center" data-voffset="130" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="200" data-responsive_offset="on" style="z-index: 9;"><img src="revolution\assets\e13ec-06-audi-s2.png" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        <div class="tp-caption   tp-resizeme" id="slide-5-layer-11" data-x="120" data-y="center" data-voffset="130" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:800;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="200" data-responsive_offset="on" style="z-index: 9;"><img src="{{asset('front-end/revolution/assets/e13ec-06-audi-s2.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
       </li>
       <!-- SLIDE  -->
-        <li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="{{asset('front-end/revolution/assets/100x50_3176d-road-bg.jpg')}}" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+        <li data-index="rs-6" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="revolution\assets\100x50_3176d-road-bg.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
         <!-- MAIN IMAGE -->
-            <img src="{{asset('front-end\revolution\assets\3176d-road-bg.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+            <img src="{{asset('front-end/revolution/assets/3176d-road-bg.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
         <!-- LAYERS -->
 
         <!-- LAYER NR. 1 -->
-        <div class="tp-caption   tp-resizeme" id="slide-6-layer-4" data-x="3" data-y="center" data-voffset="50" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="2060" data-responsive_offset="on" style="z-index: 5;"><img src="revolution\assets\74231-04-audi.png" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        <div class="tp-caption   tp-resizeme" id="slide-6-layer-4" data-x="3" data-y="center" data-voffset="50" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="2060" data-responsive_offset="on" style="z-index: 5;"><img src="{{asset('front-end/revolution/assets/74231-04-audi.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
 
         <!-- LAYER NR. 2 -->
-        <div class="tp-caption   tp-resizeme" id="slide-6-layer-5" data-x="right" data-hoffset="-10" data-y="center" data-voffset="60" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="2060" data-responsive_offset="on" style="z-index: 6;"><img src="revolution\assets\35261-05-honda.png" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        <div class="tp-caption   tp-resizeme" id="slide-6-layer-5" data-x="right" data-hoffset="-10" data-y="center" data-voffset="60" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="2060" data-responsive_offset="on" style="z-index: 6;"><img src="{{asset('front-end/revolution/assets/35261-05-honda.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
 
         <!-- LAYER NR. 3 -->
-        <div class="tp-caption   tp-resizeme" id="slide-6-layer-6" data-x="center" data-hoffset="" data-y="270" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;" data-start="3260" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">We have everything </div>
+        <div class="tp-caption   tp-resizeme" id="slide-6-layer-6" data-x="center" data-hoffset="" data-y="270" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;" data-start="3260" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Học lái xe hạng B2 chỉ với 1.000.000 Đ </div>
 
         <!-- LAYER NR. 4 -->
-        <div class="tp-caption   tp-resizeme" id="slide-6-layer-7" data-x="center" data-hoffset="" data-y="center" data-voffset="-140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="4290" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 8; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Your car needs! </div>
+        <div class="tp-caption   tp-resizeme" id="slide-6-layer-7" data-x="center" data-hoffset="" data-y="center" data-voffset="-140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="4290" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 8; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Tận tâm vì sự an toàn! </div>
 
         <!-- LAYER NR. 5 -->
-        <div class="tp-caption button red  tp-resizeme" id="slide-6-layer-10" data-x="center" data-hoffset="" data-y="bottom" data-voffset="140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power0.easeIn;" data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:600;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="5329.8614501953" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="8999.8614501953" style="z-index: 9; white-space: nowrap; font-size: 14px; line-height: 18px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;text-transform:uppercase;background-color:rgba(219, 45, 46, 1.00);padding:12px 20px 12px 20px;border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">learn more </div>
+        <div class="tp-caption button red  tp-resizeme" id="slide-6-layer-10" data-x="center" data-hoffset="" data-y="bottom" data-voffset="140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power0.easeIn;" data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:600;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="5329.8614501953" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="8999.8614501953" style="z-index: 9; white-space: nowrap; font-size: 25px; line-height: 18px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;text-transform:uppercase;background-color:rgba(219, 45, 46, 1.00);padding:12px 20px 12px 20px;border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">ĐĂNG KÝ NGAY </div>
 
         <!-- LAYER NR. 6 -->
-        <div class="tp-caption   tp-resizeme" id="slide-6-layer-3" data-x="right" data-hoffset="159" data-y="center" data-voffset="81" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="1220" data-responsive_offset="on" style="z-index: 10;"><img src="revolution\assets\ec416-03-huydai.png" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        <div class="tp-caption   tp-resizeme" id="slide-6-layer-3" data-x="right" data-hoffset="159" data-y="center" data-voffset="81" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="1220" data-responsive_offset="on" style="z-index: 10;"><img src="{{asset('front-end/revolution/assets/ec416-03-huydai.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
 
         <!-- LAYER NR. 7 -->
-        <div class="tp-caption   tp-resizeme" id="slide-6-layer-2" data-x="202" data-y="center" data-voffset="80" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="1200" data-responsive_offset="on" style="z-index: 11;"><img src="revolution\assets\1fa45-02-bmw.png" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        <div class="tp-caption   tp-resizeme" id="slide-6-layer-2" data-x="202" data-y="center" data-voffset="80" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="1200" data-responsive_offset="on" style="z-index: 11;"><img src="{{asset('front-end/revolution/assets/1fa45-02-bmw.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
 
         <!-- LAYER NR. 8 -->
-        <div class="tp-caption   tp-resizeme" id="slide-6-layer-1" data-x="center" data-hoffset="" data-y="center" data-voffset="100" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:670;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 12;"><img src="revolution\assets\95515-o1-kia.png" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        <div class="tp-caption   tp-resizeme" id="slide-6-layer-1" data-x="center" data-hoffset="" data-y="center" data-voffset="100" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:670;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 12;"><img src="{{asset('front-end/revolution/assets/95515-o1-kia.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
       </li>
+        <!-- SLIDE  -->
+        <li data-index="rs-7" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="revolution\assets\100x50_3176d-road-bg.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+          <!-- MAIN IMAGE -->
+              <img src="{{asset('front-end/revolution/assets/3176d-road-bg.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
+          <!-- LAYERS -->
+  
+      
+          <!-- LAYER NR. 3 -->
+          <div class="tp-caption   tp-resizeme" id="slide-6-layer-6" data-x="center" data-hoffset="" data-y="270" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;" data-start="3260" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 30px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Học lái xe hạng C chỉ với 1.000.000 Đ </div>
+  
+          <!-- LAYER NR. 4 -->
+          <div class="tp-caption   tp-resizeme" id="slide-6-layer-7" data-x="center" data-hoffset="" data-y="center" data-voffset="-140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rZ:35deg;sX:1;sY:1;skX:0;skY:0;s:300;e:Power4.easeInOut;" data-transform_out="opacity:0;s:300;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="4290" data-splitin="chars" data-splitout="none" data-responsive_offset="on" data-elementdelay="0.05" style="z-index: 8; white-space: nowrap; font-size: 70px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-align:center;text-transform:uppercase;">Tận tâm vì sự an toàn! </div>
+  
+          <!-- LAYER NR. 5 -->
+          <div class="tp-caption button red  tp-resizeme" id="slide-6-layer-10" data-x="center" data-hoffset="" data-y="bottom" data-voffset="140" data-width="['auto']" data-height="['auto']" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power0.easeIn;" data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);" data-transform_in="y:bottom;s:600;e:Power2.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="5329.8614501953" data-splitin="none" data-splitout="none" data-responsive_offset="on" data-end="8999.8614501953" style="z-index: 9; white-space: nowrap; font-size: 25px; line-height: 18px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;text-transform:uppercase;background-color:rgba(219, 45, 46, 1.00);padding:12px 20px 12px 20px;border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">ĐĂNG KÝ NGAY </div>
+  
+          <!-- LAYER NR. 6 -->
+          <div class="tp-caption   tp-resizeme" id="slide-6-layer-3" data-x="right" data-hoffset="159" data-y="center" data-voffset="81" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="1220" data-responsive_offset="on" style="z-index: 10;"><img src="{{asset('front-end/revolution/assets/ec416-03-huydai.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+  
+          <!-- LAYER NR. 7 -->
+          <div class="tp-caption   tp-resizeme" id="slide-6-layer-2" data-x="202" data-y="center" data-voffset="80" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="x:50px;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:300;" data-start="1200" data-responsive_offset="on" style="z-index: 11;"><img src="{{asset('front-end/revolution/assets/1fa45-02-bmw.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+  
+          <!-- LAYER NR. 8 -->
+          <div class="tp-caption   tp-resizeme" id="slide-6-layer-1" data-x="center" data-hoffset="" data-y="center" data-voffset="100" data-width="['none','none','none','none']" data-height="['none','none','none','none']" data-transform_idle="o:1;" data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:670;e:Power3.easeInOut;" data-transform_out="opacity:0;s:300;" data-start="500" data-responsive_offset="on" style="z-index: 12;"><img src="{{asset('front-end/revolution/assets/95515-o1-kia.png')}}" alt="" data-ww="auto" data-hh="auto" data-no-retina=""> </div>
+        </li>
     </ul>
     <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div> </div>
     </div>
@@ -287,10 +312,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
       <div class="col-md-12">
          <div class="section-title">
-           <span>Welcome to our website</span>
-           <h2>Dealeractive</h2>
+        
+           <h2>TẠI SAO CHỌN HỌC LÁI XE TOÀN QUỐC </h2>
            <div class="separator"></div>
-           <p>Car Dealer is the best premium HTML5 Template. We provide everything you need to build an <strong>Amazing dealership website</strong>  developed especially for car sellers, dealers or auto motor retailers. You can use this template for creating website based on any framework and any language.</p> </div>
+            </div>
       </div>
     </div>
     <div class="row">
@@ -300,8 +325,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <i class="glyph-icon flaticon-beetle"></i>
           </div>
           <div class="content">
-            <h6>All brands</h6>
-            <p>Galley simply dummy text lorem Ipsum is of the printin  k a of type and</p>
+            <h6>Trách Nhiệm</h6>
+            <p>Chúng tôi đặt ra các tiêu chí thoải mái và chất lượng cao với các khóa học xe hơi, ô tô tại saigon3t</p>
           </div>
         </div>
       </div>
@@ -311,30 +336,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <i class="glyph-icon flaticon-interface-1"></i>
           </div>
           <div class="content">
-            <h6>Free Support</h6>
-            <p>Text of the printin lorem ipsum the is simply k a type text and galley of</p>
+            <h6>Chuyên Nghiệp</h6>
+            <p>Chúng tôi luôn đi đầu về đầu tư trang thiết bị, xe hơi đời mới nhất cho các Quý học viên được trải nghiệm tốt nhất.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="feature-box text-center">
           <div class="icon">
-            <i class="glyph-icon flaticon-key"></i>
+            <i class="fa fa-heart"></i>
           </div>
           <div class="content">
-            <h6>Dealership</h6>
-            <p>Printin k a of type and lorem Ipsum is simply dummy text of the galley </p>
+            <h6>Tận Tâm</h6>
+            <p>Tuân thủ các bài học, nguyên tắc về an toàn. Với mục tiêu đào tạo bài bản, nhanh chóng, hiệu quả nhất.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="feature-box text-center">
           <div class="icon">
-            <i class="glyph-icon flaticon-wallet"></i>
+            <i class="fa fa-star"></i>
           </div>
           <div class="content">
-            <h6>affordable</h6>
-            <p>The printin k a galley Lorem Ipsum is type and simply dummy text of</p>
+            <h6>Hài Lòng</h6>
+            <p>Các học viên là khách hàng và cũng như là thượng đế. Chúng tôi mang lại dịch vụ tốt nhất, nhanh chóng, chi phí rẻ nhất.</p>
           </div>
         </div>
       </div>
@@ -343,8 +368,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        <div class="col-md-12">
           <div class="halp-call text-center">
             <img class="img-fluid" src="{{asset('front-end\images\team\01.jpg')}}" alt="">
-            <span>Have any question ?</span>
-            <h2 class="text-red">(007) 123 456 7890</h2>
+            <span>Hotline:</span>
+            <h2 class="text-red"> 0899.545.466</h2>
           </div>
        </div>
     </div>
@@ -363,188 +388,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <div class="row">
     <div class="col-md-12">
       <div class="section-title">
-         <span class="text-white">Check out our recent cars</span>
-         <h2 class="text-white">Feature Car </h2>
+       
+         <h2 class="text-white">KHÓA HỌC LÁI XE Ô TÔ </h2>
          <div class="separator"></div>
       </div>
     </div>
    </div>
    <div class="row">
     <div class="col-md-12">
-     <div class="owl-carousel owl-theme" data-nav-arrow="true" data-items="4" data-md-items="4" data-sm-items="2" data-xs-items="1" data-space="20">
-      <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="{{asset('front-end\images\car\01.jpg')}}" alt="">
-           <div class="car-overlay-banner">
-            <ul> 
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2017</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Acura Rsx</a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-     </div>
+     <div class="owl-carousel owl-theme" data-nav-arrow="true" data-items="2" data-md-items="2" data-sm-items="2" data-xs-items="1" data-space="20">
+     
      <div class="item">
        <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="{{asset('front-end\images\car\02.jpg')}}" alt="">
-           <div class="car-overlay-banner">
-            <ul> 
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2017</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Lexus GS 450h</a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="{{asset('front-end\images\car\03.jpg')}}" alt="">
-           <div class="car-overlay-banner">
-            <ul> 
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2017</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">GTA 5 Lowriders DLC</a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-     </div>
-     <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="{{asset('front-end\images\car\04.jpg')}}" alt="">
-           <div class="car-overlay-banner">
-            <ul> 
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2017</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Toyota avalon hybrid </a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
-       </div>
-      </div>
-      <div class="item">
-       <div class="car-item text-center">
-         <div class="car-image">
-           <img class="img-fluid" src="{{asset('front-end\images\car\05.jpg')}}" alt="">
-           <div class="car-overlay-banner">
-            <ul> 
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-dashboard"></i></a></li>
-             </ul>
-           </div>
-         </div>
-         <div class="car-list">
-           <ul class="list-inline">
-             <li><i class="fa fa-registered"></i> 2017</li>
-             <li><i class="fa fa-cog"></i> Manual </li>
-             <li><i class="fa fa-dashboard"></i> 6,000 mi</li>
-           </ul>
-        </div>
-         <div class="car-content">
-          <div class="star">
-           <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star orange-color"></i>
-            <i class="fa fa-star-o orange-color"></i>
-           </div>
-           <a href="#">Hyundai santa fe sport </a>
-           <div class="separator"></div>
-           <div class="price">
-             <span class="old-price">$35,568</span>
-             <span class="new-price">$32,698 </span>
-           </div>
-         </div>
+        <p></p>
        </div>
       </div>
      </div>
@@ -593,8 +449,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
       <div class="col-md-12">
         <div class="section-title">
-         <span>Read our latest news</span>
-         <h2>Latest News </h2>
+         <h2>TIN TỨC MỚI </h2>
          <div class="separator"></div>
       </div>
       </div>
@@ -630,7 +485,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-lg-8 col-md-12 text-center">
-         <h3 class="text-white">Want to know more about us? Play our promotional video now!</h3>
+         <h3 class="text-white">NHẬN TƯ VẤN TỪ 3T SÀI GÒN</h3>
        </div>
      </div>
     </div>
@@ -639,8 +494,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <div class="row justify-content-center">
        <div class="col-lg-10 col-md-12">
          <div class="video-info text-center">
-           <img class="img-fluid center-block" src="{{asset('front-end\images\car\24.jpg')}}" alt="">
-           <a class="popup-youtube" href="https://www.youtube.com/watch?v=Xd0Ok-MkqoE"> <i class="fa fa-play"></i> </a>
+           <img class="img-fluid center-block" src="{{asset('front-end\images\img-video.jpg')}}" height="327px" width="778px">
+           <a class="popup-youtube" href="https://www.youtube.com/watch?v=O-9qIYffocs"> <i class="fa fa-play"></i> </a>
          </div>
        </div>
      </div>
@@ -659,33 +514,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <div class="row">
      <div class="col-lg-3 col-md-6 text-center">
        <div class="counter-block">
-          <i class="glyph-icon flaticon-beetle"></i>
-          <h6 class="text-black">Vehicles In Stock  </h6>
-          <b class="timer" data-to="3968" data-speed="10000"></b>
+          <i ><img src="{{asset('front-end\images\home\alarm-clock.png')}}" width="20%"></i>
+          <h6 class="text-black">ĐĂNG KÝ ĐƯỢC HỌC LIỀN  </h6>
+         
       </div>
      </div>
      <div class="col-lg-3 col-md-6 text-center">
       <div class="counter-block">
-         <i class="glyph-icon flaticon-interface"></i>
-          <h6 class="text-black">Dealer Reviews</h6>
-          <b class="timer" data-to="5568" data-speed="10000"></b>
+        <i ><img src="{{asset('front-end\images\home\diamond-1.png')}}" width="20%"></i>
+          <h6 class="text-black">GIẢI PHÁP HỌC LÁI XE TRẢ GÓP 0%</h6>
+         
        </div> 
      </div>
      <div class="col-lg-3 col-md-6 text-center">
       <div class="counter-block">
-          <i class="glyph-icon flaticon-circle"></i>
-          <h6 class="text-black">Happy Customer</h6>
-          <b class="timer" data-to="8908" data-speed="10000"></b>
+        <i ><img src="{{asset('front-end\images\home\users-1.png')}}" width="20%"></i>
+          <h6 class="text-black">LỰA CHỌN GIÁO VIÊN THỰC HÀNH THEO YÊU CẦU</h6>
+        
        </div>
       </div>
       <div class="col-lg-3 col-md-6 text-center">
         <div class="counter-block">
-          <i class="glyph-icon flaticon-cup"></i>
-          <h6 class="text-black">Awards</h6>
-          <b class="timer" data-to="9968" data-speed="10000"></b>
+          <i ><img src="{{asset('front-end\images\home\repeat-1.png')}}" width="20%"></i>
+          <h6 class="text-black">XE Ô TÔ ĐA DẠNG ĐƯỢC TÙY CHỌN</h6>
+        
        </div>
      </div>
+    
     </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <div class="counter-block">
+           <i ><img src="{{asset('front-end\images\home\diploma-1.png')}}" width="20%"></i>
+           <h6 class="text-black">TIẾP TỤC ĐƯỢC GIẢM HỌC PHÍ ĐẾN 0 ĐỒNG KHI GIỚI THIỆU THÊM HỌC VIÊN  </h6>
+        
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+       <div class="counter-block">
+         <i ><img src="{{asset('front-end\images\home\id-card-1.png')}}" width="20%"></i>
+           <h6 class="text-black">THỜI GIAN HỌC THỰC HÀNH BẢO LƯU HOẶC CHUYỂN NHƯỢNG CHO NGƯỜI KHÁC</h6>
+         
+        </div> 
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+       <div class="counter-block">
+         <i ><img src="{{asset('front-end\images\home\users-1.png')}}" width="20%"></i>
+           <h6 class="text-black">CAM KẾT KHÔNG PHÁT SINH THÊM PHÍ </h6>
+      
+        </div>
+       </div>
+       <div class="col-lg-3 col-md-6 text-center">
+        <div class="counter-block">
+          <i ><img src="{{asset('front-end\images\home\price-tag.png')}}" width="20%"></i>
+          <h6 class="text-black">GIẢM GIÁ KHI CHẤP NHẬN NHẬP HỌC MUỘN HOẶC ĐÓNG HỌC PHÍ 1 LẦN</h6>
+        
+       </div>
+     </div>
+     </div>
   </div>
 </section>
 
@@ -703,8 +589,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="row">
       <div class="col-md-12">
         <div class="section-title">
-         <span>What Our Happy Clients say about us</span>
-         <h2>our Testimonial </h2>
+         <h2>CẢM NHẬN CỦA HỌC VIÊN VỀ 3T SÀI GÒN</h2>
          <div class="separator"></div>
       </div>
       </div>
@@ -719,12 +604,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            </div> 
            <div class="testimonial-box">
              <div class="testimonial-avtar">
-               <img class="img-fluid" src="{{asset('front-end\images\team\01.jpg')}}" alt="">
-               <h6>Alice Williams</h6>
-               <span>Auto Dealer</span>
+               <img class="img-fluid" src="{{asset('front-end\images\home\4.jpg')}}" alt="">
+               <h6>VŨ TRỌNG TUYỂN</h6>
+               <span>KHÁCH HÀNG 3T SÀI GÒN</span>
              </div>
              <div class="testimonial-content">               
-                <p>It has survived not only five centuries. lorem Ipsum is simply dummy text of the printin a galley of type and bled it to make a type specimen book.</p>
+                <p>Khi học lái xe tại trung tâm Saigon3t mình cảm thấy rất thoải mái vì có thể sắp xếp thời gian và chọn lịch học phù hợp với công việc mình đang làm.</p>
                 <i class="fa fa-quote-right"></i>
              </div>
            </div>
@@ -737,12 +622,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            </div> 
            <div class="testimonial-box">
              <div class="testimonial-avtar">
-               <img class="img-fluid" src="{{asset('front-end\images\team\02.jpg')}}" alt="">
-               <h6>Michael Bean</h6>
-               <span>Car Dealer</span>
+               <img class="img-fluid" src="{{asset('front-end\images\home\3.jpg')}}" alt="">
+               <h6>PHẠM ĐĂNG TƯỜNG</h6>
+               <span>KHÁCH HÀNG 3T SÀI GÒN</span>
              </div>
              <div class="testimonial-content">               
-                <p>A galley of type and bled it to make a type specimen book. Ipsum is simply dummy text of the printin It has survived not only five centuries.</p>
+                <p>Sân tập tại Saigon3t được thiết kế theo tiêu chuẩn của Bộ GTVT và chuẩn Singapore nên rất dễ dàng đánh lái khi áp dụng lý thuyết được học .vào thực hành.</p>
                 <i class="fa fa-quote-right"></i>
              </div>
            </div>
@@ -755,12 +640,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            </div> 
            <div class="testimonial-box">
              <div class="testimonial-avtar">
-               <img class="img-fluid" src="{{asset('front-end\images\team\03.jpg')}}" alt="">
-               <h6>Felica Queen</h6>
-               <span>Auto Dealer</span>
+               <img class="img-fluid" src="{{asset('front-end\images\home\1.jpg')}}" alt="">
+               <h6>NGUYỄN CHÍ CÔNG</h6>
+               <span>KHÁCH HÀNG 3T SÀI GÒN</span>
              </div>
              <div class="testimonial-content">               
-                <p>Text of the printin a galley of type and bled it to a type specimen book. It has survived not only five centuries make Lorem Ipsum is simply dummy.</p>
+                <p>Mình rất hài lòng về chất lượng khóa đào tạo tại Sai Gon 3T. Sẽ giới thiệu thêm nhiều bạn học lái tại Trung Tâm vì luôn đảm bảo mức phí cam kết cho học viên.</p>
                 <i class="fa fa-quote-right"></i>
              </div>
            </div>
@@ -773,12 +658,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
            </div> 
            <div class="testimonial-box">
              <div class="testimonial-avtar">
-               <img class="img-fluid" src="{{asset('front-end\images\team\04.jpg')}}" alt="">
-               <h6>Sara Lisbon</h6>
-               <span>Customer</span>
+               <img class="img-fluid" src="{{asset('front-end\images\home\2.jpg')}}" alt="">
+               <h6>PHAN THANH HIẾU</h6>
+               <span>KHÁCH HÀNG 3T SÀI GÒN</span>
              </div>
              <div class="testimonial-content">               
-                <p>Printin a galley of type and bled It has survived not lorem Ipsum is simply dummy text of the  it to make a type specimen book only five centuries.</p>
+                <p>Thực hành lái xe b2 mình hay bị lỗi chạy lên dốc cầu. Nhưng khi được các thầy tại 3T Sai Gon hướng dẫn tận tâm mình đã khắc phục lỗi này trong ngày.</p>
                 <i class="fa fa-quote-right"></i>
              </div>
            </div>
@@ -797,110 +682,104 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--=================================
  footer -->
 
-<footer class="footer bg-2 bg-overlay-black-90">
-  <div class="container">
-    <div class="row">
-     <div class="col-md-12">
-      <div class="social">
-        <ul>
-          <li><a class="facebook" href="#">facebook <i class="fa fa-facebook"></i> </a></li>
-          <li><a class="twitter" href="#">twitter <i class="fa fa-twitter"></i> </a></li>
-          <li><a class="pinterest" href="#">pinterest <i class="fa fa-pinterest-p"></i> </a></li>
-          <li><a class="dribbble" href="#">dribbble <i class="fa fa-dribbble"></i> </a></li>
-          <li><a class="google-plus" href="#">google plus <i class="fa fa-google-plus"></i> </a></li>
-          <li><a class="behance" href="#">behance <i class="fa fa-behance"></i> </a></li>
-        </ul>
-       </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="about-content">
-          <img class="img-fluid" id="logo-footer" src="{{asset('front-end\images\logo-light.png')}}" alt="">
-          <p>We provide everything you need to build an amazing dealership website developed especially for car sellers dealers or auto motor retailers.</p>
-        </div>
-        <div class="address">
+ <footer class="footer bg-3 bg-overlay-black-90">
+    <div class="container">
+      <div class="row">
+       <div class="col-md-12">
+        <div class="social">
           <ul>
-            <li> <i class="fa fa-map-marker"></i><span>220E Front St. Burlington NC 27215</span> </li>
-            <li> <i class="fa fa-phone"></i><span>(007) 123 456 7890</span> </li>
-            <li> <i class="fa fa-envelope-o"></i><span>support@website.com</span> </li>
+            <li><a class="facebook" href="#">facebook <i class="fa fa-facebook"></i> </a></li>
+            <li><a class="twitter" href="#">twitter <i class="fa fa-twitter"></i> </a></li>
+            <li><a class="pinterest" href="#">pinterest <i class="fa fa-pinterest-p"></i> </a></li>
+            <li><a class="dribbble" href="#">dribbble <i class="fa fa-dribbble"></i> </a></li>
+            <li><a class="google-plus" href="#">google plus <i class="fa fa-google-plus"></i> </a></li>
+            <li><a class="behance" href="#">behance <i class="fa fa-behance"></i> </a></li>
           </ul>
+         </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="usefull-link">
-        <h6 class="text-white">Useful Links</h6>
-          <ul>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Change Oil and Filter</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Brake Pads Replacement</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Timing Belt Replacement</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Pre-purchase Car Inspection</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Starter Replacement</a></li>
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="about-content">
+            <h6 class="text-white">VỀ CHÚNG TÔI</h6>
+            <p>CÓ HỆ THỐNG CƠ SỞ NHIỀU NHẤT VIỆT NAM (5 CƠ SỞ) CÓ QUY MÔ ĐÀO TẠO LỚN NHẤT VIỆT NAM LÀ MỘT TRONG NHỮNG ĐƠN VỊ DUY NHẤT CÓ S N TẬP CÔNG NGHỆ SINGAPORE KIỂM SOÁT GIỜ TẬP BẰNG CÔNG NGHỆ V N TAY GIÁM SÁT TRỰC TUYẾN VIỆC DẠY, HỌC QUA CAMERA VÀ GPS</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="usefull-link">
+          <h6 class="text-white">TIN TỨC MỚI NHẤT</h6>
+            <ul>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>4 Điều Bạn Cần Phải Biết Về Bảo Hiểm Xe Máy</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> 600 câu hỏi thi sát hạch lái xe</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i> Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a></li>
+            </ul>
+          </div> 
+        </div>
+        <div class="col-lg-3 col-md-6">
+         <div class="recent-post-block">
+          <h6 class="text-white">TỪ KHÓA </h6>
+            <div class="recent-post">
+              <div class="recent-post-image">
+                <img class="img-fluid" src="{{asset('front-end\images\car\01.jpg')}}" alt=""> 
+              </div>
+              <div class="recent-post-info">
+                  <a href="#">Time to change your </a>
+                  <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
+              </div>
+           </div>
+           <div class="recent-post">
+              <div class="recent-post-image">
+                <img class="img-fluid" src="{{asset('front-end\images\car\02.jpg')}}" alt=""> 
+              </div>
+              <div class="recent-post-info">
+                  <a href="#">The best time to </a>
+                  <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
+              </div>
+           </div>
+           <div class="recent-post">
+              <div class="recent-post-image">
+                <img class="img-fluid" src="{{asset('front-end\images\car\03.jpg')}}" alt=""> 
+              </div>
+              <div class="recent-post-info">
+                  <a href="#">Replacing a timing </a>
+                  <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
+              </div>
+           </div>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="news-letter">
+          <h6 class="text-white">THÔNG TIN 3T SÀI GÒN </h6>
+           <p>Địa Chỉ: 205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</p>
+           <p class="mt-3">Hotline: 0899.545.466</p>
+           <p> Email: hoclaitoanquoc@gmail.com</p>
+           <form class="news-letter">
+             <input type="email" placeholder="Email của bạn" class="form-control placeholder">
+             <a class="button red" href="#">Gửi</a>
+           </form>
+          </div> 
+        </div>
+      </div>
+      <hr>
+      <div class="copyright">
+       <div class="row">
+        <div class="col-lg-6 col-md-12">
+         <div class="text-lg-left text-center">
+          <p>Phát triển 2020 © <span class="text-light">Học lái toàn quốc </span></p>
+         </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <ul class="list-inline text-lg-right text-center">
+            <li><a href="#">privacy policy </a> | </li> 
+            <li><a href="#">terms and conditions </a> |</li> 
+            <li><a href="#">contact us </a></li>
           </ul>
-        </div> 
-      </div>
-      <div class="col-lg-3 col-md-6">
-       <div class="recent-post-block">
-        <h6 class="text-white">recent posts </h6>
-          <div class="recent-post">
-            <div class="recent-post-image">
-              <img class="img-fluid" src="{{asset('front-end\images\car\01.jpg')}}" alt=""> 
-            </div>
-            <div class="recent-post-info">
-                <a href="#">Time to change your </a>
-                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
-            </div>
-         </div>
-         <div class="recent-post">
-            <div class="recent-post-image">
-              <img class="img-fluid" src="{{asset('front-end\images\car\02.jpg')}}" alt=""> 
-            </div>
-            <div class="recent-post-info">
-                <a href="#">The best time to </a>
-                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
-            </div>
-         </div>
-         <div class="recent-post">
-            <div class="recent-post-image">
-              <img class="img-fluid" src="{{asset('front-end\images\car\03.jpg')}}" alt=""> 
-            </div>
-            <div class="recent-post-info">
-                <a href="#">Replacing a timing </a>
-                <span class="post-date"><i class="fa fa-calendar"></i>September 10, 2017</span>
-            </div>
-         </div>
+        </div>
        </div>
       </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="news-letter">
-        <h6 class="text-white">subscribe Our Newsletter </h6>
-         <p>Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to our newsletter.</p>
-         <form class="news-letter">
-           <input type="email" placeholder="Enter your Email" class="form-control placeholder">
-           <a class="button red" href="#">Subscribe</a>
-         </form>
-        </div> 
-      </div>
     </div>
-    <hr>
-    <div class="copyright">
-     <div class="row">
-      <div class="col-lg-6 col-md-12">
-       <div class="text-lg-left text-center">
-        <p>©Copyright 2018 Car Dealer Developed by <a href="http://www.potenzaglobalsolutions.com/" target="_blank">Potenzaglobalsolutions</a></p>
-       </div>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <ul class="list-inline text-lg-right text-center">
-          <li><a href="#">privacy policy </a> | </li> 
-          <li><a href="#">terms and conditions </a> |</li> 
-          <li><a href="#">contact us </a></li>
-        </ul>
-      </div>
-     </div>
-    </div>
-  </div>
-</footer>
+  </footer>
  
 <!--=================================
  footer --> 

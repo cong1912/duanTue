@@ -90,9 +90,7 @@ Route::get('/lienhe',function(){
 	return view('front-end.contact');
 });
 
-Route::get('/khoahoc',function(){
-	return view('front-end.course');
-});
+Route::get('/khoahoc','HomeController@course');
 
 Route::get('/gioithieu',function(){
 	return view('front-end.introduce');
