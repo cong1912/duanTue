@@ -107,4 +107,4 @@ Route::get('/tuyendung',function(){
 Route::get('/tracuu',function(){
 	return view('front-end.search');
 });
-
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');

@@ -59,7 +59,7 @@
                             <a href="{{ route('profile.edit') }}" class="nav-item dropdown-item">{{ __('Profile') }}</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#" class="nav-item dropdown-item">{{ __('Settings') }}</a>
+                            <a href="{{ route('analytics') }}" class="nav-item dropdown-item">{{ __('đổi về trang trắng') }}</a>
                         </li>
                         <li class="dropdown-divider"></li>
                         <li class="nav-link">
