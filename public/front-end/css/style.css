@@ -883,6 +883,8 @@ footer .copyright ul li a:hover { color: #db2d2e; }
 .content-box-2.car-bg-1 { background: url(../images/car/08.jpg) no-repeat; padding: 30px 30px 154px; }
 .content-box-2.car-bg-2 { background: url(../images/car/09.jpg) no-repeat; padding: 30px 30px 154px; }
 .content-box-2.car-bg-3 { background: url(../images/car/10.jpg) no-repeat; padding: 30px 30px 154px; }
+.content-box-2.car-bg-4 { background: url(../images/car/kh1.png) no-repeat; padding: 30px 30px 154px; }
+.content-box-2.car-bg-5 { background: url(../images/car/kh2.png) no-repeat; padding: 30px 30px 154px;} 
 .content-box-2 i { color: #db2d2e; font-size: 30px; margin-bottom: 20px; display: block; }
 .content-box-2 a.link { font-size: 14px; margin-bottom: 10px; font-weight: 600; color: #363636; text-transform: capitalize; opacity: 0; }
 .content-box-2 a.link i { font-size: 14px; display: inline-block; padding-left: 5px; color: #363636; }

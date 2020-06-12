@@ -235,7 +235,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- LAYERS -->
 
     <!-- LAYER NR. 4 -->
-    <div class="tp-caption   tp-resizeme" id="slide-4-layer-1" data-x="62" data-y="179" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]' data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 70px; line-height: 80px; font-weight: 900; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-transform:uppercase;">Học lái xe hạng B2<br>
+    <div class="tp-caption   tp-resizeme" id="slide-4-layer-1" data-x="62" data-y="179" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]' data-textalign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 70px; line-height: 80px; font-weight: 900; color: rgba(255, 255, 255, 1.00);font-family:Roboto;text-transform:uppercase;">Học lái xe hạng B2, C<br>
 chỉ với 1.000.000 Đ </div>
 
     <!-- LAYER NR. 5 -->
@@ -288,21 +288,7 @@ chỉ với 1.000.000 Đ </div>
            </select>
          </div>
         </div>
-        <div class="col-md-4">
-        <span>Select yar</span>
-         <div class="selected-box">
-           <select class="selectpicker">
-            <option>Year</option>
-            <option>2010</option>
-            <option>2011</option>
-            <option>2012</option>
-            <option>2013</option>
-            <option>2014</option>
-            <option>2015</option>
-            <option>2016</option>
-           </select>
-          </div>
-        </div>
+  
         <div class="col-md-4">
         <span>Select body style</span>
         <div class="selected-box">
@@ -335,11 +321,9 @@ chỉ với 1.000.000 Đ </div>
     <div class="col-md-4">
      <div class="price-slide">
         <div class="price">
-         <label for="amount">Price Range</label>
-          <input type="text" id="amount" class="amount" value="$50 - $300">
-          <div id="slider-range"></div>
-          <a class="button" href="#">Search the Vehicle</a>
-          <a class="link" href="#">ADVANCED SEARCH</a>
+         <label for="amount">HOTLINE</label>
+         <p> 0899.545.466</p>
+          <a class="button" href="#">ĐĂNG KÝ NGAY</a>
         </div>
        </div>
     </div>
@@ -361,25 +345,22 @@ chỉ với 1.000.000 Đ </div>
       <div class="col-md-4">
         <div class="content-box-2 car-bg-1">
             <i class="glyph-icon flaticon-beetle"></i>
-            <a class="title" href="#">Buy a Car</a>
-            <p>We sell perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-            <a class="link" href="#">read more <i class="fa fa-angle-double-right"></i> </a>
+            <a class="title" href="#">Cấp bằng lái xe cho học viên</a>
+            <p>Sau khi thi đỗ kỳ thi sát hạch 7 ngày là bạn có thể nhận bằng về và tham gia giao thông rồi đó!</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="content-box-2 car-bg-2">
             <i class="glyph-icon flaticon-price-tag"></i>
-            <a class="title" href="#">Sell My Car</a>
-            <p>You can sell sed ut unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-            <a class="link" href="#">read more <i class="fa fa-angle-double-right"></i> </a>
+            <a class="title" href="#">Học thực hành lái xe ô tô</a>
+            <p>Học một thầy một trò một xe, giáo viên nhiệt tình, hướng dẫn chi tiết đầy đủ các mục và mẹo trong bài sa hình.</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="content-box-2 car-bg-3">
             <i class="glyph-icon flaticon-reparation"></i>
-            <a class="title" href="#">Get Service</a>
-            <p>We provide sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-            <a class="link" href="#">read more <i class="fa fa-angle-double-right"></i> </a>
+            <a class="title" href="#">Đăng ký học lái xe ô tô</a>
+            <p>Các bước đăng ký rất đơn giản chỉ cần học viên mang theo duy nhất CMND việc còn lại trung tâm sẽ làm giúp bạn.</p>
         </div>
       </div>
     </div>
@@ -401,7 +382,7 @@ chỉ với 1.000.000 Đ </div>
          </div> 
          <div class="content">
           <h5>Nhiệt Tình – Tận Tâm</h5>
-          <p>Đội ngũ giáo viên đông đảo, giàu kinh nghiệm, nhiệt tình đào tạo bài bản.</p>
+          <p>Đội ngũ giáo viên đông đảo, giàu kinh nghiệm, nhiệt tình đào tạo bài bản.</p><br><br>
          </div>
         </div>
       </div>
@@ -411,8 +392,8 @@ chỉ với 1.000.000 Đ </div>
            <i class="glyph-icon flaticon-interface-1"></i>
          </div> 
          <div class="content">
-          <h5>Linh Động – Hiệu Quả</h5>
-          <p>Học viên tự chọn lịch học, được giáo viên dạy 1 kèm 1 đảm bảo hiệu quả cao mỗi buổi học.</p>
+          <h5 class="mt-2">Linh Động – Hiệu Quả</h5>
+          <p>Học viên tự chọn lịch học, được giáo viên dạy 1 kèm 1 đảm bảo hiệu quả cao mỗi buổi học.</p><br><br>
          </div>
         </div>
       </div>
@@ -434,7 +415,7 @@ chỉ với 1.000.000 Đ </div>
          </div> 
          <div class="content">
           <h5>Cam Kết Trọn Gói Không Phát Sinh</h5>
-          <p>Cam kết mọi quyền lợi cũng như quy trình đào tạo rõ ràng cho học viên.</p>
+          <p>Cam kết mọi quyền lợi cũng như quy trình đào tạo rõ ràng cho học viên.</p><br>
          </div>
         </div>
       </div>
@@ -462,20 +443,26 @@ chỉ với 1.000.000 Đ </div>
     </div>
    </div>
    <div class="row ">
-    <div class="col-md-4">
-      <div class="content-box-2 car-bg-1">
+    <div class="col-md-6">
+      <div class="content-box-2 car-bg-4 text-center">
           <i class="glyph-icon flaticon-beetle"></i>
-          <a class="title" href="#">Buy a Car</a>
-          <p>We sell perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-          <a class="link" href="#">read more <i class="fa fa-angle-double-right"></i> </a>
+          <h3 class="title  text-center" href="#">KHÓA HỌC BẰNG B2</h3>
+          <h5 class=" text-center">8.500.000đ</h5>
+          <p class="mt-3">Học phí trọn gói 100%</p>
+          <p>Hỗ trợ trả góp lãi suất 0%</p>
+          <p>Lịch học linh động (T2 - CN)</p>
+          <a class="button" href="#">ĐĂNG KÝ NGAY</a>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="content-box-2 car-bg-2">
+    <div class="col-md-6">
+      <div class="content-box-2 car-bg-5 text-center">
           <i class="glyph-icon flaticon-price-tag"></i>
-          <a class="title" href="#">Sell My Car</a>
-          <p>You can sell sed ut unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
-          <a class="link" href="#">read more <i class="fa fa-angle-double-right"></i> </a>
+          <h3 class="title " href="#">KHÓA HỌC BẰNG C</h3>
+          <h5 class="text-center">11.000.000đ</h5>
+          <p class="mt-3">Học phí trọn gói 100%</p>
+          <p>Hỗ trợ trả góp lãi suất 0%</p>
+          <p>Lịch học linh động (T2 - CN)</p>
+          <a class="button" href="#">ĐĂNG KÝ NGAY</a>
       </div>
     </div>
   </div>
@@ -493,28 +480,25 @@ chỉ với 1.000.000 Đ </div>
   <div class="container">
    <div class="row">
     <div class="col-md-7">
-      <h2>our services</h2>
-      <span>We provide best services processus dynamicus, qui sequitur mutationem co</span>
+      <h2>LÝ DO HƠN 20.000 NGƯỜI ĐĂNG KÝ HỌC LÁI HỌC LÁI 3T SÀI GÒN</h2>
       <div class="row">
         <div class="col-md-6">
          <div class="feature-box-2">
           <div class="icon">
-           <i class="glyph-icon flaticon-wallet"></i>
+            <i class="glyph-icon flaticon-wallet"></i>
           </div> 
           <div class="content">
-          <h5>Affordable</h5>
-          <p>Laudantium perspiciatis sed ut unde omnis iste natus error sit voluptatem acantium doloremque.</p>
+          <h5>ĐĂNG KÝ ĐƯỢC HỌC LIỀN</h5>
          </div>
         </div>
         </div>
         <div class="col-md-6">
          <div class="feature-box-2">
           <div class="icon">
-           <i class="glyph-icon flaticon-gas-station"></i>
+            <i class="glyph-icon flaticon-gas-station"></i>
           </div> 
           <div class="content">
-          <h5>Oil Changes</h5>
-          <p>Voluptatem perspiciatis sed ut unde omnis iste natus error sit acantium doloremque laudantium.</p>
+          <h5>GIẢI PHÁP HỌC LÁI XE TRẢ GÓP 0%</h5>
          </div>
         </div>
         </div>
@@ -523,29 +507,47 @@ chỉ với 1.000.000 Đ </div>
         <div class="col-md-6">
          <div class="feature-box-2">
           <div class="icon">
-           <i class="glyph-icon flaticon-air-conditioning"></i>
+            <i class="glyph-icon flaticon-air-conditioning"></i>
           </div> 
           <div class="content">
-          <h5>Air conditioning</h5>
-          <p>Natus perspiciatis sed ut unde omnis iste error sit voluptatem acantium doloremque laudantium.</p>
+          <h5>TIẾP TỤC ĐƯỢC GIẢM HỌC PHÍ ĐẾN 0 ĐỒNG KHI GIỚI THIỆU THÊM HỌC VIÊN</h5>
          </div>
         </div>
         </div>
         <div class="col-md-6">
          <div class="feature-box-2">
           <div class="icon">
-           <i class="glyph-icon flaticon-gearstick"></i>
+            <i class="glyph-icon flaticon-gearstick"></i>
           </div> 
           <div class="content">
-          <h5>transmission</h5>
-          <p>Omnis perspiciatis sed ut unde iste natus error sit voluptatem acantium doloremque laudantium.</p>
+          <h5>THỜI GIAN HỌC THỰC HÀNH BẢO LƯU HOẶC CHUYỂN NHƯỢNG CHO NGƯỜI KHÁC</h5>
          </div>
         </div>
         </div>
+        <div class="col-md-6">
+          <div class="feature-box-2">
+           <div class="icon">
+            <i class="glyph-icon flaticon-circle"></i>
+          </div> 
+           <div class="content">
+           <h5>LỰA CHỌN GIÁO VIÊN THỰC HÀNH THEO YÊU CẦU</h5>
+          </div>
+         </div>
+         </div>
+         <div class="col-md-6">
+          <div class="feature-box-2">
+           <div class="icon">
+            <i class="glyph-icon flaticon-price-tag"></i>
+          </div> 
+           <div class="content">
+           <h5>GIẢM GIÁ KHI CHẤP NHẬN HỌC MUỘN HOẶC ĐÓNG HỌC PHÍ 1 LẦN</h5>
+          </div>
+         </div>
+         </div>
       </div>  
      </div>
      <div class="col-md-5">
-       <img class="img-fluid" src="{{asset('front-end\images\car\12.jpg')}}" alt="">
+       <img class="img-fluid" src="{{asset('front-end\images\car\_DSC8572.png')}}" alt="">
      </div>
    </div>
   </div>
@@ -554,6 +556,8 @@ chỉ với 1.000.000 Đ </div>
 <!--=================================
  our-service -->
 
+
+ <hr class="gray">
 
 <!--=================================
  latest news -->
@@ -569,121 +573,82 @@ chỉ với 1.000.000 Đ </div>
     </div>
    </div>
    <div class="row">
-     <div class="col-lg-4 col-md-12">
+     <div class=" col-md-12">
+      <div class="owl-carousel" data-items="3" data-md-items="3" data-sm-items="2" data-xs-items="1" data-space="20">
+        <div class="item">  
         <div class="blog-2">
           <div class="blog-image">
-            <img class="img-fluid" src="{{asset('front-end\images\blog\05.jpg')}}" alt="">
+            <img class="img-fluid" src="{{asset('front-end\images\blog\bao-hiem-xe-may-1-800x385.jpg')}}" alt="">
             <div class="date">
-              <span>aug 17</span>
+              <span>may 28</span>
             </div>
           </div>
           <div class="blog-content">
-            <div class="blog-admin-main">
-             <div class="blog-admin">
-              <img class="img-fluid" src="{{asset('front-end\images\team\01.jpg')}}" alt="">
-              <span>John Doe</span>
-             </div>
-             <div class="blog-meta float-right">
-               <ul>
-                 <li><a href="#"> <i class="fa fa-comment"></i><br> 123</a></li>
-                 <li class="share"><a href="#"> <i class="fa fa-share-alt"></i><br> ...</a>
-                  <div class="blog-social"> 
-                   <ul>
-                    <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-pinterest-p"></i></a> </li>
-                   </ul>
-                   </div>
-                 </li>
-               </ul>
-             </div>
-            </div>
+          
             <div class="blog-description text-center">
-               <a href="#">Does Your Life Lack Meaning</a>
+               <a href="#">4 điều bạn cần phải biết về bảo hiểm xe máy</a>
                <div class="separator"></div>
-              <p>You will begin to realize why this exercise Pattern is called the Dickens with reference to the ghost</p>
+              <p> – Theo quy định tại thông tư 22/2016 của Bộ Tài chính thì: “Chủ xe cơ giới khi tham gia giao thông trên lãnh thổ Việt Nam phải tham gia bảo hiểm bắt buộc [...]</p>
             </div>
           </div>
         </div>
      </div>
      
-   <div class="col-lg-4 col-md-12">
+   <div class="item">
         <div class="blog-2">
           <div class="blog-image">
-            <img class="img-fluid" src="{{asset('front-end\images\blog\06.jpg')}}" alt="">
+            <img class="img-fluid" src="{{asset('front-end\images\blog\Toyata-yaris-768x512.png')}}" alt="">
             <div class="date">
-              <span>aug 17</span>
+              <span>apr 13</span>
             </div>
           </div>
           <div class="blog-content">
-            <div class="blog-admin-main">
-             <div class="blog-admin">
-              <img class="img-fluid" src="{{asset('front-end\images\team\02.jpg')}}" alt="">
-              <span>Paul Flavius</span>
-             </div>
-             <div class="blog-meta float-right">
-               <ul>
-                 <li><a href="#"> <i class="fa fa-comment"></i><br> 123</a></li>
-                 <li class="share"><a href="#"> <i class="fa fa-share-alt"></i><br> ...</a>
-                  <div class="blog-social"> 
-                   <ul>
-                    <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-pinterest-p"></i></a> </li>
-                   </ul>
-                   </div>
-                 </li>
-               </ul>
-             </div>
-            </div>
+        
             <div class="blog-description text-center">
-               <a href="#">The A Z Of Motivation</a>
+               <a href="#">Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</a>
                <div class="separator"></div>
-              <p>Exercise is called you will begin to Pattern realize why this the Dickens Pattern with reference to ghost</p>
+              <p>Bài viết hôm nay 3T Sài Gòn xin chia sẻ các bạn 05 mẫu xe tiết kiệm xăng nhất hiện nay và đang được phân phối tại thị trường Việt Nam [...]</p>
             </div>
           </div>
         </div>
      </div>
-     <div class="col-lg-4 col-md-12">
+     <div class="item">
         <div class="blog-2">
           <div class="blog-image">
-            <img class="img-fluid" src="{{asset('front-end\images\blog\07.jpg')}}" alt="">
+            <img class="img-fluid" src="{{asset('front-end\images\blog\hinhc-1400x466.png')}}" alt="">
             <div class="date">
               <span>aug 17</span>
             </div>
           </div>
           <div class="blog-content">
-            <div class="blog-admin-main">
-             <div class="blog-admin">
-              <img class="img-fluid" src="{{asset('front-end\images\team\03.jpg')}}" alt="">
-              <span>Sara Lisbon</span>
-             </div>
-             <div class="blog-meta float-right">
-               <ul>
-                 <li><a href="#"> <i class="fa fa-comment"></i><br> 123</a></li>
-                 <li class="share"><a href="#"> <i class="fa fa-share-alt"></i><br> ...</a>
-                  <div class="blog-social"> 
-                   <ul>
-                    <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-pinterest-p"></i></a> </li>
-                   </ul>
-                   </div>
-                 </li>
-               </ul>
-             </div>
-            </div>
+   
             <div class="blog-description text-center">
-               <a href="#">Motivation In Life</a>
+               <a href="#">600 câu hỏi thi sát hạch lái xe</a>
                <div class="separator"></div>
-              <p>Dickens Pattern you will begin to realize why this Dickens exercise is the with reference to the ghost</p>
+              <p>Trung Tâm Dạy Nghề Lái Xe Sài Gòn xin giới thiệu phần mềm 600 câu hỏi lý thuyết lái xe B2 và học bằng C mới nhất 2020 từ Tổng Cục Đường Bộ Việt Nam trong năm 2019 đã tiến hành đổi mới [...]</p>
             </div>
           </div>
         </div>
      </div>   
+     <div class="item">
+      <div class="blog-2">
+        <div class="blog-image">
+          <img class="img-fluid" src="{{asset('front-end\images\blog\1-1-800x400.png')}}" alt="">
+          <div class="date">
+            <span>apr 13</span>
+          </div>
+        </div>
+        <div class="blog-content">
+      
+          <div class="blog-description text-center">
+             <a href="#">Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a>
+             <div class="separator"></div>
+            <p>1. 100% bao đậu
+              “Ảo banh nóc” là cách quảng cáo gây sốc và cũng là chiêu trò dụ học viên đăng ký học lái xe B2 và bằng C của một số trường dạy lái xe không uy tín [...]</p>
+          </div>
+        </div>
+      </div>
+   </div>
     </div>
   </div>
 </section> 
@@ -787,14 +752,14 @@ chỉ với 1.000.000 Đ </div>
   <div class="container">
    <div class="row">
     <div class="col-md-6">
-      <h4 class="text-red">Subscribe to Our Newsletter Feed</h4>
-      <p class="text-white">Simply Dummy Text of the Printin  Galley of Type and Bled it to Make a Type.</p>
+      <h4 class="text-red">Liên hệ với chúng tôi</h4>
+      <p class="text-white">Để nhận thêm thông tin chi tiết. </p>
      </div>
      <div class="col-md-6">
         <form class="news-letter-form">
            <div class="row no-gutter">
-            <div class="col-md-10 col-9"><input type="email" placeholder="Enter your Email" class="form-control placeholder"></div>
-            <div class="col-md-2 col-3"><a class="button red" href="#">Subscribe</a></div>
+            <div class="col-md-10 col-9"><input type="email" placeholder="Email của bạn" class="form-control placeholder"></div>
+            <div class="col-md-2 col-3"><a class="button red" href="#">Gửi</a></div>
            </div>
          </form>
      </div>
@@ -811,73 +776,21 @@ chỉ với 1.000.000 Đ </div>
 
 <footer class="footer-3 footer-topbar light page-section-pt">
   <div class="container">
-  <div class="row top">
-    <div class="col-lg-3 col-md-12">
-      <img class="img-fluid" id="logo_footer_dark" src="{{asset('front-end\images\SaiGon.png')}}" alt="">
-    </div>
-    <div class="col-lg-5 col-md-12">
-      <div class="footer-nav text-lg-right text-center">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-12">
-      <div class="social text-lg-right text-center">
-          <ul>
-            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-pinterest-p"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-dribbble"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-vimeo"></i> </a></li>
-            <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
-          </ul>
-       </div>      
-    </div>
-   </div>
-    <div class="row">
-      <div class="col-md-12">
-        <hr>
-      </div>
-    </div>
+ 
     <div class="row">
       <div class="col-lg-5 col-md-12">
         <div class="about-content">
-         <h6 class="text-black">about us</h6>
-          <p class="text-gray">Car Dealer is the best premium HTML5 Template. We provide everything you need to build an Amazing dealership website developed especially for car sellers, dealers or auto motor retailers. You can use this template for creating website.</p>
+         <h6 class="text-black">VỀ CHÚNG TÔI</h6>
+          <p class="text-gray">Có hệ thống cơ sở nhiều nhất việt nam (5 cơ sở) có quy mô đào tạo lớn nhất việt nam là một trong những đơn vị duy nhất có s n tập công nghệ singapore kiểm soát giờ tập bằng công nghệ v n tay giám sát trực tuyến việc dạy, học qua camera và GPS.</p>
         </div>
       </div>
       <div class="col-lg-7 col-md-12">
-      <h6 class="text-black">Useful Links</h6>
-          <div class="usefull-link">
-            <div class="row">
-              <div class="col-md-4">
-                <ul>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Change </a></li>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Replacement</a></li>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Contact us</a></li>
-               </ul>
-              </div>
-              <div class="col-md-4">
-                <ul>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Change </a></li>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Replacement</a></li>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Contact us</a></li>
-               </ul>
-              </div>
-              <div class="col-md-4">
-                <ul>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Change </a></li>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Replacement</a></li>
-                <li> <a href="#"> <i class="fa fa-angle-right"></i> Contact us</a></li>
-               </ul>
-              </div>
-            </div>
-        </div> 
+      <h6 class="text-black">TIN TỨC MỚI NHẤT
+      </h6>
+        <p>4 điều bạn cần phải biết về bảo hiểm xe máy</p>
+        <p>Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</p>
+       <p>600 câu hỏi thi sát hạch lái xe</p>
+       <p>Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</p>
       </div>
     </div>
     </div>
@@ -886,15 +799,8 @@ chỉ với 1.000.000 Đ </div>
       <div class="row">
        <div class="col-lg-6 col-md-12">
          <div class="text-lg-left text-center">
-         <p>©Copyright 2018 Car Dealer Developed by <a href="http://www.potenzaglobalsolutions.com/" target="_blank">Potenzaglobalsolutions</a></p>
+          <p>Phát triển 2020 © <span class="text-dark">Học lái toàn quốc </span></p>
        </div>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <ul class="list-inline text-lg-right text-center">
-          <li><a href="#">privacy policy </a> | </li> 
-          <li><a href="#">terms and conditions </a> |</li> 
-          <li><a href="#">contact us </a></li>
-        </ul>
       </div>
      </div>
     </div>

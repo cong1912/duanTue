@@ -107,12 +107,9 @@ Route::get('/tuyendung',function(){
 Route::get('/tracuu',function(){
 	return view('front-end.search');
 });
-<<<<<<< HEAD
 
 Route::get('/trangchu',function(){
 	return view('front-end.home3');
 });
 
-=======
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
->>>>>>> d8327203f61f0242f61a9a8a47785b0fba4e0235
