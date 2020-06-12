@@ -108,3 +108,7 @@ Route::get('/tracuu',function(){
 	return view('front-end.search');
 });
 
+Route::get('/trangchu',function(){
+	return view('front-end.home3');
+});
+
