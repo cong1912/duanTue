@@ -107,12 +107,19 @@ Route::get('/tuyendung',function(){
 Route::get('/tracuu',function(){
 	return view('front-end.search');
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> ac5280a6605a4d97c028d35fd9dc8bdfaea473f5
 
 Route::get('/trangchu',function(){
 	return view('front-end.home3');
 });
 
+<<<<<<< HEAD
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
+=======
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
+>>>>>>> ac5280a6605a4d97c028d35fd9dc8bdfaea473f5
