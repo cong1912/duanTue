@@ -119,71 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li>
           <div class="search-top"> <a class="search-btn not_click d-none d-lg-block" href="javascript:void(0);">Search Button</a>
             <div class="search-box not-click">
-              <div class="row">
-                <div class="col-lg-2 col-sm-6">
-                 <div class="selected-box">
-                  <select class="selectpicker">
-                  <option>Make </option>
-                  <option>BMW</option>
-                  <option>Honda </option>
-                  <option>Hyundai </option>
-                  <option>Nissan </option>
-                  <option>Mercedes Benz </option>
-                 </select>
-                </div>
-                 </div>
-                 <div class="col-lg-2 col-sm-6">
-                  <div class="selected-box">
-                     <select class="selectpicker">
-                      <option>Model</option>
-                      <option>3-Series</option>
-                      <option>Carrera</option>
-                      <option>GT-R</option>
-                      <option>Cayenne</option>
-                      <option>Mazda6</option>
-                      <option>Macan</option>
-                     </select>
-                   </div>
-                  </div>
-                  <div class="col-lg-2 col-sm-6">
-                   <div class="selected-box">
-                   <select class="selectpicker">
-                    <option>Year</option>
-                    <option>2010</option>
-                    <option>2011</option>
-                    <option>2012</option>
-                    <option>2013</option>
-                    <option>2014</option>
-                    <option>2015</option>
-                    <option>2016</option>
-                   </select>
-                  </div>
-                    </div>
-                   <div class="col-lg-2 col-sm-6">
-                    <div class="selected-box">
-                     <select class="selectpicker">
-                        <option>Body style</option>
-                        <option>2dr Car</option>
-                        <option>4dr Car</option>
-                        <option>Convertible</option>
-                        <option>Sedan</option>
-                        <option>Sports Utility</option>
-                       </select>
-                      </div>
-                    </div>
-                   <div class="col-lg-2 col-sm-6">
-                    <div class="selected-box">
-                     <select class="selectpicker">
-                        <option>Vehicle Status</option>
-                        <option>Condition</option>
-                        <option>All Conditions</option>
-                        <option>Condition</option>
-                        <option>Brand New</option>
-                        <option>Slightly Used</option>
-                        <option>Used</option> 
-                       </select>
-                     </div>
-                    </div>
+              <div class="row" >
                    <div class="col-lg-2 col-sm-6">
                     <div class="text-center">
                       <button class="button red" type="button">Search</button>
@@ -227,6 +163,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- LAYER NR. 3 -->
     <div class="tp-caption button red " id="slide-3-layer-4" data-x="62" data-y="452" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"delay":1720,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","force":true,"to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bs:solid;bw:0 0 0 0;"}]' data-textalign="['left','left','left','left']" data-paddingtop="[10,10,10,10]" data-paddingright="[30,30,30,30]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 16px; font-weight: 400; font-family:Open Sans;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">LIÊN HỆ NGAY </div>
+      
+<div class="container">
+	<div class="d-flex float-right h-100">
+		<div class="card">
+			<div class="card-header align-content-center">
+				<h3 class="mt-1 ml-2">Liên hệ chúng tôi</h3>
+			
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="Tên của bạn">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+						</div>
+						<input type="email" class="form-control" placeholder="Email của bạn">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-phone"></i></span>
+						</div>
+						<input type="phone" class="form-control" placeholder="SDT của bạn">
+					</div>
+        <div class="container"> 
+          <form>
+            <p style="color: white; font-size: 15px">Khóa học:</p>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio1" style="color: white">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Hạng B2
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label" for="radio2" style="color: white">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Hạng C
+              </label>
+            </div>
+            </form>
+        </div>
+				</form>
+			</div>
+      <div class="card-footer ml-5">
+				<div class="form-group">
+          <input type="submit" value="Đăng ký ngay" class="btn login_btn align-content-center">
+        </div>
+      </div>
+      
+		</div>
+	</div>
+</div>
   </li>
   <!-- SLIDE  -->
     <li data-index="rs-4" data-transition="random-static,random-premium,random" data-slotamount="default,default,default,default" data-hideafterloop="0" data-hideslideonmobile="off" data-randomtransition="on" data-easein="default,default,default,default" data-easeout="default,default,default,default" data-masterspeed="default,default,default,default" data-thumb="revolution/assets/100x50_ac5dd-02.jpg" data-rotate="0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -243,6 +234,61 @@ chỉ với 1.000.000 Đ </div>
 
     <!-- LAYER NR. 6 -->
     <div class="tp-caption button red " id="slide-4-layer-4" data-x="62" data-y="430" data-width="['auto']" data-height="['auto']" data-type="button" data-responsive_offset="on" data-frames='[{"delay":1720,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","force":true,"to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);bs:solid;bw:0 0 0 0;"}]' data-textalign="['left','left','left','left']" data-paddingtop="[10,10,10,10]" data-paddingright="[30,30,30,30]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 16px; font-weight: 400;font-family:Open Sans;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">ĐĂNG KÝ NGAY</div>
+     
+<div class="container">
+	<div class="d-flex float-right h-100">
+		<div class="card">
+			<div class="card-header align-content-center">
+				<h3 class="mt-1 ml-2">Liên hệ chúng tôi</h3>
+			
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-user"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="Tên của bạn">
+						
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+						</div>
+						<input type="email" class="form-control" placeholder="Email của bạn">
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fa fa-phone"></i></span>
+						</div>
+						<input type="phone" class="form-control" placeholder="SDT của bạn">
+					</div>
+          <div class="container"> 
+            <form>
+              <p style="color: white; font-size: 15px">Khóa học:</p>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio1" style="color: white">
+                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Hạng B2
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="radio2" style="color: white">
+                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Hạng C
+                </label>
+              </div>
+              </form>
+          </div>
+				</form>
+			</div>
+      <div class="card-footer ml-5">
+				<div class="form-group">
+          <input type="submit" value="Đăng ký ngay" class="btn login_btn align-content-center">
+        </div>
+      </div>
+      
+		</div>
+	</div>
+</div>
   </li>
 </ul>
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div> </div>
@@ -252,95 +298,13 @@ chỉ với 1.000.000 Đ </div>
  rev-slider -->
 
 
-<!--=================================
- search -->
-
-<section class="search white-bg">
-  <div class="container">
-   <div class="search-block">
-    <div class="row">
-     <div class="col-md-8">
-      <div class="row">
-       <div class="col-md-4">
-        <span>Select make</span>
-          <div class="selected-box">
-            <select class="selectpicker">
-            <option>Make </option>
-            <option>BMW</option>
-            <option>Honda </option>
-            <option>Hyundai </option>
-            <option>Nissan </option>
-            <option>Mercedes Benz </option>
-           </select>
-          </div>
-        </div>
-        <div class="col-md-4">
-        <span>Select model</span>
-          <div class="selected-box">
-           <select class="selectpicker">
-            <option>Model</option>
-            <option>3-Series</option>
-            <option>Carrera</option>
-            <option>GT-R</option>
-            <option>Cayenne</option>
-            <option>Mazda6</option>
-            <option>Macan</option>
-           </select>
-         </div>
-        </div>
-  
-        <div class="col-md-4">
-        <span>Select body style</span>
-        <div class="selected-box">
-         <select class="selectpicker">
-            <option>Body style</option>
-            <option>2dr Car</option>
-            <option>4dr Car</option>
-            <option>Convertible</option>
-            <option>Sedan</option>
-            <option>Sports Utility</option>
-           </select>
-          </div>
-        </div>
-        <div class="col-md-4">
-       <span>Select vehicle status</span>
-         <div class="selected-box">
-           <select class="selectpicker">
-            <option>Vehicle Status</option>
-            <option>Condition</option>
-            <option>All Conditions</option>
-            <option>Condition</option>
-            <option>Brand New</option>
-            <option>Slightly Used</option>
-            <option>Used</option> 
-           </select>
-         </div>
-        </div>
-      </div>
-     </div>
-    <div class="col-md-4">
-     <div class="price-slide">
-        <div class="price">
-         <label for="amount">HOTLINE</label>
-         <p> 0899.545.466</p>
-          <a class="button" href="#">ĐĂNG KÝ NGAY</a>
-        </div>
-       </div>
-    </div>
-   </div>
-  </div>
- </div>
-</section>      
-
-<!--=================================
- search -->
 
 
 <!--=================================
  welcome -->
 
 <section class="welcome-3 white-bg page-section-ptb">
-  <div class="container">
+   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <div class="content-box-2 car-bg-1">
@@ -365,7 +329,7 @@ chỉ với 1.000.000 Đ </div>
       </div>
     </div>
     <div class="row about custom-block-2">
-      <div class="col-md-6">
+      <div class="col-md-6 candeu">
         <h2> VỀ CHÚNG TÔI </h2>
         <p>Là một trong những công ty tiên phong về lĩnh vực dạy lái xe ô tô và xe tải hàng đầu tại Việt Nam. Với sự phát triển không ngừng của ngành lái xe, lợi ích và sự phát triển của khách hàng luôn là vấn đề ưu tiên hàng đầu của công ty chúng tôi. Vì vậy đến với 3T, khách hàng sẽ được hỗ trợ tối đa học lái xe B2, C, D, E… và sự dụng các dịch vụ cũng như thiết bị lái xe tiên tiến do 3T cung cấp cho cho học học viên sử dụng.
           Để làm được điều này một cách tốt nhất, kết hợp với các trung tâm đào tạo và dạy nghề cùng hệ thống 3T, công ty đã phát hành mô hình chuỗi trung tâm học lái xe phù hợp các vị trí địa lý có nhu cầu học học lái xe cao.</p>
@@ -426,6 +390,27 @@ chỉ với 1.000.000 Đ </div>
 <!--=================================
  welcome -->
  
+<!--=================================
+ hotline -->
+
+<section class="welcome-block objects-car page-section-ptb white-bg">
+  <div class="objects-left left"><img class="img-fluid objects-1" src="{{asset('front-end\images\objects\01.jpg')}}" alt=""></div>
+  <div class="objects-right right"><img class="img-fluid objects-2" src="{{asset('front-end\images\objects\02.jpg')}}" alt=""></div>
+   <div class="container">
+         <div class="row">
+        <div class="col-md-12">
+           <div class="halp-call text-center">
+             <img class="img-fluid" src="{{asset('front-end\images\team\01.jpg')}}" alt="">
+             <span>Hotline:</span>
+             <h2 class="text-red"> 0899.545.466</h2>
+           </div>
+        </div>
+     </div>
+   </div>
+ </section>
+ 
+ <!--=================================
+  end of hotline -->
  
 <!--=================================
  feature-car -->
@@ -778,19 +763,40 @@ chỉ với 1.000.000 Đ </div>
   <div class="container">
  
     <div class="row">
-      <div class="col-lg-5 col-md-12">
+      <div class="col-lg-3 col-md-6">
         <div class="about-content">
-         <h6 class="text-black">VỀ CHÚNG TÔI</h6>
-          <p class="text-gray">Có hệ thống cơ sở nhiều nhất việt nam (5 cơ sở) có quy mô đào tạo lớn nhất việt nam là một trong những đơn vị duy nhất có s n tập công nghệ singapore kiểm soát giờ tập bằng công nghệ v n tay giám sát trực tuyến việc dạy, học qua camera và GPS.</p>
+          <h6 class="text-danger">VỀ CHÚNG TÔI</h6>
+          <p class="candeu">CÓ HỆ THỐNG CƠ SỞ NHIỀU NHẤT VIỆT NAM (5 CƠ SỞ) CÓ QUY MÔ ĐÀO TẠO LỚN NHẤT VIỆT NAM LÀ MỘT TRONG NHỮNG ĐƠN VỊ DUY NHẤT CÓ S N TẬP CÔNG NGHỆ SINGAPORE KIỂM SOÁT GIỜ TẬP BẰNG CÔNG NGHỆ V N TAY GIÁM SÁT TRỰC TUYẾN VIỆC DẠY, HỌC QUA CAMERA VÀ GPS</p>
         </div>
       </div>
-      <div class="col-lg-7 col-md-12">
-      <h6 class="text-black">TIN TỨC MỚI NHẤT
-      </h6>
-        <p>4 điều bạn cần phải biết về bảo hiểm xe máy</p>
-        <p>Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</p>
-       <p>600 câu hỏi thi sát hạch lái xe</p>
-       <p>Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</p>
+      <div class="col-lg-3 col-md-6">
+        <div class="usefull-link candeu">
+        <h6 class="text-danger">TIN TỨC MỚI NHẤT</h6>
+          <ul>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i>4 Điều Bạn Cần Phải Biết Về Bảo Hiểm Xe Máy</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i> Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i> 600 câu hỏi thi sát hạch lái xe</a></li>
+            <li><a href="#"><i class="fa fa-angle-double-right"></i> Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a></li>
+          </ul>
+        </div> 
+      </div>
+      <div class="col-lg-3 col-md-6">
+       <div class="recent-post-block candeu">
+        <h6 class="text-danger mb-3">TỪ KHÓA </h6>
+      <p>3t sài gòn bảo hiểm xe máy bằng B2 bằng c giấy phép lái xe B2 hoc lai xe bien hoa hoclaixeotobienhoa.com học bằng C học lái xe b2 học lái xe bằng b2 học lái xe ô tô học lái xe ô tô biên hòa học lái xe ô tô tô biên hòa học phí bằng b2 học phí lái xe B2 lái xe B2 lý thuyết học lái xe B2 Sài Gòn 3T thi bằng lái b2 thi lái xe B2 thi lý thuyết hạng B2 thi sát hạch B2 thi thực hành b2 đào tạo lái xe hạng B2 đăng ký học lái xe B2</p>
+       </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="news-letter">
+        <h6 class="text-danger mb-3">THÔNG TIN 3T SÀI GÒN </h6>
+         <p>Địa Chỉ: 205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</p>
+         <p class="mt-3">Hotline: 0899.545.466</p>
+         <p> Email: hoclaitoanquoc@gmail.com</p>
+         <form class="news-letter">
+           <input type="email" placeholder="Email của bạn" class="form-control placeholder">
+           <a class="button red mt-4" href="#">Gửi</a>
+         </form>
+        </div> 
       </div>
     </div>
     </div>

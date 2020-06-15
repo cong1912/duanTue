@@ -83,7 +83,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 Route::get('/',function(){
-	return view('front-end.home');
+	return view('front-end.home3');
 });
 
 Route::get('/lienhe',function(){
@@ -106,12 +106,6 @@ Route::get('/tuyendung',function(){
 
 Route::get('/tracuu',function(){
 	return view('front-end.search');
-});
-
-
-
-Route::get('/trangchu',function(){
-	return view('front-end.home3');
 });
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
