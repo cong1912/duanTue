@@ -60,6 +60,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager (noscript) -->
 
 
+<!--=================================
+  loading -->
+  
+  <div id="loading">
+    <div id="loading-center">
+        <img src="{{asset('front-end\images\loader.gif')}}" alt="">
+   </div>
+  </div>
+  
+  <!--=================================
+    loading -->
   
 
 <!--=================================
@@ -119,16 +130,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li>
           <div class="search-top"> <a class="search-btn not_click d-none d-lg-block" href="javascript:void(0);">Search Button</a>
             <div class="search-box not-click">
-              <div class="row" >
-                   <div class="col-lg-2 col-sm-6">
+              <div class="row">
+                <div>
+                 <div class="selected-box">
+                  <input type="text" class="form-control ml-3" style="width: 930px" placeholder="Nhập từ khóa...">
+                </div>
+                 </div>
+                
+                   <div >
                     <div class="text-center">
-                      <button class="button red" type="button">Search</button>
+                      <button class="button red ml-4" type="button">Tìm kiếm</button>
                   </div>
                 </div>
               </div>
              </div>
            </div>
-          </li>
+         </li>
         </ul>
        </div>
       </div>
@@ -766,7 +783,7 @@ chỉ với 1.000.000 Đ </div>
       <div class="col-lg-3 col-md-6">
         <div class="about-content">
           <h6 class="text-danger">VỀ CHÚNG TÔI</h6>
-          <p class="candeu">CÓ HỆ THỐNG CƠ SỞ NHIỀU NHẤT VIỆT NAM (5 CƠ SỞ) CÓ QUY MÔ ĐÀO TẠO LỚN NHẤT VIỆT NAM LÀ MỘT TRONG NHỮNG ĐƠN VỊ DUY NHẤT CÓ S N TẬP CÔNG NGHỆ SINGAPORE KIỂM SOÁT GIỜ TẬP BẰNG CÔNG NGHỆ V N TAY GIÁM SÁT TRỰC TUYẾN VIỆC DẠY, HỌC QUA CAMERA VÀ GPS</p>
+          <p class="candeu">Có hệ thống cơ sở nhiều nhất việt nam (5 cơ sở) có quy mô đào tạo lớn nhất việt nam là một trong những đơn vị duy nhất có s n tập công nghệ singapore kiểm soát giờ tập bằng công nghệ v n tay giám sát trực tuyến việc dạy, học qua camera và GPS.</p>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
@@ -783,8 +800,31 @@ chỉ với 1.000.000 Đ </div>
       <div class="col-lg-3 col-md-6">
        <div class="recent-post-block candeu">
         <h6 class="text-danger mb-3">TỪ KHÓA </h6>
-      <p>3t sài gòn bảo hiểm xe máy bằng B2 bằng c giấy phép lái xe B2 hoc lai xe bien hoa hoclaixeotobienhoa.com học bằng C học lái xe b2 học lái xe bằng b2 học lái xe ô tô học lái xe ô tô biên hòa học lái xe ô tô tô biên hòa học phí bằng b2 học phí lái xe B2 lái xe B2 lý thuyết học lái xe B2 Sài Gòn 3T thi bằng lái b2 thi lái xe B2 thi lý thuyết hạng B2 thi sát hạch B2 thi thực hành b2 đào tạo lái xe hạng B2 đăng ký học lái xe B2</p>
-       </div>
+      <a href="#" style="font-size: 22pt; color: black"> 3t sài gòn</a> 
+      <a href="#" style="font-size: 9pt; color: black">bảo hiểm xe máy</a> 
+      <a href="#" style="font-size: 9pt; color: black">bằng B2</a> 
+      <a href="#" style="font-size: 13pt; color: black">bằng c</a> 
+      <a href="#" style="font-size: 13pt; color: black">giấy phép lái xe B2</a>  
+      <a href="#" style="font-size: 9pt; color: black">hoc lai xe bien hoa</a>
+      <a href="#" style="font-size: 9pt; color: black">hoclaixeotobienhoa.com</a> 
+      <a href="#" style="font-size: 9pt; color: black"> học bằng C </a>
+      <a href="#" style="font-size: 9pt; color: black">học lái xe b2 </a>
+      <a href="#" style="font-size: 9pt; color: black">học lái xe bằng b2</a> 
+      <a href="#" style="font-size: 9pt; color: black">học lái xe ô tô</a> 
+      <a href="#" style="font-size: 13pt; color: black">học lái xe ô tô biên hòa</a> 
+      <a href="#" style="font-size: 9pt; color: black">học phí bằng b2</a> 
+      <a href="#" style="font-size: 9pt; color: black">học phí lái xe B2</a> 
+      <a href="#" style="font-size: 22pt; color: black">lái xe B2</a> 
+      <a href="#" style="font-size: 9pt; color: black">lý thuyết học lái xe B2</a>
+      <a href="#" style="font-size: 9pt; color: black">Sài Gòn 3T</a>
+      <a href="#" style="font-size: 9pt; color: black">thi bằng lái b2</a>     
+      <a href="#" style="font-size: 9pt; color: black"> thi lái xe B2</a>
+      <a href="#" style="font-size: 9pt; color: black">thi lý thuyết hạng B2</a>
+      <a href="#" style="font-size: 9pt; color: black">thi sát hạch B2</a>
+      <a href="#" style="font-size: 9pt; color: black">thi thực hành b2</a>
+      <a href="#" style="font-size: 9pt; color: black"> đào tạo lái xe hạng B2</a>
+      <a href="#" style="font-size: 9pt; color: black">đăng ký học lái xe B2</a>
+    </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="news-letter">

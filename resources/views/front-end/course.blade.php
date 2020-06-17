@@ -33,7 +33,7 @@ privacy-policy  -->
   <div class="container">
     <div class="row">
      <div class="col-md-12">
-    {{$doc->content}} 
+    {!!$doc->content!!}
 
   </div> 
     </div>

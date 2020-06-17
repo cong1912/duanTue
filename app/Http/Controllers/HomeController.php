@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Courses;
+
 
 class HomeController extends Controller
 {
@@ -26,8 +26,5 @@ class HomeController extends Controller
         return view('dashboard');
     }
 
-    public function course(){
-        $doc=Courses::find(1);
-        return view('front-end/course',['doc' => $doc]);
-    }
+ 
 }
