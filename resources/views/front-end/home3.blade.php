@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+﻿@extends('front-end.layouts.master_home')
+@section('content')
+=======
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,6 +178,7 @@
 <!--=================================
  header -->
 
+>>>>>>> 7578438161549e459e20e9f8d1247c9a8c34d777
 
 <!--=================================
  rev-slider -->
@@ -888,6 +893,11 @@
     </div>
 </section>
 
+<<<<<<< HEAD
+ <!--=================================
+ Newsletter -->
+@endsection
+=======
 <!--=================================
 Newsletter -->
 
@@ -1125,3 +1135,4 @@ back to top -->
 
 </body>
 </html>
+>>>>>>> 7578438161549e459e20e9f8d1247c9a8c34d777

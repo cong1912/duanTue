@@ -18,8 +18,6 @@ class CreateSoftwaresTable extends Migration
             $table->string('name');
             $table->string('image')->nullable();
             $table->longText('content');
-            $table->string('link_android');
-            $table->string('link_ios');
             $table->timestamps();
         });
     }

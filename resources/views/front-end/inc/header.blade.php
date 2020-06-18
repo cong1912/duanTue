@@ -62,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   <div id="loading">
     <div id="loading-center">
-        <img src="{{asset('front-end\images\loader4.gif')}}" alt="">
+        <img src="{{asset('front-end\images\loader.gif')}}" alt="">
    </div>
   </div>
   
@@ -86,46 +86,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- menu logo -->
         <ul class="menu-logo">
             <li>
-                <a href="index.html"><img src="{{asset('front-end/images/SaiGon.png')}}" alt="logo"> </a>
+            <a href="{{route('trangchu')}}"><img src="{{asset('front-end/images/SaiGon.png')}}" alt="logo"> </a>
             </li>
         </ul>
       <!-- menu links -->
       <ul class="menu-links">
         <!-- active class -->
-        <li><a href="javascript:void(0)"> GIỚI THIỆU </a>
+        <li><a href="{{route('gioithieu')}}"> GIỚI THIỆU </a>
              <!-- drop down multilevel  -->
            
         </li>
         <li><a href="javascript:void(0)">KHÓA HỌC <i class="fa fa-angle-down fa-indicator"></i></a>
           <ul class="drop-down-multilevel">
-            <li><a href="index.html">HẠNG B2</a></li>
-            <li><a href="index-2.html">HẠNG C</a></li>
+            @foreach ($ten_khoahoc as $ten_khoahoc)
+            <li><a href="{{route('khoahoc',$ten_khoahoc->id)}}">{{$ten_khoahoc->name}}</a></li>
+            @endforeach
         </ul>
         </li>
         <li ><a href="javascript:void(0)">TRA CỨU <i class="fa fa-angle-down fa-indicator"></i></a>
           <ul class="drop-down-multilevel">
-            <li><a href="index.html">LỊCH THI TỐT NGHIỆP THÁNG 6</a></li>
-            <li><a href="index-2.html">LỊCH THI SÁT HẠCH 06 – 2020</a></li>
-            <li><a href="index.html">Lịch học lí thuyết tháng 6</a></li>
-            <li><a href="index-2.html">LỊCH THI TỐT NGHIỆP 04 – 2020</a></li>
-            <li><a href="index-2.html">LỊCH THI SÁT HẠCH </a></li>
+            @foreach ($tracuu as $tracuu )
+            <li><a href="">{{$tracuu ->test_schedule}}</a></li>
+            @endforeach
         </ul>
         </li>
         <li><a href="javascript:void(0)">PHẦN MỀM  <i class="fa fa-angle-down fa-indicator"></i></a> 
            <!-- drop down multilevel  -->
             <ul class="drop-down-multilevel">
-                <li><a href="listing-01.html">450 CÂU</a></li>
-                <li><a href="listing-02.html">600 CÂU</a></li>
+              @foreach ($phanmem as $phanmem )
+              <li><a href="{{route('phanmem',$phanmem->id)}}">{{$phanmem ->name}}</a></li>
+              @endforeach
             </ul>
         </li>
-        <li><a href="javascript:void(0)">TIN TỨC  </a> 
+        <li><a href="{{route('tintuc')}}">TIN TỨC  </a> 
         </li>
         <li class=""><a href="javascript:void(0)"> TUYỂN DỤNG </a>
         </li>
-        <li><a href="javascript:void(0)"> LIÊN HỆ</a>
+        <li><a href="{{route('lienhe')}}"> LIÊN HỆ</a>
         </li>
         <li>
-        
+          <div class="search-top"> <a class="search-btn not_click d-none d-lg-block" href="javascript:void(0);">Search Button</a>
+            <div class="search-box not-click">
+              <div class="row">
+                <div>
+                 <div class="selected-box">
+                  <input type="text" class="form-control ml-3" style="width: 930px" placeholder="Nhập từ khóa...">
+                </div>
+                 </div>
+                
+                   <div >
+                    <div class="text-center">
+                      <button class="button red ml-4" type="button">Tìm kiếm</button>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
          </li>
         </ul>
        </div>

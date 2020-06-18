@@ -20,7 +20,8 @@
            <div class="col-md-6 text-md-right float-right">
              <ul class="page-breadcrumb">
                 <li><a href="#"><i class="fa fa-home"></i> HOME</a> <i class="fa fa-angle-double-right"></i></li>
-                <li><span>TRA CỨU</span> </li>
+                <li><a href="#">Tra cứu</a> <i class="fa fa-angle-double-right"></i></li>
+                <li><span>LỊCH THI TỐT NGHIỆP THÁNG 6</span> </li>
              </ul>
            </div>
      </div>

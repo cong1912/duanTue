@@ -17,6 +17,7 @@ class CreateSearchsTable extends Migration
             $table->increments('id');
             $table->string('test_schedule');
             $table->string('image')->nullable();
+            $table->longText('content');
             $table->timestamps();
         });
     }
