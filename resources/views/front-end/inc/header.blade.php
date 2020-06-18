@@ -106,7 +106,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li ><a href="javascript:void(0)">TRA CỨU <i class="fa fa-angle-down fa-indicator"></i></a>
           <ul class="drop-down-multilevel">
             @foreach ($tracuu as $tracuu )
-            <li><a href="">{{$tracuu ->test_schedule}}</a></li>
+            <li><a href="{{route('tracuu',$tracuu->id)}}">{{$tracuu->title}}</a></li>
             @endforeach
         </ul>
         </li>
@@ -118,7 +118,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               @endforeach
             </ul>
         </li>
-        <li><a href="{{route('tintuc')}}">TIN TỨC  </a> 
+        <li><a href="javascript:void(0)">TIN TỨC  <i class="fa fa-angle-down fa-indicator"></i> </a> 
+           <!-- drop down multilevel  -->
+           <ul class="drop-down-multilevel">
+            @foreach ($tintuc as $tintuc )
+            <li><a href="{{route('tintuc',$tintuc->id)}}">{{$tintuc ->title}}</a></li>
+            @endforeach
+          </ul>
         </li>
         <li class=""><a href="javascript:void(0)"> TUYỂN DỤNG </a>
         </li>

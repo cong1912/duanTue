@@ -94,17 +94,16 @@ Route::get('khoahoc/{id}',['uses'=>'PageHomeController@course','as'=>'khoahoc'])
 Route::get('phanmem/{id}',['uses'=>'PageHomeController@software','as'=>'phanmem']);
 
 Route::get('gioithieu',['uses'=>'PageHomeController@introduce','as'=>'gioithieu']);
+
 Route::get('lienhe',['uses'=>'PageHomeController@contact','as'=>'lienhe']);
-Route::get('tintuc',['uses'=>'PageHomeController@new','as'=>'tintuc']);
+
+Route::get('tintuc/{id}',['uses'=>'PageHomeController@new','as'=>'tintuc']);
+
+Route::get('tracuu/{id}',['uses'=>'PageHomeController@search','as'=>'tracuu']);
 
 Route::get('/tuyendung',function(){
 	return view('front-end.recruitment');
 });
-
-Route::get('/tracuu',function(){
-	return view('front-end.search');
-});
-
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 

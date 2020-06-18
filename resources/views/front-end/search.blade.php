@@ -15,13 +15,13 @@
   <div class="container">
      <div class="row text-center intro-title">
            <div class="col-md-6 text-md-left d-inline-block">
-             <h3 class="text-white">LỊCH THI TỐT NGHIỆP THÁNG 6 </h3>
+             <h3 class="text-white">{!!$search->title!!} </h3>
            </div>
            <div class="col-md-6 text-md-right float-right">
              <ul class="page-breadcrumb">
                 <li><a href="#"><i class="fa fa-home"></i> HOME</a> <i class="fa fa-angle-double-right"></i></li>
                 <li><a href="#">Tra cứu</a> <i class="fa fa-angle-double-right"></i></li>
-                <li><span>LỊCH THI TỐT NGHIỆP THÁNG 6</span> </li>
+                <li><span>{!!$search->title!!}</span> </li>
              </ul>
            </div>
      </div>
@@ -31,11 +31,9 @@
 <!--=================================
  inner-intro -->
 
-<div class="mt-5">
-    <img src="{{asset('front-end\images\tracuu.jpg')}}" width="1350px">
-    <p class="mt-2 mr-5 ml-5" style="font-size: 20px">Lịch thi mới nhất được 3T Sài Gòn cập nhập cho các học viên chuẩn bị bắt đầu thi lái xe bằng B2 và C. Các học viên vui lòng cập nhập thông tin để chuẩn bị cho việc thi . Hoặc vui lòng liên hệ 3T Sài Gòn theo hotline: 0899.545.466.
-    </p>
-    <p class="mb-5 mr-5 ml-5" style="font-size: 20px">Xin cảm ơn</p>
+<div class="mt-5 ml-5 mr-5">
+<img src="/images/{!!$search->image!!}" width="1250px">
+    <p class="mt-2 mr-5 ml-5" style="font-size: 20px">{!!$search->content!!}</p>
     <br><br><br>
 </div>
  
