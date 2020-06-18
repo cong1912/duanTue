@@ -1,4 +1,4 @@
-@extends('back-end.layouts.master')
+@extends('back-end.layouts.master', ['page' => __('User Management'), 'pageSlug' => 'index'])
 @section('css')
     <link href="{{asset("back-end\plugins\apex\apexcharts.css")}}" rel="stylesheet" type="text/css">
     <link href="{{asset("back-end\assets\css\dashboard\dash_2.css")}}" rel="stylesheet" type="text/css">

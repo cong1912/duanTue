@@ -1,4 +1,4 @@
-@extends('back-end.layouts.master')
+@extends('back-end.layouts.master',['page' => __('User Management'), 'pageSlug' => 'index'])
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\table\datatable\datatables.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\table\datatable\custom_dt_html5.css')}}">

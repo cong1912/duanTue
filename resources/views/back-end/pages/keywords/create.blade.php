@@ -1,4 +1,4 @@
-@extends('back-end.layouts.master')
+@extends('back-end.layouts.master',['page' => __('User Management'), 'pageSlug' => 'key'])
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\dropify\dropify.min.css')}}">
     <link href="{{asset('back-end\assets\css\scrollspyNav.css')}}" rel="stylesheet" type="text/css">

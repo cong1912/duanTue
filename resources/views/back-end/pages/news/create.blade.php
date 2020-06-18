@@ -1,4 +1,4 @@
-@extends('back-end.layouts.master')
+@extends('back-end.layouts.master',['page' => __('User Management'), 'pageSlug' => 'news'])
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\dropify\dropify.min.css')}}">
     <link href="{{asset('back-end\assets\css\users\account-setting.css')}}" rel="stylesheet" type="text/css">
@@ -49,6 +49,7 @@
                                                                             <select class="form-control" name="category" id="year">
                                                                                 <option value="1">tin tức</option>
                                                                                 <option value="2">tuyển dụng</option>
+                                                                                <option value="3">tra cứu</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
