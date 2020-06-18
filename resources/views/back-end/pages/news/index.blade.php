@@ -1,4 +1,4 @@
-@extends('back-end.layouts.master')
+@extends('back-end.layouts.master',['page' => __('User Management'), 'pageSlug' => 'news'])
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\table\datatable\datatables.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\table\datatable\custom_dt_html5.css')}}">
@@ -38,8 +38,10 @@
                                             <td><img src="/images/{{$new->image}}" width="100px"></td>
                                             @if( $new->category ==1)
                                             <td>{{ __('tin tức')}}</td>
-                                            @else
+                                                @elseif( $new->category ==2)
                                                 <td>{{__('tuyển dụng') }}</td>
+                                            @else
+                                                    <td>{{__('tra cứu') }}</td>
                                             @endif
                                         <td>
                                             <div class="btn-group">

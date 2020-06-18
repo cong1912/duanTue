@@ -36,7 +36,13 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $request->validate([
+            'phone' => 'required',
+            'email' => 'required',
+        ]);
+        Contacts::create($request->all());
+        return redirect()->route('home')->withStatus(__('Bạn đã gửi thông tin thành công'));
     }
 
     /**

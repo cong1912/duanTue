@@ -74,9 +74,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/contact/{id}/edit', 'ContactsController@edit')->name('contact.edit');
     Route::put('/contact/{id}', 'ContactsController@update')->name('contact.update');
     Route::delete('/contact/{id}/delete', 'ContactsController@destroy')->name('contact.destroy');
-    Route::get('analytics', function () {
-        return view('back-end.pages.analytics.index');
-    })->name('analytics');
+    Route::get('analytics', function () {return view('back-end.pages.analytics.index');})->name('analytics');
+    //keywords
+    Route::get('search/index', 'SearchsController@index')->name('Search.index');
+    Route::get('/search/create', 'SearchsController@create')->name('Search.create');
+    Route::post('/search', 'SearchsController@store')->name('Search.store');
+    Route::get('/search/{id}/edit', 'SearchsController@edit')->name('Search.edit');
+    Route::put('/search/{id}', 'SearchsController@update')->name('Search.update');
+    Route::delete('/search/{id}/delete', 'SearchsController@destroy')->name('Search.destroy');
 });
 
 
@@ -84,7 +89,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::get('/',function(){
 	return view('front-end.home3');
-});
+})->name('home');
 
 Route::get('/lienhe',function(){
 	return view('front-end.contact');

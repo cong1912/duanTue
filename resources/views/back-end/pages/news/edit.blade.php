@@ -1,4 +1,4 @@
-@extends('back-end.layouts.master')
+@extends('back-end.layouts.master',['page' => __('User Management'), 'pageSlug' => 'news'])
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{asset('back-end\plugins\dropify\dropify.min.css')}}">
     <link href="{{asset('back-end\assets\css\users\account-setting.css')}}" rel="stylesheet" type="text/css">
@@ -47,13 +47,15 @@
                                                                     <div class="d-sm-flex d-block">
                                                                         <div class="form-group mr-1">
                                                                             <select class="form-control" name="category" id="year">
-                                                                                <option value="1">tin tức</option>
-                                                                                <option value="2">tuyển dụng</option>
+                                                                                <option @if($new->category==1)  selected @endif value="1">tin tức</option>
+                                                                                <option @if($new->category==2)  selected @endif value="2">tuyển dụng</option>
+                                                                                <option @if($new->category==3)  selected @endif value="3">tra cứu</option>
                                                                             </select>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
                                                                 <textarea class="ckeditor" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" >{{$new->content}}</textarea>
