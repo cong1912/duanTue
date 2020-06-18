@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Softwares;
+
 class PageController extends Controller
 {
     /**

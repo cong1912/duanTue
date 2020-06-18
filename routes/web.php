@@ -82,23 +82,14 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 
-Route::get('/',function(){
-	return view('front-end.home3');
-});
+Route::get('/',['uses'=>'PageHomeController@index','as'=>'trangchu']);
+Route::get('khoahoc/{id}',['uses'=>'PageHomeController@course','as'=>'khoahoc']);
 
-Route::get('/lienhe',function(){
-	return view('front-end.contact');
-});
+Route::get('phanmem/{id}',['uses'=>'PageHomeController@software','as'=>'phanmem']);
 
-Route::get('/khoahoc','PageHomeController@course');
-
-Route::get('/gioithieu',function(){
-	return view('front-end.introduce');
-});
-
-Route::get('/tintuc',function(){
-	return view('front-end.new');
-});
+Route::get('gioithieu',['uses'=>'PageHomeController@introduce','as'=>'gioithieu']);
+Route::get('lienhe',['uses'=>'PageHomeController@contact','as'=>'lienhe']);
+Route::get('tintuc',['uses'=>'PageHomeController@new','as'=>'tintuc']);
 
 Route::get('/tuyendung',function(){
 	return view('front-end.recruitment');
@@ -107,6 +98,7 @@ Route::get('/tuyendung',function(){
 Route::get('/tracuu',function(){
 	return view('front-end.search');
 });
+
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 

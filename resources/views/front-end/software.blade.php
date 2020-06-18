@@ -9,13 +9,13 @@
   <div class="container">
      <div class="row text-center intro-title">
            <div class="col-md-6 text-md-left d-inline-block">
-             <h1 class="text-white">{!!$doc->name!!}</h1>
+             <h1 class="text-white">{{$sof->name}} </h1>
            </div>
            <div class="col-md-6 text-md-right float-right">
              <ul class="page-breadcrumb">
                 <li><a href="#"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>
-                <li><a href="#">Khóa học</a> <i class="fa fa-angle-double-right"></i></li>
-                <li><span>{!!$doc->name!!}</span> </li>
+                <li><a href="#">Phần mềm</a> <i class="fa fa-angle-double-right"></i></li>
+                <li><span>{{$sof->name}}</span> </li>
              </ul>
            </div>
      </div>
@@ -27,20 +27,22 @@
 
 
 <!--=================================
-privacy-policy  -->
+career  -->
 
-<section class="privacy-policy page-section-ptb">
+<section class="career page-section-ptb">
   <div class="container">
     <div class="row">
      <div class="col-md-12">
-    {!!$doc->content!!}
-  </div> 
-    </div>
+     <img class="img-fluid center-block" style="height: 365px" src="/images/{{$sof->image}}">
+        <div class="career-info">
+          <p>{!!$sof->content!!} </p>
+        </div>
+      </div>
+     </div>
    </div>
 </section>
 
 <!--=================================
-privacy-policy  -->
+career  -->
  
-  
-@endsection
+ @endsection
