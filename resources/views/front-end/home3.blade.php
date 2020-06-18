@@ -245,18 +245,23 @@
                                         <input type="text" name="name" class="form-control" placeholder="Tên của bạn">
 
                                     </div>
-                                    <div class="input-group form-group">
+
+                                    <div class="input-group form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                                         </div>
-                                        <input type="email" name="email" class="form-control"
+                                        <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                                placeholder="Email của bạn">
+                                        @include('alerts.feedback', ['field' => 'email'])
+
+
                                     </div>
-                                    <div class="input-group form-group">
+                                    <div class="input-group form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-phone"></i></span>
                                         </div>
-                                        <input type="text" name="phone" class="form-control" placeholder="SDT của bạn">
+                                        <input type="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="SDT của bạn">
+                                        @include('alerts.feedback', ['field' => 'phone'])
                                     </div>
                                     <div class="container">
                                         <p style="color: white; font-size: 15px">Khóa học:</p>
@@ -280,6 +285,7 @@
                                         </div>
                                     </div>
                                 </form>
+                                @error('email') {{$message}}@enderror
                             </div>
                         </div>
                     </div>
@@ -335,55 +341,57 @@
                         <div class="card">
                             <div class="card-header align-content-center">
                                 <h3 class="mt-1 ml-2">Liên hệ chúng tôi</h3>
-
+                                @include('alerts.success')
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form method="post" action="{{ route('contact.store') }}" autocomplete="off">
+                                    @csrf
                                     <div class="input-group form-group">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-user"></i></span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Tên của bạn">
+                                        <input type="text" name="name" class="form-control" placeholder="Tên của bạn">
 
                                     </div>
-                                    <div class="input-group form-group">
+                                    <div class="input-group form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                                         </div>
-                                        <input type="email" class="form-control" placeholder="Email của bạn">
+                                        <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                               placeholder="Email của bạn">
+                                        @include('alerts.feedback', ['field' => 'email'])
                                     </div>
-                                    <div class="input-group form-group">
+                                    <div class="input-group form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
                                         <div class="input-group-prepend">
                                             <span class="input-group-text"><i class="fa fa-phone"></i></span>
                                         </div>
-                                        <input type="phone" class="form-control" placeholder="SDT của bạn">
+                                        <input type="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="SDT của bạn">
+                                        @include('alerts.feedback', ['field' => 'phone'])
                                     </div>
                                     <div class="container">
-                                        <form>
-                                            <p style="color: white; font-size: 15px">Khóa học:</p>
-                                            <div class="form-check-inline">
-                                                <label class="form-check-label" for="radio1" style="color: white">
-                                                    <input type="radio" class="form-check-input" id="radio1"
-                                                           name="optradio" value="option1" checked>Hạng B2
-                                                </label>
-                                            </div>
-                                            <div class="form-check-inline">
-                                                <label class="form-check-label" for="radio2" style="color: white">
-                                                    <input type="radio" class="form-check-input" id="radio2"
-                                                           name="optradio" value="option2">Hạng C
-                                                </label>
-                                            </div>
-                                        </form>
+                                        <p style="color: white; font-size: 15px">Khóa học:</p>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label"   for="radio1" style="color: white">
+                                                <input type="radio" class="form-check-input" id="radio1" name="driver’s_license"
+                                                       value="hạng B2" checked>Hạng B2
+                                            </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label"  for="radio2" style="color: white">
+                                                <input type="radio" class="form-check-input" id="radio2" name="driver’s_license"
+                                                       value="Hạng C">Hạng C
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer ml-5">
+                                        <div class="form-group">
+                                            <input type="submit" value="Đăng ký ngay"
+                                                   class="btn login_btn align-content-center">
+                                        </div>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="card-footer ml-5">
-                                <div class="form-group">
-                                    <input type="submit" value="Đăng ký ngay"
-                                           class="btn login_btn align-content-center">
-                                </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>

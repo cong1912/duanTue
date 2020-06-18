@@ -36,12 +36,17 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-
-        $request->validate([
+        $validator =  $request->validate([
+            'name' => 'required',
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'driver’s_license' => 'required',
             'phone' => 'required',
-            'email' => 'required',
         ]);
-        Contacts::create($request->all());
+
+
+
+        Contacts::create($validator);
+
         return redirect()->route('home')->withStatus(__('Bạn đã gửi thông tin thành công'));
     }
 
@@ -87,6 +92,9 @@ class ContactsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $course = Contacts::find($id);
+        $course->delete();
+
+        return redirect()->route('contact.index')->withStatus(__('xóa khóa học thành công.'));
     }
 }
