@@ -29,7 +29,7 @@
 <section class="welcome-4 page-section-ptb white-bg">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-md-10">
+      <div class="col-md-12">
          <div class="section-title">
            <p>{!!$introduce->content!!}</p>
          </div>

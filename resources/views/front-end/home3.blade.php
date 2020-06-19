@@ -1,8 +1,8 @@
-@extends('front-end.layouts.master_home')
+
+﻿@extends('front-end.layouts.master_home')
 @section('content')
 
-    <!--=================================
- rev-slider -->
+
 
     <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="car-dealer-05"
          data-source="gallery"
@@ -715,6 +715,7 @@
     </section>
 
 
+
     <!--=================================
     Newsletter -->
 @endsection
@@ -733,4 +734,6 @@ footer -->
 
 <!--=================================
 back to top -->
+
+
 

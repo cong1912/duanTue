@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Courses;
+use App\News;
 use App\Searchs;
 use App\Softwares;
 use Illuminate\Support\ServiceProvider;
@@ -28,9 +29,11 @@ class AppServiceProvider extends ServiceProvider
     {
         view()->composer('front-end/inc/header',function($view){
             $ten_khoahoc=Courses::all();
-            $tracuu = Searchs::all();
+            $tracuu = News::all()->where('category',3);
             $phanmem = Softwares::all();
-            $view->with(['ten_khoahoc'=>$ten_khoahoc,'tracuu'=>$tracuu, 'phanmem'=>$phanmem]);
+            $tintuc = News::all()->where('category',1);
+            $tuyendung = News::all()->where('category',2);
+            $view->with(['ten_khoahoc'=>$ten_khoahoc,'tracuu'=>$tracuu, 'phanmem'=>$phanmem,'tintuc'=>$tintuc,'tuyendung'=>$tuyendung]);
         });
     }
 }

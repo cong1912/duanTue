@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Courses;
 use App\Introduces;
 use App\News;
+use App\Searchs;
 use App\Softwares;
 
 use function GuzzleHttp\Promise\all;
@@ -34,9 +35,17 @@ class PageHomeController extends Controller
     public function contact(){
         return view('front-end/contact');
     }
-    public function new(){
-        $new = News::all();
-        return view('front-end/new',['new'=>$new]);
+    public function new($id){
+        $new = News::find($id);
+        $new_nav=News::where('category',1)->all();
+        return view('front-end/new',['new'=>$new,'new_nav'=>$new_nav]);
     }
-   
+    public function search(Request $req,$id){
+        $search = News::find($id);
+        return view('front-end/search',['search'=>$search]);
+    }
+    public function tuyendung(Request $req,$id){
+        $td = News::find($id)->where('category',2);
+        return view('front-end/recruitment',['td'=>$td]);
+    }
 }

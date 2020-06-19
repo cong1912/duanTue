@@ -4,7 +4,7 @@
 <meta name="description" content="Car Dealer - The Best Car Dealer Automotive Responsive HTML5 Template">
 <meta name="author" content="potenzaglobalsolutions.com">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>TRUNG TÂM DẠY NGHỀ LÁI XE SÀI GÒN</title>
+<title>HOME - 3T SÀI GÒN</title>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="{{asset('front-end\images\SaiGon.png')}}">
@@ -62,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   <div id="loading">
     <div id="loading-center">
-        <img src="{{asset('front-end\images\loader.gif')}}" alt="">
+        <img src="{{asset('front-end\images\loader4.gif')}}" alt="">
    </div>
   </div>
   
@@ -92,65 +92,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <!-- menu links -->
       <ul class="menu-links">
         <!-- active class -->
-        <li><a href="{{route('gioithieu')}}"> GIỚI THIỆU </a>
-             <!-- drop down multilevel  -->
-           
+        <li><a href=""> NỔI BẬT </a>
         </li>
-        <li><a href="javascript:void(0)">KHÓA HỌC <i class="fa fa-angle-down fa-indicator"></i></a>
-          <ul class="drop-down-multilevel">
-            @foreach ($ten_khoahoc as $ten_khoahoc)
-            <li><a href="{{route('khoahoc',$ten_khoahoc->id)}}">{{$ten_khoahoc->name}}</a></li>
-            @endforeach
-        </ul>
+        <li><a href="javascript:void(0)">3T SÀI GÒN</a>
         </li>
-        <li ><a href="javascript:void(0)">TRA CỨU <i class="fa fa-angle-down fa-indicator"></i></a>
-          <ul class="drop-down-multilevel">
-            @foreach ($tracuu as $tracuu )
-            <li><a href="{{route('tracuu',$tracuu->id)}}" style="font-size:10px">{{$tracuu->title}}</a></li>
-            @endforeach
-        </ul>
+        <li><a href="javascript:void(0)"> KINH NGHIỆM </a>
         </li>
-        <li><a href="javascript:void(0)">PHẦN MỀM  <i class="fa fa-angle-down fa-indicator"></i></a> 
-           <!-- drop down multilevel  -->
-            <ul class="drop-down-multilevel">
-              @foreach ($phanmem as $phanmem )
-              <li><a href="{{route('phanmem',$phanmem->id)}}">{{$phanmem ->name}}</a></li>
-              @endforeach
-            </ul>
+        <li><a href="javascript:void(0)">VIDEO</a>
         </li>
-        <li><a href="javascript:void(0)">TIN TỨC  <i class="fa fa-angle-down fa-indicator"></i> </a> 
-           <!-- drop down multilevel  -->
-           <ul class="drop-down-multilevel">
-            @foreach ($tintuc as $tintuc )
-            <li><a href="{{route('tintuc',$tintuc->id)}}">{{$tintuc ->title}}</a></li>
-            @endforeach
-          </ul>
+        <li><a href=""> HÌNH ẢNH </a>
         </li>
-        @foreach ($tuyendung as $tuyendung )
-        <li class=""><a href="{{route('tuyendung',$tuyendung->id)}}"> {!!$tuyendung->title!!} </a>
+        <li><a href="javascript:void(0)">TIN TỨC</a>
         </li>
-        @endforeach
-        <li><a href="{{route('lienhe')}}"> LIÊN HỆ</a>
+        <li><a href="javascript:void(0)"> LIÊN HỆ </a>
         </li>
-        <li>
-          <div class="search-top"> <a class="search-btn not_click d-none d-lg-block" href="javascript:void(0);">Search Button</a>
-            <div class="search-box not-click">
-              <div class="row">
-                <div>
-                 <div class="selected-box">
-                  <input type="text" class="form-control ml-3" style="width: 930px" placeholder="Nhập từ khóa...">
-                </div>
-                 </div>
-                
-                   <div >
-                    <div class="text-center">
-                      <button class="button red ml-4" type="button">Tìm kiếm</button>
-                  </div>
-                </div>
-              </div>
-             </div>
-           </div>
-         </li>
         </ul>
        </div>
       </div>
