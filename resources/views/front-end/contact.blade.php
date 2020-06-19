@@ -42,13 +42,15 @@
                 <label for="exampleFormControlInput1"><strong>Họ và tên:</strong></label>
                  <input id="name" type="text" placeholder="Vui lòng nhập họ và tên" class="form-control" name="name">
              </div>
-               <div class="form-group">
+               <div class="form-group{{ $errors->has('email') ? ' has-danger' : '' }}">
                 <label for="exampleFormControlInput1"><strong>Email của bạn:</strong></label>
-                 <input type="email" placeholder="Vui lòng nhập email" class="form-control" name="email">
+                 <input type="email" placeholder="Vui lòng nhập email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email">
+                   @include('alerts.feedback', ['field' => 'email'])
                 </div>
-                <div class="form-group">
+                <div class="form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
                   <label for="exampleFormControlInput1"><strong>Số điện thoại của bạn</strong></label>
-                  <input type="phone" placeholder="Vui lòng nhập số điện thoại" class="form-control" name="phone">
+                  <input type="phone" placeholder="Vui lòng nhập số điện thoại" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone">
+                    @include('alerts.feedback', ['field' => 'phone'])
               </div>
                  <div class="form-group">
                   <label for="exampleFormControlSelect1"><strong class="text-black">Vui lòng chọn hạng bằng</strong></label>

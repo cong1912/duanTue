@@ -31,10 +31,12 @@
                                         <p>tên khóa học</p>
                                         <label for="t-text" class="sr-only">Text</label>
                                         <input id="t-text" type="text" name="name" placeholder="tên khóa học" value="{{ $course->name }}" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" required="">
+                                        @include('alerts.feedback', ['field' => 'name'])
                                     </div>
                                     <div class="form-group{{ $errors->has('content') ? ' has-danger' : '' }}">
                                         <p>Nội dung </p>
                                         <textarea id="textarea" name="content" class="ckeditor textarea{{ $errors->has('content') ? ' is-invalid' : '' }}" maxlength="225" rows="2" placeholder="This textarea has a limit of 225 chars.">{{$course->content}}</textarea>
+                                        @include('alerts.feedback', ['field' => 'content'])
                                     </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>

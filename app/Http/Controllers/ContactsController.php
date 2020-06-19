@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contacts;
+use App\Http\Requests\FormPost;
 use Illuminate\Http\Request;
 
 class ContactsController extends Controller
@@ -30,22 +31,17 @@ class ContactsController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     * @param  \App\Http\Requests\FormPost  $request
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FormPost $request)
     {
-        $validator =  $request->validate([
-            'name' => 'required',
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'driver’s_license' => 'required',
-            'phone' => 'required',
-        ]);
+
+        $validated = $request->validated();
 
 
-
-        Contacts::create($validator);
+        Contacts::create($validated);
 
         return redirect()->back()->withStatus(__('Bạn đã gửi thông tin thành công'));
     }
