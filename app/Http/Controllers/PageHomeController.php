@@ -37,11 +37,15 @@ class PageHomeController extends Controller
     }
     public function new($id){
         $new = News::find($id);
-        $new_nav=News::where('category',1)->paginate(4);
+        $new_nav=News::where('category',1)->all();
         return view('front-end/new',['new'=>$new,'new_nav'=>$new_nav]);
     }
     public function search(Request $req,$id){
         $search = News::find($id);
         return view('front-end/search',['search'=>$search]);
+    }
+    public function tuyendung(Request $req,$id){
+        $td = News::find($id)->where('category',2);
+        return view('front-end/recruitment',['td'=>$td]);
     }
 }

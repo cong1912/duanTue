@@ -101,9 +101,8 @@ Route::get('tintuc/{id}',['uses'=>'PageHomeController@new','as'=>'tintuc']);
 
 Route::get('tracuu/{id}',['uses'=>'PageHomeController@search','as'=>'tracuu']);
 
-Route::get('/tuyendung',function(){
-	return view('front-end.recruitment');
-});
+Route::get('tuyendung/{id}',['uses'=>'PageHomeController@tuyendung','as'=>'tuyendung']);
+
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 

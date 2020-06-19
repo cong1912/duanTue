@@ -34,7 +34,7 @@
         <div class="blog-entry">
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
-               <img class="img-fluid" src="/images/{{$new->image}}" alt="">
+               <img class="img-fluid" src="/images/{{$new->image}}" width="740px">
               </div>
             </div>
             <div class="entry-title mt-5 mb-4">
@@ -86,14 +86,6 @@
             <div class="tags">
              <ul>
               <li><a href="#">Bootstrap</a></li>
-              <li><a href="#">HTML5</a></li>
-              <li><a href="#">Wordpress</a></li>
-              <li><a href="#">CSS3</a></li>
-              <li><a href="#">Creative</a></li>
-              <li><a href="#">Multipurpose</a></li>
-              <li><a href="#">Bootstrap</a></li>
-              <li><a href="#">HTML5</a></li>
-              <li><a href="#">Wordpress</a></li>
             </ul>
            </div>
          </div>
