@@ -2,7 +2,7 @@
 @section('content')
 <!--=================================
  inner-intro -->
- 
+
  <section class="inner-intro bg-1 bg-overlay-black-70">
   <div class="container">
      <div class="row text-center intro-title">
@@ -28,37 +28,40 @@
 
 <section class="contact-2 page-section-ptb white-bg">
   <div class="container">
-   
+
     <div class="row">
      <div class="col-lg-8 col-sm-12 mb-lg-0 mb-1">
         <div class="gray-form row">
          <div class="col-md-12">
-          <div id="formmessage">Success/Error Message Goes Here</div>
-           <form class="form-horizontal" id="contactform" role="form" method="post" action="php/contact-form.php">
+
+           <form  method="post" action="{{route('contact.store')}}">
+               @csrf
             <div class="contact-form">
                <div class="form-group">
+                   @include('alerts.success')
                 <label for="exampleFormControlInput1"><strong>Họ và tên:</strong></label>
                  <input id="name" type="text" placeholder="Vui lòng nhập họ và tên" class="form-control" name="name">
-             </div> 
+             </div>
                <div class="form-group">
                 <label for="exampleFormControlInput1"><strong>Email của bạn:</strong></label>
                  <input type="email" placeholder="Vui lòng nhập email" class="form-control" name="email">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1"><strong>Số điện thoại của bạn</strong></label>
-                  <input type="text" placeholder="Vui lòng nhập số điện thoại" class="form-control" name="phone">
+                  <input type="phone" placeholder="Vui lòng nhập số điện thoại" class="form-control" name="phone">
               </div>
                  <div class="form-group">
                   <label for="exampleFormControlSelect1"><strong class="text-black">Vui lòng chọn hạng bằng</strong></label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Bằng B2</option>
-                    <option>Bằng C</option>
+                  <select name="driver’s_license" class="form-control" id="exampleFormControlSelect1">
+                    <option value="Bằng B2">Bằng B2</option>
+                    <option value="Bằng C">Bằng C</option>
                   </select>
               </div>
-                 <input type="hidden" name="action" value="sendEmail">
-                 <button id="submit" name="submit" type="submit" value="Send" class="button red"> Gửi</button>
+                <input type="submit" value="Đăng ký ngay"
+                       class="btn btn-outline-danger align-content-center">
                </div>
-               <div class="mt-5 mt-5">
+            </form>
+             <div class="mt-5 mt-5">
                  <h3 class="mt-2"><strong>CÂU HỎI THƯỜNG GẶP</strong></h3>
                  <hr>
                  <hr >
@@ -74,9 +77,8 @@
                  <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
                  <hr >
                  <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
-               </div>
-            </form>
-            <div id="ajaxloader" style="display:none"><img class="center-block" src="{{asset('images\ajax-loader.gif')}}" alt=""></div> 
+             </div>
+            <div id="ajaxloader" style="display:none"><img class="center-block" src="{{asset('images\ajax-loader.gif')}}" alt=""></div>
           </div>
         </div>
        </div>
@@ -138,5 +140,5 @@
 
 <!--=================================
  contact-map -->
- 
+
  @endsection

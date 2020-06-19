@@ -49,6 +49,7 @@ class NewsController extends Controller
         News::create([
             'title' => $data['title'],
             'category'=>$data['category'],
+            'tomtat'=>$data['tomtat'],
             'image'=>$imageName,
             'content'=>$data['content'],
         ]);
@@ -97,6 +98,7 @@ class NewsController extends Controller
             News::find($id)->update([
                 'title' => $data['title'],
                 'category'=>$data['category'],
+                'tomtat' => $data['tomtat'],
                 'image'=>$imageName,
                 'content'=>$data['content'],
             ]);

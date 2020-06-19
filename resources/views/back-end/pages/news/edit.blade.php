@@ -55,7 +55,11 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
+                                                            <div class="form-group editor-container{{ $errors->has('tomtat') ? ' has-danger' : '' }}">
+                                                                <label for="aboutBio">Nội dung tóm tắt</label>
+                                                                <textarea class="ckeditor" name="tomtat" id="aboutBio" required  cols="80" rows="10" >{{$new->tomtat}}</textarea>
+                                                                @include('alerts.feedback', ['field' => 'tomtat'])
+                                                            </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
                                                                 <textarea class="ckeditor" name="content" id="aboutBio" required placeholder="nội dung bài viết" rows="10" >{{$new->content}}</textarea>

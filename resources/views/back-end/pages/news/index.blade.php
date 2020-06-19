@@ -23,6 +23,7 @@
                                     <th>tiêu đề</th>
                                     <th>ảnh thumb</th>
                                     <th>danh mục</th>
+                                    <th>tóm tắt</th>
                                     <th>hành động</th>
                                 </tr>
                                 </thead>
@@ -43,6 +44,7 @@
                                             @else
                                                     <td>{{__('tra cứu') }}</td>
                                             @endif
+                                        <td>{!!$new->tomtat!!}</td>
                                         <td>
                                             <div class="btn-group">
                                                 <button type="button" class="btn btn-dark btn-sm">Action</button>

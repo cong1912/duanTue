@@ -47,7 +47,7 @@ class ContactsController extends Controller
 
         Contacts::create($validator);
 
-        return redirect()->route('home')->withStatus(__('Bạn đã gửi thông tin thành công'));
+        return redirect()->back()->withStatus(__('Bạn đã gửi thông tin thành công'));
     }
 
     /**
