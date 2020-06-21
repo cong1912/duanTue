@@ -65,18 +65,52 @@
             </form>
              <div class="mt-5 mt-5">
                  <h3 class="mt-2"><strong>CÂU HỎI THƯỜNG GẶP</strong></h3>
-                 <hr>
-                 <hr >
-                 <hr class="mt-5">        
-                 <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
-                 <hr >
-                 <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
-                 <hr >
-                 <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
-                 <hr >
-                 <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
-                 <hr >
-                 <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
+                 <div class="tabcontent accordion mt-5"> 
+                  <div class="accordion-title">
+                       <a href="#">Thủ tục học lái xe B2 thế nào?</a>
+                  </div>
+                  <div class="accordion-content"> 
+                      <p>Thủ tục đăng ký học lái xe bằng B2 tại hoclaitoanquoc.com rất đơn giản: Học viên chỉ cần chuẩn bị 01 bản photocopy chứng minh thư và 08 ảnh 3×4; những giấy tờ khác trung tâm sẽ hoàn thiện cho học viên.</p>
+                  </div>
+                  <div class="accordion-title">
+                       <a href="#">Học viên đăng ký thi khi nào học và học trong bao lâu?</a>
+                  </div>
+                  <div class="accordion-content"> 
+                      <p>Học viên đăng ký là đi học ngay, được học vào ngày cuối tuần, kể cả buổi tối và học viên có thể bảo lưu kết quả. Thời gian học lái xe B2 là 3 tháng, sau đó học viên thi sát hạch, vượt qua kỳ thi và được cấp bằng trong vòng 10 – 15 ngày.</p>
+                  </div>
+                   <div class="accordion-title">
+                       <a href="#">Thời gian học lý thuyết vào thực hành thế nào?</a>
+                  </div>
+                  <div class="accordion-content"> 
+                    <ul class="list-style-none">
+                      <li>– Lý thuyết: Học viên được giáo viên hướng dẫn tận tình, học với phương pháp đặc biệt, tương tác giữa học viên – giáo viên với những câu hỏi hay tình huống giả địnhvà không giới hạn số buổi. Lớp học đạt tiêu chuẩn, đầy đủ máy móc, thiết bị phục vụ việc học.</li>
+                      <li>– Thực hành: Học trên sân thi và xe thi, gồm 15 giờ thực lái và 45 giờ kiến tập, tổng 60 giờ trên xe. </li>
+                    </ul>                  
+                  </div>
+                <div class="accordion-title">
+                     <a href="#">Trong khóa học, có bao nhiêu giáo viên hướng dẫn thực hành?</a>
+                </div>
+                <div class="accordion-content"> 
+                  <p>Tại hoclaitoanquoc.com, bạn được học thực hành lái xe 1 kèm 1 theo yêu cầu của học viên và có thể đổi giáo viên nếu thấy không hài lòng. Giáo viên giàu kinh nghiệm sẽ tận tình hướng dẫn học viên, đảm bảo học viên học tốt, thi tốt.</p>
+              </div>
+              <div class="accordion-title">
+                   <a href="#">Trung tâm đào tạo bằng xe gì?</a>
+              </div>
+              <div class="accordion-content"> 
+                <p>Học viên được học và thi trên các xe đời mới như Vios thần thánh 2019, Kia 2018 (nếu học xe tải bằng C)</p>
+            </div>
+            <div class="accordion-title">
+                 <a href="#">Học viên thực hành ở đâu?</a>
+                 
+            </div>
+            <div class="accordion-content"> 
+               <p>Chúng tôi có hệ thống sân tập đa dạng về địa lý để học viên lựa chọn địa điểm phù hợp. Bạn có thể thực hành tại các địa điểm sau:</p>
+                <ul class="list-style-none">
+                  <li>Trung Tâm Dạy Nghề Lái Xe Sài Gòn (205C Đường Phạm Văn Thuận, Phường Tân Tiến, Thành Phố Biên Hòa, Tỉnh Đồng Nai)</li>
+                  <li>Trung Tâm Sát Hạch Bửu Long (Khu phố 5, phường Bửu Long,, Thành phố Biên Hoà, Đồng Nai) </li>
+                </ul>
+           </div>
+                </div>
              </div>
             <div id="ajaxloader" style="display:none"><img class="center-block" src="{{asset('images\ajax-loader.gif')}}" alt=""></div>
           </div>

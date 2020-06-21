@@ -30,11 +30,7 @@
           <div class="tags">
             <ul>
              @foreach ($key as $key)
-<<<<<<< HEAD
              <a class="btn btn-outline-danger mb-2" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
-=======
-             <button href="" class="darkgrey mb-2">{!!$key->keyword!!}</button>
->>>>>>> f85ad6b865ea262af9fbac5d14455bf6f009d775
              @endforeach
            </ul>
           </div>

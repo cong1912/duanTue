@@ -26,7 +26,7 @@
 
 <!--=================================
  blog  -->
-<div class="text-center mt-5"><h5><strong>SEARCH RESULTS FOR: </strong> </h5></div>
+<div class="text-center mt-5"><h5><strong>SEARCH RESULTS FOR: </strong>{{ $tukhoa}} </h5></div>
 
 <section class="blog blog-right-sidebar page-section-ptb">
   <div class="container">

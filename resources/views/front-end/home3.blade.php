@@ -344,7 +344,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="halp-call text-center">
-                        <img class="img-fluid" src="{{asset('front-end\images\team\01.jpg')}}" alt="">
+                        <img class="img-fluid" src="{{asset('front-end\images\logo.jpg')}}" alt="">
                         <span>Hotline:</span>
                         <h2 class="text-red"> 0899.545.466</h2>
                     </div>

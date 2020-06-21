@@ -59,13 +59,15 @@ class PageHomeController extends Controller
     }
 
     public function getSearch(Request $req){
+        $data = $req->all();
+        $tukhoa=$data['key'];
         $key = Keywords::all();
         $new_nav=News::where('category',1)->paginate(4);
         $new =News::where('category',1)->where(function($query ) use($req){
             $query->where('title','like','%'.$req->key.'%')
             ->orwhere('content','like','%'.$req->key.'%');
         })->get();
-        return view('front-end/search_new',['new'=>$new,'new_nav'=>$new_nav,'key'=>$key]);
+        return view('front-end/search_new',['new'=>$new,'new_nav'=>$new_nav,'key'=>$key,'tukhoa'=>$tukhoa]);
     }
    
 }
