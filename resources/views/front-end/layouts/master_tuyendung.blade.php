@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('front-end.inc.header_tuyendung')
+    @include('front-end.inc.header')
     @yield('css')
 </head>
 

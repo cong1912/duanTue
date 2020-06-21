@@ -3,7 +3,7 @@
 <!--=================================
  inner-intro -->
 
- <section class="inner-intro bg-1 bg-overlay-black-70">
+ <section class="inner-intro bg-1 bg-overlay-black-50">
   <div class="container">
      <div class="row text-center intro-title">
            <div class="col-md-6 text-md-left d-inline-block">

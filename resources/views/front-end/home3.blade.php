@@ -128,7 +128,6 @@
                     <img src="{{asset('front-end/revolution/assets/ac5dd-02.jpg')}}" alt="" data-bgposition="center center"
                          data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina="">
                     <!-- LAYERS -->
-
                     <!-- LAYER NR. 4 -->
                     <div class="tp-caption   tp-resizeme" id="slide-4-layer-1" data-x="62" data-y="179"
                          data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on"
