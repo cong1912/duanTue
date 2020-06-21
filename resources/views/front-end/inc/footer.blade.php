@@ -15,10 +15,9 @@
         <div class="usefull-link">
         <h6 class="text-white">TIN TỨC MỚI NHẤT</h6>
           <ul class="candeu mt-3">
-            <li><a href="#"><i class="fa fa-angle-double-right"></i>4 Điều Bạn Cần Phải Biết Về Bảo Hiểm Xe Máy</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> 600 câu hỏi thi sát hạch lái xe</a></li>
-            <li><a href="#"><i class="fa fa-angle-double-right"></i> Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a></li>
+            @foreach ($tintuc as $tintuc)
+          <li><a href="{{route('chitiet-tintuc',$tintuc->id)}}"><i class="fa fa-angle-double-right"></i>{{$tintuc->title}}</a></li>
+          @endforeach
           </ul>
         </div> 
       </div>
