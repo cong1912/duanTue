@@ -80,7 +80,7 @@ class KeywordsController extends Controller
     {
 
         $res=$request->validate([
-            'keyword' => 'unique:keywords,keyword|required|max:255|string|',
+            'keyword' => 'required',
             'bancong' => 'required',
         ]);
 
