@@ -94,7 +94,7 @@
              
              <ul>
               @foreach ($key as $key)
-              <li><a href="#">{!!$key->keyword!!}</a></li>
+              <li><a  href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a></li>
               @endforeach
             </ul>
            
