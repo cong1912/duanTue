@@ -8,6 +8,6 @@ class Keywords extends Model
 {
     protected $table = 'keywords';
     protected $fillable = [
-        'keyword',
+        'keyword','bancong',
     ];
 }

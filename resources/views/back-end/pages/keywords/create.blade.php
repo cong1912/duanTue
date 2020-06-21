@@ -27,6 +27,10 @@
                                         <p>nội dung </p>
                                         <input class="form-control" type="text" name="keyword" required id="aboutBio" placeholder="keyword ">
                                     </div>
+                                    <div class="form-group{{ $errors->has('keyword') ? ' has-danger' : '' }} ">
+                                        <p>bản cộng </p>
+                                        <input class="form-control" type="text" name="bancong" required id="aboutBio" placeholder="vd:'chào tuệ' bạn phải nhập 'chào+tuệ' ">
+                                    </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>
 
