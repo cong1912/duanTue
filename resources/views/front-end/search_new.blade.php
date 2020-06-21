@@ -1,4 +1,4 @@
-﻿@extends('front-end.layouts.master')
+@extends('front-end.layouts.master')
 @section('content')
 
 <!--=================================
@@ -26,19 +26,20 @@
 
 <!--=================================
  blog  -->
+<div class="text-center mt-5"><h5><strong>SEARCH RESULTS FOR: </strong> </h5></div>
 
 <section class="blog blog-right-sidebar page-section-ptb">
   <div class="container">
     <div class="row">
-      
      <div class="col-md-8">
-      @foreach ($newki as $new)
+      @foreach ($new as $new)
         <div class="blog-entry">
           <div class="entry-title">
-            <p>TIN TỨC</p>
+          <strong>TIN TỨC</strong>
             <a href="{{route('chitiet-tintuc',$new->id)}}" style="font-size: 25px">{!!$new->title!!}</a>
+            <hr class="mt-2" style="width: 53px;">
             </div>
-          <div class="blog-entry-image  clearfix">
+          <div class="blog-entry-image  clearfix mt-4">
              <div class="portfolio-item">
                <img class="img-fluid" src="/images/{{$new->image}}" width="740px">
               </div>
@@ -103,7 +104,6 @@
       </div>
       
      </div>
-     <div class="row ml-1">{{ $newki->links() }}</div>
        </div>
 </section>
 

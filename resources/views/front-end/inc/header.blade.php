@@ -118,34 +118,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               @endforeach
             </ul>
         </li>
-        <li><a href="javascript:void(0)">TIN TỨC  <i class="fa fa-angle-down fa-indicator"></i> </a> 
-           <!-- drop down multilevel  -->
-           <ul class="drop-down-multilevel">
-            @foreach ($tintuc as $tintuc )
-            <li><a href="{{route('tintuc',$tintuc->id)}}">{{$tintuc ->title}}</a></li>
-            @endforeach
-          </ul>
+        <li><a href="{{route('tintuc')}}">TIN TỨC  </a> 
         </li>
-        @foreach ($tuyendung as $tuyendung )
-        <li class=""><a href="{{route('tuyendung',$tuyendung->id)}}"> {!!$tuyendung->title!!} </a>
+        <li><a href="{{route('tuyendung')}}"> TUYỂN DỤNG </a>
         </li>
-        @endforeach
         <li><a href="{{route('lienhe')}}"> LIÊN HỆ</a>
         </li>
         <li>
-          <div class="search-top"> <a class="search-btn not_click d-none d-lg-block" href="javascript:void(0);">Search Button</a>
-            <div class="search-box not-click">
+          <div class="search-top"> <a class="search-btn not_click d-none d-lg-block" href="#">Search Button</a>
+            <div class="search-box">
               <div class="row">
-                <div>
+                <form role="search" method="get"  action="{{route('timkiem')}}">
                  <div class="selected-box">
-                  <input type="text" class="form-control ml-3" style="width: 930px" placeholder="Nhập từ khóa...">
+                  <input type="text" name="key" class="form-control ml-3" style="width: 1100px" placeholder="Nhập từ khóa...">
                 </div>
-                 </div>
-                
-                   <div >
-                    <div class="text-center">
-                      <button class="button red ml-4" type="button">Tìm kiếm</button>
-                  </div>
+                </form>
                 </div>
               </div>
              </div>

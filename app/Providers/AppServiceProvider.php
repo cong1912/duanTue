@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Courses;
+use App\Keywords;
 use App\News;
 use App\Searchs;
 use App\Softwares;
@@ -34,6 +35,15 @@ class AppServiceProvider extends ServiceProvider
             $tintuc = News::all()->where('category',1);
             $tuyendung = News::all()->where('category',2);
             $view->with(['ten_khoahoc'=>$ten_khoahoc,'tracuu'=>$tracuu, 'phanmem'=>$phanmem,'tintuc'=>$tintuc,'tuyendung'=>$tuyendung]);
+        });
+
+        view()->composer('front-end/inc/footer', function($view){
+            $key = Keywords::all();
+            $view->with(['key'=>$key]);
+        });
+        view()->composer('front-end/inc/footer_home', function($view){
+            $key = Keywords::all();
+            $view->with(['key'=>$key]);
         });
     }
 }

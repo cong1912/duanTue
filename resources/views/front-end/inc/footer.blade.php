@@ -23,33 +23,14 @@
         </div> 
       </div>
       <div class="col-lg-3 col-md-6">
-        <div class=" candeu">
          <h6 class="text-light mb-3">TỪ KHÓA </h6>
-       <a href="#" style="font-size: 22pt; color: rgb(169, 175, 180)"> 3t sài gòn</a> 
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">bảo hiểm xe máy</a> 
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">bằng B2</a> 
-       <a href="#" style="font-size: 13pt; color: rgb(169, 175, 180)">bằng c</a> 
-       <a href="#" style="font-size: 13pt; color: rgb(169, 175, 180)">giấy phép lái xe B2</a>  
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">hoc lai xe bien hoa</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">hoclaixeotobienhoa.com</a> 
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)"> học bằng C </a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">học lái xe b2 </a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">học lái xe bằng b2</a> 
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">học lái xe ô tô</a> 
-       <a href="#" style="font-size: 13pt; color: rgb(169, 175, 180)">học lái xe ô tô biên hòa</a> 
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">học phí bằng b2</a> 
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">học phí lái xe B2</a> 
-       <a href="#" style="font-size: 22pt; color: rgb(169, 175, 180)">lái xe B2</a> 
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">lý thuyết học lái xe B2</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">Sài Gòn 3T</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">thi bằng lái b2</a>     
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)"> thi lái xe B2</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">thi lý thuyết hạng B2</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">thi sát hạch B2</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">thi thực hành b2</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)"> đào tạo lái xe hạng B2</a>
-       <a href="#" style="font-size: 9pt; color: rgb(169, 175, 180)">đăng ký học lái xe B2</a>
-     </div>
+         <div class="tags">
+          <ul>
+           @foreach ($key as $key)
+           <button class="darkgrey mb-2">{!!$key->keyword!!}</button>
+           @endforeach
+         </ul>
+        </div>
        </div>
       <div class="col-lg-3 col-md-6">
         <div class="news-letter">

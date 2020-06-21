@@ -68,8 +68,16 @@
                  <hr>
                  <hr >
                  <hr class="mt-5">
-                 <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
-                 <hr >
+                 <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Right-aligned menu
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>              
                  <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>
                  <hr >
                  <p style="font-size: 20px" class="mt-3"><strong>Thủ tục học lái xe B2 thế nào?</strong></p>

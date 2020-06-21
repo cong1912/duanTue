@@ -97,12 +97,15 @@ Route::get('gioithieu',['uses'=>'PageHomeController@introduce','as'=>'gioithieu'
 
 Route::get('lienhe',['uses'=>'PageHomeController@contact','as'=>'lienhe']);
 
-Route::get('tintuc/{id}',['uses'=>'PageHomeController@new','as'=>'tintuc']);
+Route::get('tintuc',['uses'=>'PageHomeController@new','as'=>'tintuc']);
 
 Route::get('tracuu/{id}',['uses'=>'PageHomeController@search','as'=>'tracuu']);
 
-Route::get('tuyendung/{id}',['uses'=>'PageHomeController@tuyendung','as'=>'tuyendung']);
+Route::get('tuyendung',['uses'=>'PageHomeController@tuyendung','as'=>'tuyendung']);
 
+Route::get('chitiet-tintuc/{id}',['uses'=>'PageHomeController@getDetail','as'=>'chitiet-tintuc']);
+
+Route::get('timkiem',['uses'=>'PageHomeController@getSearch','as'=>'timkiem']);
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 

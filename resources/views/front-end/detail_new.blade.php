@@ -1,4 +1,4 @@
-﻿@extends('front-end.layouts.master')
+@extends('front-end.layouts.master')
 @section('content')
 
 <!--=================================
@@ -8,7 +8,7 @@
   <div class="container">
      <div class="row text-center intro-title">
            <div class="col-md-6 text-md-left d-inline-block">
-           <h3 class="text-white">Tin tức</h3>
+           <h3 class="text-white">{!!$new->title!!}</h3>
            </div>
            <div class="col-md-6 text-md-right float-right">
              <ul class="page-breadcrumb">
@@ -30,37 +30,21 @@
 <section class="blog blog-right-sidebar page-section-ptb">
   <div class="container">
     <div class="row">
-      
      <div class="col-md-8">
-      @foreach ($newki as $new)
         <div class="blog-entry">
-          <div class="entry-title">
-            <p>TIN TỨC</p>
-            <a href="{{route('chitiet-tintuc',$new->id)}}" style="font-size: 25px">{!!$new->title!!}</a>
-            </div>
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
                <img class="img-fluid" src="/images/{{$new->image}}" width="740px">
               </div>
             </div>
-            
+            <div class="entry-title mt-5 mb-4">
+              <a href="#" style="font-size: 25px">{!!$new->title!!}</a>
+              </div>
           <div class="entry-content">
-            <p>{!!$new->tomtat!!}</p>
+            <p>{!!$new->content!!}</p>
           </div>
-           <div class="entry-share clearfix">
-           <a class="button red float-left" href="{{route('chitiet-tintuc',$new->id)}}"> ĐỌC TIẾP </a>
-             <div class="share float-right"><a href="#"> <i class="fa fa-share-alt"></i> </a>
-                  <div class="blog-social"> 
-                   <ul class="list-style-none">
-                    <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-envelope"></i></a> </li>
-                   </ul>
-                   </div>
-                 </div>
-             </div>
           </div>
           <hr class="gray">
-          @endforeach
      </div>
       <div class="col-md-4">
         <div class="blog-sidebar">
@@ -101,10 +85,8 @@
          </div>
         </div>                       
       </div>
-      
      </div>
-     <div class="row ml-1">{{ $newki->links() }}</div>
-       </div>
+   </div>
 </section>
 
 <!--=================================

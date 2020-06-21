@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Courses;
 use App\Introduces;
+use App\Keywords;
 use App\News;
 use App\Searchs;
 use App\Softwares;
@@ -35,17 +36,35 @@ class PageHomeController extends Controller
     public function contact(){
         return view('front-end/contact');
     }
-    public function new($id){
-        $new = News::find($id);
-        $new_nav=News::where('category',1)->all();
-        return view('front-end/new',['new'=>$new,'new_nav'=>$new_nav]);
+    public function new(){
+        $newki = News::where('category',1)->paginate(4);
+        $key = Keywords::all();
+        $new_nav=News::where('category',1)->paginate(4);
+        return view('front-end/new',['newki'=>$newki,'new_nav'=>$new_nav,'key'=>$key]);
     }
     public function search(Request $req,$id){
         $search = News::find($id);
         return view('front-end/search',['search'=>$search]);
     }
-    public function tuyendung(Request $req,$id){
-        $td = News::find($id)->where('category',2);
+    public function tuyendung(){
+        $td = News::all()->where('category',2);
         return view('front-end/recruitment',['td'=>$td]);
+    }
+    public function getDetail(Request $req,$id){
+        $new=News::where('id',$req->id)->first();
+        $key = Keywords::all();
+        $new_nav=News::where('category',1)->paginate(4);
+        return view('front-end/detail_new',['new'=>$new, 'new_nav'=>$new_nav,'key'=>$key]);
+
+    }
+
+    public function getSearch(Request $req){
+        $key = Keywords::all();
+        $new_nav=News::where('category',1)->paginate(4);
+        $new =News::where('category',1)->where(function($query ) use($req){
+            $query->where('title','like','%'.$req->key.'%')
+            ->orwhere('content','like','%'.$req->key.'%');
+        })->get();
+        return view('front-end/search_new',['new'=>$new,'new_nav'=>$new_nav,'key'=>$key]);
     }
 }

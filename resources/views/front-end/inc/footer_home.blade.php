@@ -25,32 +25,15 @@
           </div> 
         </div>
         <div class="col-lg-3 col-md-6">
-         <div class="recent-post-block candeu">
+         <div class="recent-post-block">
           <h6 class="text-danger mb-3">TỪ KHÓA </h6>
-        <a href="#" style="font-size: 22pt; color: black"> 3t sài gòn</a> 
-        <a href="#" style="font-size: 9pt; color: black">bảo hiểm xe máy</a> 
-        <a href="#" style="font-size: 9pt; color: black">bằng B2</a> 
-        <a href="#" style="font-size: 13pt; color: black">bằng c</a> 
-        <a href="#" style="font-size: 13pt; color: black">giấy phép lái xe B2</a>  
-        <a href="#" style="font-size: 9pt; color: black">hoc lai xe bien hoa</a>
-        <a href="#" style="font-size: 9pt; color: black">hoclaixeotobienhoa.com</a> 
-        <a href="#" style="font-size: 9pt; color: black"> học bằng C </a>
-        <a href="#" style="font-size: 9pt; color: black">học lái xe b2 </a>
-        <a href="#" style="font-size: 9pt; color: black">học lái xe bằng b2</a> 
-        <a href="#" style="font-size: 9pt; color: black">học lái xe ô tô</a> 
-        <a href="#" style="font-size: 13pt; color: black">học lái xe ô tô biên hòa</a> 
-        <a href="#" style="font-size: 9pt; color: black">học phí bằng b2</a> 
-        <a href="#" style="font-size: 9pt; color: black">học phí lái xe B2</a> 
-        <a href="#" style="font-size: 22pt; color: black">lái xe B2</a> 
-        <a href="#" style="font-size: 9pt; color: black">lý thuyết học lái xe B2</a>
-        <a href="#" style="font-size: 9pt; color: black">Sài Gòn 3T</a>
-        <a href="#" style="font-size: 9pt; color: black">thi bằng lái b2</a>     
-        <a href="#" style="font-size: 9pt; color: black"> thi lái xe B2</a>
-        <a href="#" style="font-size: 9pt; color: black">thi lý thuyết hạng B2</a>
-        <a href="#" style="font-size: 9pt; color: black">thi sát hạch B2</a>
-        <a href="#" style="font-size: 9pt; color: black">thi thực hành b2</a>
-        <a href="#" style="font-size: 9pt; color: black"> đào tạo lái xe hạng B2</a>
-        <a href="#" style="font-size: 9pt; color: black">đăng ký học lái xe B2</a>
+          <div class="tags">
+            <ul>
+             @foreach ($key as $key)
+             <button class="darkgrey mb-2">{!!$key->keyword!!}</button>
+             @endforeach
+           </ul>
+          </div>
       </div>
         </div>
         <div class="col-lg-3 col-md-6">

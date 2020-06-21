@@ -27,16 +27,10 @@
 <section class="welcome-3 white-bg page-section-ptb">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="section-title">
-           <h2>HỆ THỐNG 3T SÀI GÒN </h2>
-           <div class="separator"></div>
-        </div>
-      </div>
+      @foreach ($td as $td)
+      {!!$td->content!!}
+      @endforeach
      </div>
-    <div class="row">
-    <p></p>
-    </div>
   </div>
 </section>
 
