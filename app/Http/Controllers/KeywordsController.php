@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Keywords;
 use Illuminate\Http\Request;
+use function GuzzleHttp\Promise\all;
 
 class KeywordsController extends Controller
 {
@@ -36,8 +37,10 @@ class KeywordsController extends Controller
      */
     public function store(Request $request)
     {
+
         $res=$request->validate([
             'keyword' => 'unique:keywords,keyword|required|max:255|string|',
+            'bancong' => 'required',
         ]);
         Keywords::create($res);
         return redirect()->route('keywords.index')->withStatus(__('từ khóa được tạo thành công'));
@@ -75,8 +78,10 @@ class KeywordsController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $res=$request->validate([
-            'keyword' => 'unique:keywords,keyword|required|max:255|string|',
+            'keyword' => 'required',
+            'bancong' => 'required',
         ]);
 
         Keywords::whereId($id)->update($res);

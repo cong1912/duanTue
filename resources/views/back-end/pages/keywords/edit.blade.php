@@ -16,7 +16,7 @@
                             <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Form tạo keyword</h4>
+                                        <h4>Form sửa keyword</h4>
                                     </div>
                                 </div>
                             </div>
@@ -27,6 +27,10 @@
                                     <div class="form-group{{ $errors->has('keyword') ? ' has-danger' : '' }} ">
                                         <p>nội dung </p>
                                         <input class="form-control" name="keyword" required id="aboutBio" value="{{$keyword->keyword}}" placeholder="keyword ">
+                                    </div>
+                                    <div class="form-group{{ $errors->has('bancong') ? ' has-danger' : '' }} ">
+                                        <p>bản cộng </p>
+                                        <input class="form-control" type="text" name="bancong" required id="aboutBio"  value="{{$keyword->bancong}}" placeholder="vd:'chào tuệ' bạn phải nhập 'chào+tuệ' ">
                                     </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>

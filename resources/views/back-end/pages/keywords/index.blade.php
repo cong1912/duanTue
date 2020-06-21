@@ -21,6 +21,7 @@
                                 <tr>
                                     <th>stt</th>
                                     <th>keyword</th>
+                                    <th>bản cộng</th>
                                     <th>hành động</th>
                                 </tr>
                                 </thead>
@@ -34,6 +35,7 @@
                                         <?php $i=$i+1 ?>
                                         <td><?php echo $i ?></td>
                                         <td>{{ $keyword->keyword }}</td>
+                                            <td>{{ $keyword->bancong }}</td>
                                         <td>
                                             <div class="btn-group">
                                                 <button type="button" class="btn btn-dark btn-sm">Action</button>

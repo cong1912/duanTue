@@ -7,7 +7,7 @@
 </head>
 
 <body class="sidebar-noneoverflow">
-   
+
     @yield('content')
     @include('front-end.inc.footer_home')
     @yield('script')

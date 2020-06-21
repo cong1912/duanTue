@@ -5,7 +5,7 @@
 
  <footer class="footer-3 footer-topbar light page-section-pt">
     <div class="container">
-   
+
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <div class="about-content">
@@ -22,7 +22,7 @@
               <li><a href="#"><i class="fa fa-angle-double-right"></i> 600 câu hỏi thi sát hạch lái xe</a></li>
               <li><a href="#"><i class="fa fa-angle-double-right"></i> Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a></li>
             </ul>
-          </div> 
+          </div>
         </div>
         <div class="col-lg-3 col-md-6">
          <div class="recent-post-block">
@@ -30,7 +30,11 @@
           <div class="tags">
             <ul>
              @foreach ($key as $key)
+<<<<<<< HEAD
              <a class="btn btn-outline-danger mb-2" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
+=======
+             <button href="" class="darkgrey mb-2">{!!$key->keyword!!}</button>
+>>>>>>> f85ad6b865ea262af9fbac5d14455bf6f009d775
              @endforeach
            </ul>
           </div>
@@ -46,7 +50,7 @@
              <input type="email" placeholder="Email của bạn" class="form-control placeholder">
              <a class="button red mt-4" href="#">Gửi</a>
            </form>
-          </div> 
+          </div>
         </div>
       </div>
       </div>
@@ -62,55 +66,55 @@
       </div>
      </div>
   </footer>
-  
+
    <!--=================================
    footer -->
-  
-  
-  
-  
+
+
+
+
    <!--=================================
    back to top -->
-  
+
   <div class="car-top">
     <span><img src="{{asset('front-end\images\car.png')}}" alt=""></span>
   </div>
-  
+
    <!--=================================
    back to top -->
-   
-  
+
+
   <!--=================================
    jquery -->
-  
+
   <!-- jquery  -->
   <script type="text/javascript" src="{{asset('front-end\js\jquery-3.3.1.min.js')}}"></script>
-   
+
   <!-- bootstrap -->
   <script type="text/javascript" src="{{asset('front-end\js\popper.js')}}"></script>
   <script type="text/javascript" src="{{asset('front-end\js\bootstrap.min.js')}}"></script>
-  
+
   <!-- mega-menu -->
   <script type="text/javascript" src="{{asset('front-end\js\mega-menu\mega_menu.js')}}"></script>
-  
+
   <!-- appear -->
   <script type="text/javascript" src="{{asset('front-end\js\jquery.appear.js')}}"></script>
-  
+
   <!-- counter -->
   <script type="text/javascript" src="{{asset('front-end\js\counter\jquery.countTo.js')}}"></script>
-  
+
   <!-- owl-carousel -->
   <script type="text/javascript" src="{{asset('front-end\js\owl-carousel\owl.carousel.min.js')}}"></script>
-  
+
   <!-- jquery-ui -->
   <script type="text/javascript" src="{{asset('front-end\js\jquery-ui.js')}}"></script>
-  
+
   <!-- select -->
   <script type="text/javascript" src="j{{asset('front-end\s\select\jquery-select.js')}}"></script>
-  
+
   <!-- magnific popup -->
   <script type="text/javascript" src="{{asset('front-end\js\magnific-popup\jquery.magnific-popup.min.js')}}"></script>
-  
+
   <!-- revolution -->
   <script type="text/javascript" src="{{asset('front-end\revolution\js\jquery.themepunch.tools.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('front-end\revolution\js\jquery.themepunch.revolution.min.js')}}"></script>
@@ -124,17 +128,17 @@
   <script type="text/javascript" src="{{asset('front-end\revolution\js\extensions\revolution.extension.parallax.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('front-end\revolution\js\extensions\revolution.extension.slideanims.min.js')}}"></script>
   <script type="text/javascript" src="{{asset('front-end\revolution\js\extensions\revolution.extension.video.min.js')}}"></script>
-  
+
   <!-- custom -->
   <script type="text/javascript" src="{{asset('front-end\js\custom.js')}}"></script>
-  
+
   <!-- style customizer  -->
   <script type="text/javascript" src="{{asset('front-end\js\style-customizer.js')}}"></script>
-  
+
   <script type="text/javascript">
    (function($){
-    "use strict";  
-   
+    "use strict";
+
       var tpj=jQuery;
        var revapi3;
         tpj(document).ready(function() {
@@ -196,8 +200,8 @@
               }
             });
           }
-        }); 
+        });
    })(jQuery);
-  
+
   </script>
-    
+
