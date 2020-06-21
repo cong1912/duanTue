@@ -1,6 +1,8 @@
-﻿﻿@extends('front-end.layouts.master_home')
+﻿@extends('front-end.layouts.master_home')
 @section('content')
 
+    <!--=================================
+ rev-slider -->
 
     <div id="rev_slider_3_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="car-dealer-05"
          data-source="gallery"
@@ -77,6 +79,8 @@
                                             <input type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
                                                    placeholder="Email của bạn">
                                             @include('alerts.feedback', ['field' => 'email'])
+
+
                                         </div>
                                         <div class="input-group form-group{{ $errors->has('phone') ? ' has-danger' : '' }}">
                                             <div class="input-group-prepend">
@@ -190,7 +194,7 @@
                                             <input type="phone" name="phone" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" placeholder="SDT của bạn">
                                             @include('alerts.feedback', ['field' => 'phone'])
                                         </div>
-                                        <div class="container">F
+                                        <div class="container">
                                             <p style="color: white; font-size: 15px">Khóa học:</p>
                                             <div class="form-check-inline">
                                                 <label class="form-check-label"   for="radio1" style="color: white">
@@ -710,10 +714,6 @@
         </div>
     </section>
 
-
-
     <!--=================================
     Newsletter -->
 @endsection
-
-
