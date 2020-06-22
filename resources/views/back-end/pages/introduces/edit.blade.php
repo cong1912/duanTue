@@ -26,7 +26,7 @@
                                     @method('put')
                                     <div class="form-group{{ $errors->has('content') ? ' has-danger' : '' }} ">
                                         <p>nội dung </p>
-                                        <textarea class="ckeditor" name="content" required id="aboutBio" placeholder="nội dung " rows="10" >{{$introduce->content}}</textarea>
+                                        <textarea class="ckeditor" name="content" required id="aboutBio" placeholder="nội dung " rows="10" >{!!$introduce->content!!}</textarea>
                                     </div>
                                     <input class="btn btn-primary" type="submit" value="Submit">
                                 </div>
