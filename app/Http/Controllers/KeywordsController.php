@@ -15,7 +15,7 @@ class KeywordsController extends Controller
      */
     public function index()
     {
-        $keyword =Keywords::get();
+        $keyword =Keywords::orderBy('id', 'desc')->get();
         return view('back-end.pages.keywords.index',compact('keyword'));
     }
 

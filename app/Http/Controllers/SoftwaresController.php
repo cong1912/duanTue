@@ -14,7 +14,7 @@ class SoftwaresController extends Controller
      */
     public function index()
     {
-        $software =Softwares::get();
+        $software =Softwares::orderBy('id', 'desc')->get();
         return view('back-end.pages.softwares.index',compact('software'));
     }
 

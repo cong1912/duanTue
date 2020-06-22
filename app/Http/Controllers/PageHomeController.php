@@ -23,7 +23,7 @@ class PageHomeController extends Controller
         $doc=Courses::find($id);
         return view('front-end/course',['doc' => $doc]);
     }
-    
+
     public function software($id){
         $sof = Softwares::find($id);
         return view('front-end/software',['sof' => $sof]);
@@ -73,5 +73,5 @@ class PageHomeController extends Controller
         })->get();
         return view('front-end/search_new',['new'=>$new,'new_nav'=>$new_nav,'key'=>$key,'tukhoa'=>$tukhoa]);
     }
-   
+
 }
