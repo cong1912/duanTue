@@ -53,8 +53,7 @@
              <div class="share float-right"><a href="#"> <i class="fa fa-share-alt"></i> </a>
                   <div class="blog-social"> 
                    <ul class="list-style-none">
-                    <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-envelope"></i></a> </li>
+                    <li> <a href="https://www.facebook.com/trungtam3tsaigondongnai/"><i class="fa fa-facebook"></i></a> </li>
                    </ul>
                    </div>
                  </div>

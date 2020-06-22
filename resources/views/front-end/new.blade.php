@@ -35,8 +35,9 @@
       @foreach ($newki as $new)
         <div class="blog-entry">
           <div class="entry-title">
-            <p>TIN TỨC</p>
+            <strong>TIN TỨC</strong>
             <a href="{{route('chitiet-tintuc',$new->id)}}" style="font-size: 25px">{!!$new->title!!}</a>
+            <hr class="mt-2" style="width: 53px;">
             </div>
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
@@ -52,8 +53,7 @@
              <div class="share float-right"><a href="#"> <i class="fa fa-share-alt"></i> </a>
                   <div class="blog-social"> 
                    <ul class="list-style-none">
-                    <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
-                    <li> <a href="#"><i class="fa fa-envelope"></i></a> </li>
+                    <li> <a href="https://www.facebook.com/trungtam3tsaigondongnai/"><i class="fa fa-facebook"></i></a> </li>
                    </ul>
                    </div>
                  </div>
@@ -104,7 +104,7 @@
       </div>
       
      </div>
-     <div class="row ml-1">{{ $newki->links() }}</div>
+     <div class="row">{{ $newki->links() }}</div>
        </div>
 </section>
 

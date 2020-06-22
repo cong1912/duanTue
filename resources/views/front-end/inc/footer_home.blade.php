@@ -28,7 +28,7 @@
           <div class="tags">
             <ul>
              @foreach ($key as $key)
-             <a class="btn btn-outline-danger mb-2" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
+             <a class="btn btn-outline-danger mb-2" style="font-style: normal; font-size: 13px" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
              @endforeach
            </ul>
           </div>

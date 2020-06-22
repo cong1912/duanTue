@@ -51,7 +51,7 @@
                          data-paddingright="[30,30,30,30]" data-paddingbottom="[10,10,10,10]"
                          data-paddingleft="[30,30,30,30]"
                          style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 16px; font-weight: 400; font-family:Open Sans;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                        LIÊN HỆ NGAY
+                         <a href="{{route('lienhe')}}" class="text-light">LIÊN HỆ NGAY</a>
                     </div>
 
                     <div class="container">
@@ -158,7 +158,7 @@
                          data-paddingright="[30,30,30,30]" data-paddingbottom="[10,10,10,10]"
                          data-paddingleft="[30,30,30,30]"
                          style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 16px; font-weight: 400;font-family:Open Sans;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                        ĐĂNG KÝ NGAY
+                         <a href="{{route('lienhe')}}" class="text-light">ĐĂNG KÝ NGAY</a>
                     </div>
 
                     <div class="container">
@@ -501,14 +501,17 @@
                 </div>
             </div>
             <div class="row">
+               
                 <div class=" col-md-12">
                     <div class="owl-carousel" data-items="3" data-md-items="3" data-sm-items="2" data-xs-items="1"
                          data-space="20">
-                        <div class="item">
-                            <div class="blog-2">
-                                <div class="blog-image">
-                                    <img class="img-fluid"
-                                         src="{{asset('front-end\images\blog\bao-hiem-xe-may-1-800x385.jpg')}}" alt="">
+                         @foreach($new as $new)
+                        <div class="item" style="height: 500px">
+                            
+                            <div class="blog-2" >
+                               
+                                <div class="blog-image" >
+                                    <img style="height: 178px; width: 356px;" src="/images/{{$new->image}}">
                                     <div class="date">
                                         <span>may 28</span>
                                     </div>
@@ -516,77 +519,19 @@
                                 <div class="blog-content">
 
                                     <div class="blog-description text-center">
-                                        <a href="#">4 điều bạn cần phải biết về bảo hiểm xe máy</a>
+                                    <a href="{{route('chitiet-tintuc',$new->id)}}">{!!$new->title!!}</a>
                                         <div class="separator"></div>
-                                        <p> – Theo quy định tại thông tư 22/2016 của Bộ Tài chính thì: “Chủ xe cơ giới khi
-                                            tham gia giao thông trên lãnh thổ Việt Nam phải tham gia bảo hiểm bắt buộc
-                                            [...]</p>
+                                        <p> {!!$new->tomtat!!}</p>
                                     </div>
                                 </div>
+                              
                             </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="blog-2">
-                                <div class="blog-image">
-                                    <img class="img-fluid" src="{{asset('front-end\images\blog\Toyata-yaris-768x512.png')}}"
-                                         alt="">
-                                    <div class="date">
-                                        <span>apr 13</span>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-
-                                    <div class="blog-description text-center">
-                                        <a href="#">Top 05 Mẫu Xe Ô tô Tiết Kiệm Xăng Nhất Hiện Nay</a>
-                                        <div class="separator"></div>
-                                        <p>Bài viết hôm nay 3T Sài Gòn xin chia sẻ các bạn 05 mẫu xe tiết kiệm xăng nhất
-                                            hiện nay và đang được phân phối tại thị trường Việt Nam [...]</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-2">
-                                <div class="blog-image">
-                                    <img class="img-fluid" src="{{asset('front-end\images\blog\hinhc-1400x466.png')}}"
-                                         alt="">
-                                    <div class="date">
-                                        <span>aug 17</span>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-
-                                    <div class="blog-description text-center">
-                                        <a href="#">600 câu hỏi thi sát hạch lái xe</a>
-                                        <div class="separator"></div>
-                                        <p>Trung Tâm Dạy Nghề Lái Xe Sài Gòn xin giới thiệu phần mềm 600 câu hỏi lý thuyết
-                                            lái xe B2 và học bằng C mới nhất 2020 từ Tổng Cục Đường Bộ Việt Nam trong năm
-                                            2019 đã tiến hành đổi mới [...]</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-2">
-                                <div class="blog-image">
-                                    <img class="img-fluid" src="{{asset('front-end\images\blog\1-1-800x400.png')}}" alt="">
-                                    <div class="date">
-                                        <span>apr 13</span>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-
-                                    <div class="blog-description text-center">
-                                        <a href="#">Ma Trận Lừa Đảo Của Các Trung Tâm Dạy Lái Xe B2 & bằng C</a>
-                                        <div class="separator"></div>
-                                        <p>1. 100% bao đậu
-                                            “Ảo banh nóc” là cách quảng cáo gây sốc và cũng là chiêu trò dụ học viên đăng ký
-                                            học lái xe B2 và bằng C của một số trường dạy lái xe không uy tín [...]</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                           
+                        </div> 
+                        @endforeach    
+                    </div>
+                </div>
+            
                     </div>
                 </div>
     </section>

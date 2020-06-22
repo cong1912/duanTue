@@ -15,7 +15,8 @@ use function GuzzleHttp\Promise\all;
 class PageHomeController extends Controller
 {
     public function index(){
-        return view('front-end/home3');
+        $new=News::where('category',1)->orderBy('id', 'desc')->get();
+        return view('front-end/home3',['new'=>$new]);
     }
 
     public function course(Request $req,$id){
@@ -39,7 +40,8 @@ class PageHomeController extends Controller
     public function new(){
         $newki = News::where('category',1)->paginate(4);
         $key = Keywords::all();
-        $new_nav=News::where('category',1)->paginate(4);
+        $new_nav=News::where('category',1)
+        ->orderBy('id', 'desc')->limit(4)->get();
         return view('front-end/new',['newki'=>$newki,'new_nav'=>$new_nav,'key'=>$key]);
     }
     public function search(Request $req,$id){
@@ -47,13 +49,15 @@ class PageHomeController extends Controller
         return view('front-end/search',['search'=>$search]);
     }
     public function tuyendung(){
-        $td = News::all()->where('category',2);
-        return view('front-end/recruitment',['td'=>$td]);
+        $td = News::where('category',2)->paginate(4);;
+        $key = Keywords::all();
+        $new_nav=News::where('category',2) ->orderBy('id', 'desc')->limit(4)->get();
+        return view('front-end/recruitment',['td'=>$td,'new_nav'=>$new_nav,'key'=>$key]);
     }
     public function getDetail(Request $req,$id){
         $new=News::where('id',$req->id)->first();
         $key = Keywords::all();
-        $new_nav=News::where('category',1)->paginate(4);
+        $new_nav=News::where('category',1) ->orderBy('id', 'desc')->limit(4)->get();
         return view('front-end/detail_new',['new'=>$new, 'new_nav'=>$new_nav,'key'=>$key]);
 
     }
@@ -62,7 +66,7 @@ class PageHomeController extends Controller
         $data = $req->all();
         $tukhoa=$data['key'];
         $key = Keywords::all();
-        $new_nav=News::where('category',1)->paginate(4);
+        $new_nav=News::where('category',1)->orderBy('id', 'desc')->limit(4)->get();
         $new =News::where('category',1)->where(function($query ) use($req){
             $query->where('title','like','%'.$req->key.'%')
             ->orwhere('content','like','%'.$req->key.'%');

@@ -39,12 +39,12 @@ class AppServiceProvider extends ServiceProvider
 
         view()->composer('front-end/inc/footer', function($view){
             $key = Keywords::all();
-            $tintuc = News::where('category',1)->paginate(4);
+            $tintuc = News::where('category',1)->orderBy('id', 'desc')->limit(4)->get();
             $view->with(['key'=>$key,'tintuc'=>$tintuc]);
         });
         view()->composer('front-end/inc/footer_home', function($view){
             $key = Keywords::all();
-            $tintuc = News::where('category',1)->paginate(4);
+            $tintuc = News::where('category',1)->orderBy('id', 'desc')->limit(4)->get();
             $view->with(['key'=>$key,'tintuc'=>$tintuc]);
         });
     }
