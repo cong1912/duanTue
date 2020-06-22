@@ -14,7 +14,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $new =News::get();
+        $new =News::orderBy('id', 'desc')->get();
         return view('back-end.pages.news.index',compact('new'));
     }
 
@@ -38,7 +38,7 @@ class NewsController extends Controller
     {
         //dd($request->all());
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:5000',
             'title' => "required",
             'content'=>"required",
         ]);
@@ -89,7 +89,7 @@ class NewsController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:5000',
         ]);
         if ($request->hasFile('image')) {
             $imageName = time().'.'.$request->image->extension();

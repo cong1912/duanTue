@@ -22,7 +22,7 @@ class PageHomeController extends Controller
         $doc=Courses::find($id);
         return view('front-end/course',['doc' => $doc]);
     }
-    
+
     public function software($id){
         $sof = Softwares::find($id);
         return view('front-end/software',['sof' => $sof]);
@@ -53,7 +53,7 @@ class PageHomeController extends Controller
     public function getDetail(Request $req,$id){
         $new=News::where('id',$req->id)->first();
         $key = Keywords::all();
-        $new_nav=News::where('category',1)->paginate(4);
+        $new_nav=News::where('category',1)->paginate(2);
         return view('front-end/detail_new',['new'=>$new, 'new_nav'=>$new_nav,'key'=>$key]);
 
     }
@@ -69,5 +69,5 @@ class PageHomeController extends Controller
         })->get();
         return view('front-end/search_new',['new'=>$new,'new_nav'=>$new_nav,'key'=>$key,'tukhoa'=>$tukhoa]);
     }
-   
+
 }
