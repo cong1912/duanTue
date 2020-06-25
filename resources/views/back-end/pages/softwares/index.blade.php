@@ -37,7 +37,7 @@
                                         <?php $i=$i+1 ?>
                                         <td><?php echo $i ?></td>
                                         <td>{{ $software->name }}</td>
-                                            <td><img src="/images/{{ $software->image }}" style="width: 100px"></td>
+                                            <td><img src="{{ asset('storage/images/'.$software->image) }}" style="width: 100px"></td>
                                             <td>{{ $software->link_android }}</td>
                                             <td>{{ $software->link_ios }}</td>
                                         <td>

@@ -36,7 +36,7 @@
                                         <?php $i=$i+1 ?>
                                         <td><?php echo $i ?></td>
                                         <td>{{ $new->title }}</td>
-                                            <td><img src="/images/{{$new->image}}" width="100px"></td>
+                                            <td><img src="{{ asset('storage/images/'.$new->image) }}" width="100px"></td>
                                             @if( $new->category ==1)
                                             <td>{{ __('tin tức')}}</td>
                                                 @elseif( $new->category ==2)

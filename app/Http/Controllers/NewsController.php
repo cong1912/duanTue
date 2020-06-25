@@ -44,7 +44,7 @@ class NewsController extends Controller
         ]);
         //dd($request->all());
         $imageName = time().'.'.$request->image->extension();
-        $request->image->move(public_path('images'), $imageName);
+        $request->image->move(storage_path('app/public/images'), $imageName);
         $data = $request->all();
         News::create([
             'title' => $data['title'],
@@ -93,7 +93,7 @@ class NewsController extends Controller
         ]);
         if ($request->hasFile('image')) {
             $imageName = time().'.'.$request->image->extension();
-            $request->image->move(public_path('images'), $imageName);
+            $request->image->move(storage_path('app/public/images'), $imageName);
             $data = $request->all();
             News::find($id)->update([
                 'title' => $data['title'],

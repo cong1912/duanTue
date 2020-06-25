@@ -41,7 +41,7 @@ class SoftwaresController extends Controller
         ]);
         //dd($request->all());
         $imageName = time().'.'.$request->image->extension();
-        $request->image->move(public_path('images'), $imageName);
+        $request->image->move(storage_path('app/public/images'), $imageName);
         $data = $request->all();
         Softwares::create([
             'name' => $data['name'],
@@ -90,7 +90,7 @@ class SoftwaresController extends Controller
         ]);
         if ($request->hasFile('image')) {
             $imageName = time().'.'.$request->image->extension();
-            $request->image->move(public_path('images'), $imageName);
+            $request->image->move(storage_path('app/public/images'), $imageName);
             $data = $request->all();
             Softwares::find($id)->update([
                 'name' => $data['name'],
