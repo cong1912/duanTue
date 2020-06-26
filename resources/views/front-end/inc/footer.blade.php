@@ -8,13 +8,13 @@
       <div class="col-lg-3 col-md-6">
         <div class="about-content">
           <h6 class="text-white">VỀ CHÚNG TÔI</h6>
-          <p class="candeu mt-4">Có hệ thống cơ sở nhiều nhất việt nam (5 cơ sở) có quy mô đào tạo lớn nhất việt nam là một trong những đơn vị duy nhất có sân tập công nghệ singapore kiểm soát giờ tập bằng công nghệ vân tay giám sát trực tuyến việc dạy, học qua camera và GPS</p>
+          <p class="mt-4">Có hệ thống cơ sở nhiều nhất việt nam (5 cơ sở) có quy mô đào tạo lớn nhất việt nam là một trong những đơn vị duy nhất có sân tập công nghệ singapore kiểm soát giờ tập bằng công nghệ vân tay giám sát trực tuyến việc dạy, học qua camera và GPS</p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 mb-3">
         <div class="usefull-link">
         <h6 class="text-white">TIN TỨC MỚI NHẤT</h6>
-          <ul class="candeu mt-3">
+          <ul class="mt-3">
             @foreach ($tintuc as $tintuc)
           <li><a href="{{route('chitiet-tintuc',$tintuc->id)}}"><i class="fa fa-angle-double-right"></i>{{$tintuc->title}}</a></li>
           @endforeach
@@ -22,22 +22,26 @@
         </div> 
       </div>
       <div class="col-lg-3 col-md-6">
-         <h6 class="text-light mb-3">TỪ KHÓA </h6>
+         <h6 class="text-light mb-4">TỪ KHÓA </h6>
          <div class="tags">
           <ul>
            @foreach ($key as $key)
-           <a class="btn btn-outline-secondary mb-2" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
+           <a class="btn btn-outline-secondary mb-2 " style="font-style: normal; font-size: 13px" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
            @endforeach
          </ul>
         </div>
        </div>
       <div class="col-lg-3 col-md-6">
         <div class="news-letter">
-        <h6 class="text-white">THÔNG TIN 3T SÀI GÒN </h6>
-         <p class="candeu mt-4">Địa Chỉ: 205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</p>
-         <p class="mt-3 candeu">Hotline: 0899.545.466</p>
-         <p class="candeu"> Email: hoclaitoanquoc@gmail.com</p>
-         <form class="news-letter">
+        <h6 class="text-white mb-4">THÔNG TIN 3T SÀI GÒN </h6>
+        <div class="address">
+          <ul>
+            <li> <i class="fa fa-map-marker"></i><span>205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</span> </li>
+            <li> <i class="fa fa-phone"></i><span>0899.545.466</span> </li>
+            <li> <i class="fa fa-envelope-o"></i><span>hoclaitoanquoc@gmail.com</span> </li>
+          </ul>
+        </div>
+         <form class="news-letter mt-4">
            <input type="email" placeholder="Email của bạn" class="form-control placeholder">
            <a class="button red" href="#">Gửi</a>
          </form>
@@ -81,20 +85,20 @@
    
   <!-- bootstrap -->
   <script type="text/javascript" src="{{asset('front-end\js\popper.js')}}"></script>
-  <script type="text/javascript" src="j{{asset('front-end\s\bootstrap.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('front-end\s\bootstrap.min.js')}}"></script>
   
   <!-- mega-menu -->
   <script type="text/javascript" src="{{asset('front-end\js\mega-menu\mega_menu.js')}}"></script>
   
   
 <!-- appear -->
-<script type="text/javascript" src="js\jquery.appear.js"></script>
+<script type="text/javascript" src="{{asset('front-end\js\jquery.appear.js')}}"></script>
 
 <!-- counter -->
-<script type="text/javascript" src="js\counter\jquery.countTo.js"></script>
+<script type="text/javascript" src="{{asset('front-end\js\counter\jquery.countTo.js')}}"></script>
 
 <!-- owl-carousel -->
-<script type="text/javascript" src="js\owl-carousel\owl.carousel.min.js"></script>
+<script type="text/javascript" src="{{asset('front-end\js\owl-carousel\owl.carousel.min.js')}}"></script>
 
   <!-- select -->
   <script type="text/javascript" src="{{asset('front-end\js\select\jquery-select.js')}}"></script>

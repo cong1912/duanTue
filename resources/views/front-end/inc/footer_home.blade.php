@@ -5,16 +5,39 @@
 
  <footer class="footer-3 footer-topbar light page-section-pt">
     <div class="container">
-
+       <div class="row top">
+    <div class="col-lg-3 col-md-12">
+      <img class="img-fluid" src="{{asset('front-end/images/SaiGon.png')}}" alt="">
+    </div>
+    <div class="col-lg-5 col-md-12">
+      <div class="footer-nav text-lg-right text-center">
+        <ul>
+        <li><a href="{{route('trangchu')}}">Trang chủ</a></li>
+          <li><a href="{{route('gioithieu')}}">Giới thiệu</a></li>
+          <li><a href="{{route('tintuc')}}">Tin tức</a></li>
+          <li><a href="{{route('tuyendung')}}">Tuyển dụng</a></li>
+          <li><a href="{{route('lienhe')}}">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="social text-lg-right text-center">
+          <ul>
+            <li><a href="https://www.facebook.com/trungtam3tsaigondongnai/"> <i class="fa fa-facebook"></i> </a></li>
+           
+          </ul>
+       </div>      
+    </div>
+   </div>
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <div class="about-content">
             <h6 class="text-danger">VỀ CHÚNG TÔI</h6>
-            <p class="candeu">Có hệ thống cơ sở nhiều nhất việt nam (5 cơ sở) có quy mô đào tạo lớn nhất việt nam là một trong những đơn vị duy nhất có s n tập công nghệ singapore kiểm soát giờ tập bằng công nghệ v n tay giám sát trực tuyến việc dạy, học qua camera và GPS.</p>
+            <p>Có hệ thống cơ sở nhiều nhất việt nam (5 cơ sở) có quy mô đào tạo lớn nhất việt nam là một trong những đơn vị duy nhất có s n tập công nghệ singapore kiểm soát giờ tập bằng công nghệ v n tay giám sát trực tuyến việc dạy, học qua camera và GPS.</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-6">
-          <div class="usefull-link candeu">
+          <div class="usefull-link ">
           <h6 class="text-danger">TIN TỨC MỚI NHẤT</h6>
             <ul>
               @foreach ($tintuc as $tintuc)
@@ -28,7 +51,7 @@
           <div class="tags">
             <ul>
              @foreach ($key as $key)
-             <a class="btn btn-outline-danger mb-2" style="font-style: normal; font-size: 13px" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
+             <a class="btn btn-outline-danger mb-3" style="font-style: normal; font-size: 13px" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a>
              @endforeach
            </ul>
           </div>
@@ -36,15 +59,19 @@
         </div>
         <div class="col-lg-3 col-md-6">
           <div class="news-letter">
-          <h6 class="text-danger mb-3">THÔNG TIN 3T SÀI GÒN </h6>
-           <p>Địa Chỉ: 205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</p>
-           <p class="mt-3">Hotline: 0899.545.466</p>
-           <p> Email: hoclaitoanquoc@gmail.com</p>
-           <form class="news-letter">
-             <input type="email" placeholder="Email của bạn" class="form-control placeholder">
-             <a class="button red mt-4" href="#">Gửi</a>
-           </form>
-          </div>
+            <h6 class="text-danger mb-3">THÔNG TIN 3T SÀI GÒN </h6>
+            <div class="address">
+              <ul>
+                <li> <i class="fa fa-map-marker"></i><span>205C Phạm Văn Thuận, Phường Tân Tiến, Biên Hòa, Đồng Nai.</span> </li>
+                <li> <i class="fa fa-phone"></i><span>0899.545.466</span> </li>
+                <li> <i class="fa fa-envelope-o"></i><span>hoclaitoanquoc@gmail.com</span> </li>
+              </ul>
+            </div>
+             <form class="news-letter mt-3">
+               <input type="email" placeholder="Email của bạn" class="form-control placeholder">
+               <a class="button red mt-3" href="#">Gửi</a>
+             </form>
+            </div>
         </div>
       </div>
       </div>
@@ -104,7 +131,7 @@
   <script type="text/javascript" src="{{asset('front-end\js\jquery-ui.js')}}"></script>
 
   <!-- select -->
-  <script type="text/javascript" src="j{{asset('front-end\s\select\jquery-select.js')}}"></script>
+  <script type="text/javascript" src="{{asset('front-end\js\select\jquery-select.js')}}"></script>
 
   <!-- magnific popup -->
   <script type="text/javascript" src="{{asset('front-end\js\magnific-popup\jquery.magnific-popup.min.js')}}"></script>

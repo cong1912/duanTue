@@ -38,7 +38,7 @@ class PageHomeController extends Controller
         return view('front-end/contact');
     }
     public function new(){
-        $newki = News::where('category',1)->paginate(4);
+        $newki = News::where('category',1)->orderBy('id', 'desc')->paginate(4);
         $key = Keywords::all();
         $new_nav=News::where('category',1)
         ->orderBy('id', 'desc')->limit(4)->get();

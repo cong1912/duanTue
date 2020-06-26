@@ -33,7 +33,7 @@ career  -->
   <div class="container">
     <div class="row">
      <div class="col-md-12">
-     <img class="img-fluid center-block" style="height: 365px" src="/images/{{$sof->image}}">
+     <img class="img-fluid center-block" style="height: 365px" src="/storage/images/{{$sof->image}}">
         <div class="career-info">
           <p>{!!$sof->content!!} </p>
         </div>

@@ -262,8 +262,8 @@
                 </div>
             </div>
             <div class="row about custom-block-2">
-                <div class="col-md-6 candeu">
-                    <h2> VỀ CHÚNG TÔI </h2>
+                <div class="col-md-6">
+                    <h2>VỀ CHÚNG TÔI </h2>
                     <p>Là một trong những công ty tiên phong về lĩnh vực dạy lái xe ô tô và xe tải hàng đầu tại Việt Nam.
                         Với sự phát triển không ngừng của ngành lái xe, lợi ích và sự phát triển của khách hàng luôn là vấn
                         đề ưu tiên hàng đầu của công ty chúng tôi. Vì vậy đến với 3T, khách hàng sẽ được hỗ trợ tối đa học
@@ -371,26 +371,37 @@
                 </div>
             </div>
             <div class="row ">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="content-box-2 car-bg-4 text-center">
                         <i class="glyph-icon flaticon-beetle"></i>
                         <h3 class="title  text-center" href="#">KHÓA HỌC BẰNG B2</h3>
-                        <h5 class=" text-center">8.500.000đ</h5>
+                        <h5 class=" text-center">7.800.000đ</h5>
                         <p class="mt-3">Học phí trọn gói 100%</p>
                         <p>Hỗ trợ trả góp lãi suất 0%</p>
                         <p>Lịch học linh động (T2 - CN)</p>
-                        <a class="button" href="#">ĐĂNG KÝ NGAY</a>
+                        <a class="button" href="{{route('lienhe')}}">ĐĂNG KÝ NGAY</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="content-box-2 car-bg-5 text-center">
                         <i class="glyph-icon flaticon-price-tag"></i>
                         <h3 class="title " href="#">KHÓA HỌC BẰNG C</h3>
-                        <h5 class="text-center">11.000.000đ</h5>
+                        <h5 class="text-center">9.300.000đ</h5>
                         <p class="mt-3">Học phí trọn gói 100%</p>
                         <p>Hỗ trợ trả góp lãi suất 0%</p>
                         <p>Lịch học linh động (T2 - CN)</p>
-                        <a class="button" href="#">ĐĂNG KÝ NGAY</a>
+                        <a class="button" href="{{route('lienhe')}}">ĐĂNG KÝ NGAY</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content-box-2 car-bg-4 text-center">
+                        <i class="glyph-icon flaticon-reparation"></i>
+                        <h3 class="title " href="#">HỌC LÁI XE CHỈ VỚI </h3>
+                        <h5 class="text-center">1.000.000đ</h5>
+                        <p class="mt-3">Giáo viên 1 kèm 1</p>
+                        <p>Thủ tục đơn giản</p>
+                        <p>Giờ học tự chọn</p>
+                        <a class="button" href="{{route('lienhe')}}">ĐĂNG KÝ NGAY</a>
                     </div>
                 </div>
             </div>

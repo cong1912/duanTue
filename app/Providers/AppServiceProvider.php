@@ -36,6 +36,15 @@ class AppServiceProvider extends ServiceProvider
             $tuyendung = News::all()->where('category',2);
             $view->with(['ten_khoahoc'=>$ten_khoahoc,'tracuu'=>$tracuu, 'phanmem'=>$phanmem,'tintuc'=>$tintuc,'tuyendung'=>$tuyendung]);
         });
+        view()->composer('front-end/inc/header_home',function($view){
+            $ten_khoahoc=Courses::all();
+            $tracuu = News::all()->where('category',3);
+            $phanmem = Softwares::all();
+            $tintuc = News::all()->where('category',1);
+            $tuyendung = News::all()->where('category',2);
+            $view->with(['ten_khoahoc'=>$ten_khoahoc,'tracuu'=>$tracuu, 'phanmem'=>$phanmem,'tintuc'=>$tintuc,'tuyendung'=>$tuyendung]);
+        });
+
 
         view()->composer('front-end/inc/footer', function($view){
             $key = Keywords::all();

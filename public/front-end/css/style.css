@@ -1477,6 +1477,7 @@ ul.page-breadcrumb li a:hover { color: #db2d2e; }
   .search { margin-top: -130px; position: relative; z-index: 1; }
   .button:hover { background: #323232; color: #ffffff; }
   .button.white:hover { background: #323232; color: #ffffff; }
+  
 }
 
 /*************************************
@@ -2161,6 +2162,10 @@ margin-left: -17px; line-height: 50px; }
         text-align: center;
         color: red;
     }
-
+.phantrang {
+        font-size: larger;
+        color: #25b6e6;
+       
+}
     
 /*end of search*/
