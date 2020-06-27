@@ -21,6 +21,7 @@
                                 <tr>
                                     <th>stt</th>
                                     <th>Tên khóa học</th>
+                                    <th>slug</th>
                                     <th>nội dung</th>
                                     <th>hành động</th>
                                 </tr>
@@ -35,6 +36,7 @@
                                         <?php $i=$i+1 ?>
                                         <td><?php echo $i ?></td>
                                         <td>{{ $course->name }}</td>
+                                            <td>{{ $course->slug }}</td>
                                         <td>{{ $course->content }}</td>
                                         <td>
                                             <div class="btn-group">

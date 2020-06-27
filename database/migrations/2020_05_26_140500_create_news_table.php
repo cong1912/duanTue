@@ -17,6 +17,7 @@ class CreateNewsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('image')->nullable();
+            $table->string('slug')->unique();
             $table->longText('tomtat');
             $table->longText('content');
             $table->tinyInteger('category');

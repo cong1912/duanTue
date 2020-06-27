@@ -21,6 +21,7 @@
                                 <tr>
                                     <th>stt</th>
                                     <th>tiêu đề</th>
+                                    <th>slug</th>
                                     <th>ảnh thumb</th>
                                     <th>link app android</th>
                                     <th>link app ios</th>
@@ -37,7 +38,8 @@
                                         <?php $i=$i+1 ?>
                                         <td><?php echo $i ?></td>
                                         <td>{{ $software->name }}</td>
-                                            <td><img src="{{ asset('storage/images/'.$software->image) }}" style="width: 100px"></td>
+                                            <td>{{ $software->slug }}</td>
+                                            <td><img src="{{ asset('storage/'.$software->image) }}" style="width: 100px"></td>
                                             <td>{{ $software->link_android }}</td>
                                             <td>{{ $software->link_ios }}</td>
                                         <td>

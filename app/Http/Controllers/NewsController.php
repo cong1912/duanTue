@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\News;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class NewsController extends Controller
 {
@@ -43,13 +44,16 @@ class NewsController extends Controller
             'content'=>"required",
         ]);
         //dd($request->all());
+
         $imageName = time().'.'.$request->image->extension();
-        $request->image->move(storage_path('app/public/images'), $imageName);
+       $request->image->storeAs('public', $imageName);
+
         $data = $request->all();
         News::create([
             'title' => $data['title'],
             'category'=>$data['category'],
             'tomtat'=>$data['tomtat'],
+            'slug'=>$data['slug'],
             'image'=>$imageName,
             'content'=>$data['content'],
         ]);
@@ -93,12 +97,13 @@ class NewsController extends Controller
         ]);
         if ($request->hasFile('image')) {
             $imageName = time().'.'.$request->image->extension();
-            $request->image->move(storage_path('app/public/images'), $imageName);
+            $request->image->storeAs('public', $imageName);
             $data = $request->all();
             News::find($id)->update([
                 'title' => $data['title'],
                 'category'=>$data['category'],
                 'tomtat' => $data['tomtat'],
+                'slug' => $data['slug'],
                 'image'=>$imageName,
                 'content'=>$data['content'],
             ]);
@@ -108,6 +113,7 @@ class NewsController extends Controller
             $data = $request->all();
             News::find($id)->update([
                 'title' => $data['title'],
+                'slug' => $data['slug'],
                 'category'=>$data['category'],
                 'content'=>$data['content'],
             ]);
@@ -125,6 +131,7 @@ class NewsController extends Controller
     {
         $new = News::find($id);
         $new->delete();
+        Storage::delete($new->image);
 
         return redirect()->route('news.index')->withStatus(__('xóa bài viết thành công.'));
     }

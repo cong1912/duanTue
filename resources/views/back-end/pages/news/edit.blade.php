@@ -55,9 +55,15 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="form-group{{ $errors->has('title') ? ' has-danger' : '' }}">
+                                                                <label for="title">slug bài viết</label>
+                                                                <input type="text" class="form-control mb-6" name="slug" id="title" required  value="{{$new->slug}}" placeholder="slug vd:mot-hai">
+                                                                @include('alerts.feedback', ['field' => 'title'])
+                                                            </div>
+
                                                             <div class="form-group editor-container{{ $errors->has('tomtat') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung tóm tắt</label>
-                                                                <textarea class="ckeditor" name="tomtat" id="aboutBio" required  cols="80" rows="10" >{{$new->tomtat}}</textarea>
+                                                                <textarea class="ckeditor" name="tomtat" id="aboutBio" required  cols="80" rows="10" >{!!$new->tomtat!!}</textarea>
                                                                 @include('alerts.feedback', ['field' => 'tomtat'])
                                                             </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">

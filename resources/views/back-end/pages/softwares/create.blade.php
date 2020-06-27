@@ -44,6 +44,11 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="form-group{{ $errors->has('slug') ? ' has-danger' : '' }}">
+                                                                <label for="title">slug bài viết</label>
+                                                                <input type="text" class="form-control mb-6" name="slug" id="title" required placeholder="slug vd:mot-hai">
+                                                                @include('alerts.feedback', ['field' => 'slug'])
+                                                            </div>
                                                             <div class="form-group editor-container{{ $errors->has('content') ? ' has-danger' : '' }}">
                                                                 <label for="aboutBio">Nội dung bài viết</label>
                                                                 <textarea class="ckeditor" name="content" id="aboutBio" required placeholder="nội dung bài viết" cols="80" rows="10" ></textarea>

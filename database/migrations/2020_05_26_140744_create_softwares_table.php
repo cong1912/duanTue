@@ -20,6 +20,7 @@ class CreateSoftwaresTable extends Migration
             $table->longText('content');
             $table->string('link_android');
             $table->string('link_ios');
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

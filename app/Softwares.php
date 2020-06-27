@@ -8,7 +8,7 @@ class Softwares extends Model
 {
     protected $table = 'softwares';
     protected $fillable = [
-        'name', 'image', 'content','link_android','link_ios',
+        'name', 'image', 'content','link_android','link_ios','slug',
     ];
 
 }

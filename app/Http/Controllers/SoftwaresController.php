@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Softwares;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class SoftwaresController extends Controller
 {
@@ -41,12 +42,13 @@ class SoftwaresController extends Controller
         ]);
         //dd($request->all());
         $imageName = time().'.'.$request->image->extension();
-        $request->image->move(storage_path('app/public/images'), $imageName);
+        $request->image->storeAs('public', $imageName);
         $data = $request->all();
         Softwares::create([
             'name' => $data['name'],
             'image'=>$imageName,
             'content'=>$data['content'],
+            'slug'=>$data['slug'],
             'link_android'=>$data['link_android'],
             'link_ios'=>$data['link_ios'],
         ]);
@@ -90,12 +92,13 @@ class SoftwaresController extends Controller
         ]);
         if ($request->hasFile('image')) {
             $imageName = time().'.'.$request->image->extension();
-            $request->image->move(storage_path('app/public/images'), $imageName);
+            $request->image->storeAs('public', $imageName);
             $data = $request->all();
             Softwares::find($id)->update([
                 'name' => $data['name'],
                 'image'=>$imageName,
                 'content'=>$data['content'],
+                'slug'=>$data['slug'],
                 'link_android'=>$data['link_android'],
                 'link_ios'=>$data['link_ios'],
             ]);
@@ -106,6 +109,7 @@ class SoftwaresController extends Controller
             Softwares::find($id)->update([
                 'name' => $data['name'],
                 'content'=>$data['content'],
+                'slug'=>$data['slug'],
                 'link_android'=>$data['link_android'],
                 'link_ios'=>$data['link_ios'],
             ]);
@@ -121,6 +125,9 @@ class SoftwaresController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $new = Softwares::find($id);
+        $new->delete();
+        Storage::delete('app'.$new->image);
+        return redirect()->route('software.index')->withStatus(__('xóa bài viết thành công.'));
     }
 }

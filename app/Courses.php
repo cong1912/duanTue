@@ -8,6 +8,6 @@ class Courses extends Model
 {
 
     protected $fillable = [
-        'name','content'
+        'name','content','slug',
     ];
 }

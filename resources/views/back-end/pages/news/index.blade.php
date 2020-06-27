@@ -21,8 +21,10 @@
                                 <tr>
                                     <th>stt</th>
                                     <th>tiêu đề</th>
+                                    <th>slug</th>
                                     <th>ảnh thumb</th>
                                     <th>danh mục</th>
+
                                     <th>tóm tắt</th>
                                     <th>hành động</th>
                                 </tr>
@@ -36,7 +38,8 @@
                                         <?php $i=$i+1 ?>
                                         <td><?php echo $i ?></td>
                                         <td>{{ $new->title }}</td>
-                                            <td><img src="{{ asset('storage/images/'.$new->image) }}" width="100px"></td>
+                                            <td>{{ $new->slug }}</td>
+                                            <td><img src="{{ asset('storage/'.$new->image) }}" width="100px"></td>
                                             @if( $new->category ==1)
                                             <td>{{ __('tin tức')}}</td>
                                                 @elseif( $new->category ==2)

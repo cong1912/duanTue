@@ -39,6 +39,7 @@ class CoursesController extends Controller
         $request->validate([
             'name' => 'required',
             'content' => 'required',
+            'slug' => 'required',
         ]);
 
         Courses::create($request->all());
@@ -81,6 +82,7 @@ class CoursesController extends Controller
         $res=$request->validate([
             'name' => 'required',
             'content' => 'required',
+            'slug' => 'required',
         ]);
         Courses::whereId($id)->update($res);
         return redirect()->route('courses.index')->withStatus(__('Cập nhật khóa học thành công .'));
