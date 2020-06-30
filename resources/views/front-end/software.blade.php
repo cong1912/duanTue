@@ -4,7 +4,7 @@
 
 <!--=================================
  inner-intro -->
- 
+
  <section class="inner-intro bg-1 bg-overlay-black-50">
   <div class="container">
      <div class="row text-center intro-title">
@@ -33,7 +33,7 @@ career  -->
   <div class="container">
     <div class="row">
      <div class="col-md-12">
-     <img class="img-fluid center-block" style="height: 365px" src="/storage/images/{{$sof->image}}">
+     <img class="img-fluid center-block" style="height: 365px" src="{{ asset('storage/'.$sof->image) }}">
         <div class="career-info">
           <p>{!!$sof->content!!} </p>
         </div>
@@ -44,5 +44,5 @@ career  -->
 
 <!--=================================
 career  -->
- 
+
  @endsection

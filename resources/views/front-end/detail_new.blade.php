@@ -3,7 +3,7 @@
 
 <!--=================================
  inner-intro  -->
- 
+
  <section class="inner-intro bg-1 bg-overlay-black-50">
   <div class="container">
      <div class="row text-center intro-title">
@@ -34,7 +34,7 @@
         <div class="blog-entry">
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
-               <img class="img-fluid" src="/storage/images/{!!$new->image!!}" width="740px">
+               <img class="img-fluid" src="{{ asset('storage/'.$new->image) }}" width="740px">
               </div>
             </div>
             <div class="entry-title mt-5 mb-4">
@@ -64,7 +64,7 @@
               <img src="/storage/images/{!!$nw->image!!}" alt="">
              </div>
              <div class="recent-post-info">
-               <a href="{{route('chitiet-tintuc',$nw->id)}}">{!!$nw->title!!} </a>
+               <a href="{{route('chitiet-tintuc',$nw->slug)}}">{!!$nw->title!!} </a>
               <span><i class="fa fa-calendar"></i> {!!$nw->updated_at!!}</span>
              </div>
             </div>
@@ -74,16 +74,16 @@
          <div class="sidebar-widget">
            <h6>TỪ KHÓA</h6>
             <div class="tags">
-             
+
              <ul>
               @foreach ($key as $key)
               <li><a  href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a></li>
               @endforeach
             </ul>
-           
+
            </div>
          </div>
-        </div>                       
+        </div>
       </div>
      </div>
    </div>
@@ -91,5 +91,5 @@
 
 <!--=================================
 blog -->
- 
+
 @endsection

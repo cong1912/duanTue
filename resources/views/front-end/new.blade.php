@@ -3,7 +3,7 @@
 
 <!--=================================
  inner-intro  -->
- 
+
  <section class="inner-intro bg-1 bg-overlay-black-50">
   <div class="container">
      <div class="row text-center intro-title">
@@ -30,7 +30,7 @@
 <section class="blog blog-right-sidebar page-section-ptb">
   <div class="container">
     <div class="row">
-      
+
      <div class="col-md-8">
       @foreach ($newki as $new)
         <div class="blog-entry">
@@ -41,17 +41,17 @@
             </div>
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
-               <img class="img-fluid" src="{{asset('storage/images/'.$new->image)}}" width="740px">
+               <img class="img-fluid" src="{{ asset('storage/'.$new->image) }}" width="740px" height="371.938px">
               </div>
             </div>
-            
+
           <div class="entry-content">
             <p>{!!$new->tomtat!!}</p>
           </div>
            <div class="entry-share clearfix">
-           <a class="button red float-left" href="{{route('chitiet-tintuc',$new->id)}}"> ĐỌC TIẾP </a>
+           <a class="button red float-left" href="{{route('chitiet-tintuc',$new->slug)}}"> ĐỌC TIẾP </a>
              <div class="share float-right"><a href="#"> <i class="fa fa-share-alt"></i> </a>
-                  <div class="blog-social"> 
+                  <div class="blog-social">
                    <ul class="list-style-none">
                     <li> <a href="https://www.facebook.com/trungtam3tsaigondongnai/"><i class="fa fa-facebook"></i></a> </li>
                    </ul>
@@ -77,10 +77,10 @@
             @foreach($new_nav as $nw)
             <div class="recent-post">
              <div class="recent-post-image">
-              <img src="/storage/images/{!!$nw->image!!}" alt="">
+              <img src="{{ asset('storage/'.$nw->image) }}" alt="">
              </div>
              <div class="recent-post-info">
-               <a href="{{route('chitiet-tintuc',$nw->id)}}">{!!$nw->title!!} </a>
+               <a href="{{route('chitiet-tintuc',$nw->slug)}}">{!!$nw->title!!} </a>
               <span><i class="fa fa-calendar"></i> {!!$nw->updated_at!!}</span>
              </div>
             </div>
@@ -90,19 +90,19 @@
          <div class="sidebar-widget">
            <h6>TỪ KHÓA</h6>
             <div class="tags">
-             
+
              <ul>
               @foreach ($key as $key)
-            
+
               <li><a class="mb-2" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a></li>
               @endforeach
             </ul>
-           
+
            </div>
          </div>
-        </div>                       
+        </div>
       </div>
-      
+
      </div>
  {!! $newki->links() !!}
        </div>
@@ -110,5 +110,5 @@
 
 <!--=================================
 blog -->
- 
+
 @endsection

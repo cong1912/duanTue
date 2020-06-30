@@ -19,13 +19,13 @@ class PageHomeController extends Controller
         return view('front-end/home3',['new'=>$new]);
     }
 
-    public function course(Request $req,$id){
-        $doc=Courses::find($id);
+    public function course(Request $req,$slug){
+        $doc=Courses::where('slug', $slug)->firstOrFail();
         return view('front-end/course',['doc' => $doc]);
     }
 
-    public function software($id){
-        $sof = Softwares::find($id);
+    public function software($slug){
+        $sof = Softwares::where('slug', $slug)->firstOrFail();
         return view('front-end/software',['sof' => $sof]);
     }
 
@@ -44,8 +44,8 @@ class PageHomeController extends Controller
         ->orderBy('id', 'desc')->limit(4)->get();
         return view('front-end/new',['newki'=>$newki,'new_nav'=>$new_nav,'key'=>$key]);
     }
-    public function search(Request $req,$id){
-        $search = News::find($id);
+    public function search(Request $req,$slug){
+        $search = News::where('slug', $slug)->firstOrFail();
         return view('front-end/search',['search'=>$search]);
     }
     public function tuyendung(){
@@ -54,8 +54,8 @@ class PageHomeController extends Controller
         $new_nav=News::where('category',2) ->orderBy('id', 'desc')->limit(4)->get();
         return view('front-end/recruitment',['td'=>$td,'new_nav'=>$new_nav,'key'=>$key]);
     }
-    public function getDetail(Request $req,$id){
-        $new=News::where('id',$req->id)->first();
+    public function getDetail(News $news,$slug){
+        $new=News::where('slug', $slug)->firstOrFail();
         $key = Keywords::all();
         $new_nav=News::where('category',1) ->orderBy('id', 'desc')->limit(4)->get();
         return view('front-end/detail_new',['new'=>$new, 'new_nav'=>$new_nav,'key'=>$key]);
