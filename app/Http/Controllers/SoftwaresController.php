@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Softwares;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class SoftwaresController extends Controller
 {
@@ -127,7 +128,9 @@ class SoftwaresController extends Controller
     {
         $new = Softwares::find($id);
         $new->delete();
-        Storage::delete('app'.$new->image);
+        $filepath=storage_path().'/app/public/'.$new->image;
+
+        file::delete($filepath);
         return redirect()->route('software.index')->withStatus(__('xóa bài viết thành công.'));
     }
 }

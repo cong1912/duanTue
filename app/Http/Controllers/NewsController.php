@@ -132,7 +132,8 @@ class NewsController extends Controller
     {
         $new = News::find($id);
         $new->delete();
-        $filepath=storage_path().'/app/public'.$new->image;
+        $filepath=storage_path().'/app/public/'.$new->image;
+
         file::delete($filepath);
 
 
