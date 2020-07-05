@@ -1,8 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="HTML5 Template">
-<meta name="description" content="Car Dealer - The Best Car Dealer Automotive Responsive HTML5 Template">
-<meta name="author" content="potenzaglobalsolutions.com">
+<meta name="description" content="Cam kết phát sinh hoàn 200% học phí - Lịch học linh động thứ 2 đến chủ nhật. Vui lòng liên hệ học lái xe Biên Hòa để biết thông tin chi tiết">
+<meta name="author" content="hoclaitoanquoc.com">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>TRUNG TÂM DẠY NGHỀ LÁI XE SÀI GÒN</title>
 

@@ -73,5 +73,5 @@ class PageHomeController extends Controller
         })->get();
         return view('front-end/search_new',['new'=>$new,'new_nav'=>$new_nav,'key'=>$key,'tukhoa'=>$tukhoa]);
     }
-
+    
 }

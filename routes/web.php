@@ -103,9 +103,10 @@ Route::get('tracuu/{slug}',['uses'=>'PageHomeController@search','as'=>'tracuu'])
 
 Route::get('tuyendung',['uses'=>'PageHomeController@tuyendung','as'=>'tuyendung']);
 
-Route::get('{slug}',['uses'=>'PageHomeController@getDetail','as'=>'chitiet-tintuc']);
+Route::get('tintuc/{slug}',['uses'=>'PageHomeController@getDetail','as'=>'chitiet-tintuc']);
 
 Route::get('timkiem',['uses'=>'PageHomeController@getSearch','as'=>'timkiem']);
+
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 

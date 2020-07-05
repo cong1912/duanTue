@@ -41,11 +41,7 @@
             </div>
           <div class="blog-entry-image  clearfix mt-4">
              <div class="portfolio-item">
-<<<<<<< HEAD
                <img class="img-fluid" src="/storage/{!!$new->image!!}" width="740px">
-=======
-               <img class="img-fluid" src="{{ asset('storage/'.$new->image) }}" width="740px">
->>>>>>> c7552d580871145b92396a5fe5ec5df318dde82d
               </div>
             </div>
 
@@ -81,11 +77,7 @@
             @foreach($new_nav as $nw)
             <div class="recent-post">
              <div class="recent-post-image">
-<<<<<<< HEAD
               <img src="/storage/{!!$nw->image!!}" alt="">
-=======
-              <img src="{{ asset('storage/'.$nw->image) }}" alt="">
->>>>>>> c7552d580871145b92396a5fe5ec5df318dde82d
              </div>
              <div class="recent-post-info">
                <a href="{{route('chitiet-tintuc',$nw->slug)}}">{!!$nw->title!!} </a>
