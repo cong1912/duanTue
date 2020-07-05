@@ -41,7 +41,7 @@
             </div>
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
-               <img class="img-fluid" src="{{asset('storage/images/'.$new->image)}}" width="740px">
+               <img class="img-fluid" src="{{asset('storage/'.$new->image)}}" width="740px">
               </div>
             </div>
             
@@ -61,6 +61,11 @@
           </div>
           <hr class="gray">
           @endforeach
+          <div class="pagination-nav  d-flex justify-content-center">
+            <ul class="pagination">
+               {!! $newki->links() !!}
+            </ul>
+        </div>
      </div>
       <div class="col-md-4">
         <div class="blog-sidebar">
@@ -77,7 +82,7 @@
             @foreach($new_nav as $nw)
             <div class="recent-post">
              <div class="recent-post-image">
-              <img src="/storage/images/{!!$nw->image!!}" alt="">
+              <img src="/storage/{!!$nw->image!!}" alt="">
              </div>
              <div class="recent-post-info">
                <a href="{{route('chitiet-tintuc',$nw->id)}}">{!!$nw->title!!} </a>
@@ -104,8 +109,9 @@
       </div>
       
      </div>
- {!! $newki->links() !!}
+    
        </div>
+       
 </section>
 
 <!--=================================
