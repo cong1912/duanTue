@@ -10,7 +10,7 @@
 
 <!--=================================
  inner-intro -->
- 
+
  <section class="inner-intro bg-1 bg-overlay-black-50">
   <div class="container">
      <div class="row text-center intro-title">
@@ -32,10 +32,10 @@
  inner-intro -->
 
 <div class="mt-5 ml-5 mr-5">
-<img src="/images/{!!$search->image!!}" width="1250px">
+<img src="{{ asset('storage/'.$search->image) }}" width="1250px">
     <p class="mt-2 mr-5 ml-5" style="font-size: 20px">{!!$search->content!!}</p>
     <br><br><br>
 </div>
- 
+
 
 @endsection

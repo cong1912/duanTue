@@ -512,17 +512,17 @@
                 </div>
             </div>
             <div class="row">
-               
+
                 <div class=" col-md-12">
                     <div class="owl-carousel" data-items="3" data-md-items="3" data-sm-items="2" data-xs-items="1"
                          data-space="20">
                          @foreach($new as $new)
                         <div class="item" style="height: 500px">
-                            
+
                             <div class="blog-2" >
-                               
+
                                 <div class="blog-image" >
-                                    <img style="height: 178px; width: 356px;" src="/images/{{$new->image}}">
+                                    <img style="height: 178px; width: 356px;" src="{{ asset('storage/'.$new->image) }}">
                                     <div class="date">
                                         <span>may 28</span>
                                     </div>
@@ -530,19 +530,19 @@
                                 <div class="blog-content">
 
                                     <div class="blog-description text-center">
-                                    <a href="{{route('chitiet-tintuc',$new->id)}}">{!!$new->title!!}</a>
+                                    <a href="{{route('chitiet-tintuc',$new->slug)}}">{!!$new->title!!}</a>
                                         <div class="separator"></div>
                                         <p> {!!$new->tomtat!!}</p>
                                     </div>
                                 </div>
-                              
+
                             </div>
-                           
-                        </div> 
-                        @endforeach    
+
+                        </div>
+                        @endforeach
                     </div>
                 </div>
-            
+
                     </div>
                 </div>
     </section>

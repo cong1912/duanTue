@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class NewsController extends Controller
 {
@@ -131,7 +132,10 @@ class NewsController extends Controller
     {
         $new = News::find($id);
         $new->delete();
-        Storage::delete($new->image);
+        $filepath=storage_path().'/app/public/'.$new->image;
+
+        file::delete($filepath);
+
 
         return redirect()->route('news.index')->withStatus(__('xóa bài viết thành công.'));
     }

@@ -3,7 +3,7 @@
 
 <!--=================================
  inner-intro  -->
- 
+
  <section class="inner-intro bg-1 bg-overlay-black-50">
   <div class="container">
      <div class="row text-center intro-title">
@@ -36,22 +36,26 @@
         <div class="blog-entry">
           <div class="entry-title">
           <strong>TIN TỨC</strong>
-            <a href="{{route('chitiet-tintuc',$new->id)}}" style="font-size: 25px">{!!$new->title!!}</a>
+            <a href="{{route('chitiet-tintuc',$new->slug)}}" style="font-size: 25px">{!!$new->title!!}</a>
             <hr class="mt-2" style="width: 53px;">
             </div>
           <div class="blog-entry-image  clearfix mt-4">
              <div class="portfolio-item">
+<<<<<<< HEAD
                <img class="img-fluid" src="/storage/{!!$new->image!!}" width="740px">
+=======
+               <img class="img-fluid" src="{{ asset('storage/'.$new->image) }}" width="740px">
+>>>>>>> c7552d580871145b92396a5fe5ec5df318dde82d
               </div>
             </div>
-            
+
           <div class="entry-content">
             <p>{!!$new->tomtat!!}</p>
           </div>
            <div class="entry-share clearfix">
-           <a class="button red float-left" href="{{route('chitiet-tintuc',$new->id)}}"> ĐỌC TIẾP </a>
+           <a class="button red float-left" href="{{route('chitiet-tintuc',$new->slug)}}"> ĐỌC TIẾP </a>
              <div class="share float-right"><a href="#"> <i class="fa fa-share-alt"></i> </a>
-                  <div class="blog-social"> 
+                  <div class="blog-social">
                    <ul class="list-style-none">
                     <li> <a href="https://www.facebook.com/trungtam3tsaigondongnai/"><i class="fa fa-facebook"></i></a> </li>
                    </ul>
@@ -77,10 +81,14 @@
             @foreach($new_nav as $nw)
             <div class="recent-post">
              <div class="recent-post-image">
+<<<<<<< HEAD
               <img src="/storage/{!!$nw->image!!}" alt="">
+=======
+              <img src="{{ asset('storage/'.$nw->image) }}" alt="">
+>>>>>>> c7552d580871145b92396a5fe5ec5df318dde82d
              </div>
              <div class="recent-post-info">
-               <a href="{{route('chitiet-tintuc',$nw->id)}}">{!!$nw->title!!} </a>
+               <a href="{{route('chitiet-tintuc',$nw->slug)}}">{!!$nw->title!!} </a>
               <span><i class="fa fa-calendar"></i> {!!$nw->updated_at!!}</span>
              </div>
             </div>
@@ -90,23 +98,23 @@
          <div class="sidebar-widget">
            <h6>TỪ KHÓA</h6>
             <div class="tags">
-             
+
              <ul>
               @foreach ($key as $key)
               <li><a  href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a></li>
               @endforeach
             </ul>
-           
+
            </div>
          </div>
-        </div>                       
+        </div>
       </div>
-      
+
      </div>
        </div>
 </section>
 
 <!--=================================
 blog -->
- 
+
 @endsection

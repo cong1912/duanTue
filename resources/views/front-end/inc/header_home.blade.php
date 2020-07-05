@@ -57,21 +57,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager (noscript) -->
 
 
-  
+
 
 <!--=================================
  header -->
 
 <header id="header" class="topbar-dark">
 
-<div class="menu">  
+<div class="menu">
   <!-- menu start -->
    <nav id="menu" class="mega-menu">
     <!-- menu list items container -->
     <section class="menu-list-items">
-     <div class="container"> 
-      <div class="row"> 
-       <div class="col-md-12"> 
+     <div class="container">
+      <div class="row">
+       <div class="col-md-12">
         <!-- menu logo -->
         <ul class="menu-logo">
             <li>
@@ -83,31 +83,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- active class -->
         <li><a href="{{route('gioithieu')}}"> GIỚI THIỆU </a>
              <!-- drop down multilevel  -->
-           
+
         </li>
         <li><a href="javascript:void(0)">KHÓA HỌC <i class="fa fa-angle-down fa-indicator"></i></a>
           <ul class="drop-down-multilevel">
             @foreach ($ten_khoahoc as $ten_khoahoc)
-            <li><a href="{{route('khoahoc',$ten_khoahoc->id)}}">{{$ten_khoahoc->name}}</a></li>
+            <li><a href="{{route('khoahoc',$ten_khoahoc->slug)}}">{{$ten_khoahoc->name}}</a></li>
             @endforeach
         </ul>
         </li>
         <li ><a href="javascript:void(0)">TRA CỨU <i class="fa fa-angle-down fa-indicator"></i></a>
           <ul class="drop-down-multilevel">
             @foreach ($tracuu as $tracuu )
-            <li><a href="{{route('tracuu',$tracuu->id)}}" style="font-size:10px">{{$tracuu->title}}</a></li>
+            <li><a href="{{route('tracuu',$tracuu->slug)}}" style="font-size:10px">{{$tracuu->title}}</a></li>
             @endforeach
         </ul>
         </li>
-        <li><a href="javascript:void(0)">PHẦN MỀM  <i class="fa fa-angle-down fa-indicator"></i></a> 
+        <li><a href="javascript:void(0)">PHẦN MỀM  <i class="fa fa-angle-down fa-indicator"></i></a>
            <!-- drop down multilevel  -->
             <ul class="drop-down-multilevel">
               @foreach ($phanmem as $phanmem )
-              <li><a href="{{route('phanmem',$phanmem->id)}}">{{$phanmem ->name}}</a></li>
+              <li><a href="{{route('phanmem',$phanmem->slug)}}">{{$phanmem ->name}}</a></li>
               @endforeach
             </ul>
         </li>
-        <li><a href="{{route('tintuc')}}">TIN TỨC  </a> 
+        <li><a href="{{route('tintuc')}}">TIN TỨC  </a>
         </li>
         <li><a href="{{route('tuyendung')}}"> TUYỂN DỤNG </a>
         </li>

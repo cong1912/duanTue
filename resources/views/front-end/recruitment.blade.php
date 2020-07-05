@@ -3,7 +3,7 @@
 
 <!--=================================
  inner-intro -->
- 
+
  <section class="inner-intro bg-1 bg-overlay-black-50">
   <div class="container">
      <div class="row text-center intro-title">
@@ -29,7 +29,7 @@
  <section class="blog blog-right-sidebar page-section-ptb">
   <div class="container">
     <div class="row">
-      
+
      <div class="col-md-8">
       @foreach ($td as $new)
         <div class="blog-entry">
@@ -40,17 +40,21 @@
             </div>
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
+<<<<<<< HEAD
                <img class="img-fluid" src="/storage/{{$new->image}}" width="740px">
+=======
+               <img class="img-fluid" src="{{ asset('storage/'.$new->image) }}" width="740px">
+>>>>>>> c7552d580871145b92396a5fe5ec5df318dde82d
               </div>
             </div>
-            
+
           <div class="entry-content">
             <p>{!!$new->tomtat!!}</p>
           </div>
           <div class="entry-share clearfix">
-            <a class="button red float-left" href="{{route('chitiet-tintuc',$new->id)}}"> ĐỌC TIẾP </a>
+            <a class="button red float-left" href="{{route('chitiet-tintuc',$new->slug)}}"> ĐỌC TIẾP </a>
               <div class="share float-right"><a href="#"> <i class="fa fa-share-alt"></i> </a>
-                   <div class="blog-social"> 
+                   <div class="blog-social">
                     <ul class="list-style-none">
                      <li> <a href="https://www.facebook.com/trungtam3tsaigondongnai/"><i class="fa fa-facebook"></i></a> </li>
                     </ul>
@@ -94,17 +98,17 @@
          <div class="sidebar-widget">
            <h6>TỪ KHÓA</h6>
             <div class="tags">
-             
+
              <ul>
               @foreach ($key as $key)
-            
+
               <li><a class="mb-2" href="/timkiem?key={!!$key->bancong!!}">{!!$key->keyword!!}</a></li>
               @endforeach
             </ul>
-           
+
            </div>
          </div>
-        </div>                       
+        </div>
       </div>
      </div>
        </div>

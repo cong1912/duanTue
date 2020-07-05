@@ -24,9 +24,9 @@
       <div class="social text-lg-right text-center">
           <ul>
             <li><a href="https://www.facebook.com/trungtam3tsaigondongnai/"> <i class="fa fa-facebook"></i> </a></li>
-           
+
           </ul>
-       </div>      
+       </div>
     </div>
    </div>
       <div class="row">
@@ -41,7 +41,7 @@
           <h6 class="text-danger">TIN TỨC MỚI NHẤT</h6>
             <ul>
               @foreach ($tintuc as $tintuc)
-              <li><a href="{{route('chitiet-tintuc',$tintuc->id)}}"><i class="fa fa-angle-double-right"></i>{{$tintuc->title}}</a></li>
+              <li><a href="{{route('chitiet-tintuc',$tintuc->slug)}}"><i class="fa fa-angle-double-right"></i>{{$tintuc->title}}</a></li>
               @endforeach    </ul>
           </div>
         </div>

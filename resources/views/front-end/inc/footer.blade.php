@@ -16,10 +16,10 @@
         <h6 class="text-white">TIN TỨC MỚI NHẤT</h6>
           <ul class="mt-3">
             @foreach ($tintuc as $tintuc)
-          <li><a href="{{route('chitiet-tintuc',$tintuc->id)}}"><i class="fa fa-angle-double-right"></i>{{$tintuc->title}}</a></li>
+          <li><a href="{{route('chitiet-tintuc',$tintuc->slug)}}"><i class="fa fa-angle-double-right"></i>{{$tintuc->title}}</a></li>
           @endforeach
           </ul>
-        </div> 
+        </div>
       </div>
       <div class="col-lg-3 col-md-6">
          <h6 class="text-light mb-4">TỪ KHÓA </h6>
@@ -45,7 +45,7 @@
            <input type="email" placeholder="Email của bạn" class="form-control placeholder">
            <a class="button red" href="#">Gửi</a>
          </form>
-        </div> 
+        </div>
       </div>
     </div>
     <hr>
@@ -56,41 +56,41 @@
         <p>Phát triển 2020 © <span class="text-light">Học lái toàn quốc </span></p>
        </div>
       </div>
-     
+
      </div>
     </div>
   </div>
 </footer>
-   
+
   <!--=================================
    footer -->
-   
-  
-  
+
+
+
    <!--=================================
    back to top -->
-  
+
   <div class="car-top">
     <span><img src="{{asset('front-end\images\car.png')}}" alt=""></span>
   </div>
-  
+
    <!--=================================
    back to top -->
-  
+
   <!--=================================
    jquery -->
-  
+
   <!-- jquery  -->
   <script type="text/javascript" src="{{asset('front-end\js\jquery-3.3.1.min.js')}}"></script>
-   
+
   <!-- bootstrap -->
   <script type="text/javascript" src="{{asset('front-end\js\popper.js')}}"></script>
   <script type="text/javascript" src="{{asset('front-end\s\bootstrap.min.js')}}"></script>
-  
+
   <!-- mega-menu -->
   <script type="text/javascript" src="{{asset('front-end\js\mega-menu\mega_menu.js')}}"></script>
-  
-  
+
+
 <!-- appear -->
 <script type="text/javascript" src="{{asset('front-end\js\jquery.appear.js')}}"></script>
 
@@ -102,17 +102,17 @@
 
   <!-- select -->
   <script type="text/javascript" src="{{asset('front-end\js\select\jquery-select.js')}}"></script>
-  
+
   <!-- magnific popup -->
   <script type="text/javascript" src="{{asset('front-end\js\magnific-popup\jquery.magnific-popup.min.js')}}"></script>
-  
+
   <!-- style customizer  -->
   <script type="text/javascript" src="{{asset('front-end\js\style-customizer.js')}}"></script>
-   
+
   <!-- custom -->
   <script type="text/javascript" src="{{asset('front-end\js\custom.js')}}"></script>
-    
- 
+
+
 <script type="text/javascript">
   (function($){
  "use strict";
@@ -172,10 +172,9 @@
            }
          });
        }
-     }); 
+     });
  })(jQuery);
 
-</script> 
+</script>
   </body>
   </html>
-  
