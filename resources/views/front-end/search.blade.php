@@ -57,7 +57,7 @@
               </div>
           </div>
           <div class="sidebar-widget">
-            <h6>TIN TỨC</h6>
+            <h6>TRA CỨU</h6>
             @foreach($new_nav as $nw)
             <div class="recent-post">
              <div class="recent-post-image">
