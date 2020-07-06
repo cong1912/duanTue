@@ -46,7 +46,9 @@ class PageHomeController extends Controller
     }
     public function search(Request $req,$slug){
         $search = News::where('slug', $slug)->firstOrFail();
-        return view('front-end/search',['search'=>$search]);
+        $key = Keywords::all();
+        $new_nav=News::where('category',3) ->orderBy('id', 'desc')->limit(4)->get();
+        return view('front-end/search',['search'=>$search,'new_nav'=>$new_nav,'key'=>$key]);
     }
     public function tuyendung(){
         $td = News::where('category',2)->paginate(4);;
