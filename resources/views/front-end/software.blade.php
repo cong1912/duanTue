@@ -37,6 +37,14 @@ career  -->
         <div class="career-info">
           <p>{!!$sof->content!!} </p>
         </div>
+      <div class="row">
+        <a href="{!!$sof->link_android!!} " class="mb-3">
+        <img class="img-fluid col-lg-6 pull-right " width="400px" height="160px" src="/front-end/images/ANDROID.png">   
+      </a>
+      <a href="{!!$sof->link_ios!!}">
+        <img class="img-fluid col-lg-6  "  width="400px" height="160px" src="/front-end/images/IOS.png">
+      </a>
+    </div>
       </div>
      </div>
    </div>

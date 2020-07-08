@@ -1,4 +1,4 @@
-﻿@extends('front-end.layouts.master_tuyendung')
+﻿@extends('front-end.layouts.master')
 @section('content')
 
 <!--=================================
@@ -40,11 +40,7 @@
             </div>
           <div class="blog-entry-image  clearfix">
              <div class="portfolio-item">
-<<<<<<< HEAD
                <img class="img-fluid" src="/storage/{{$new->image}}" width="740px">
-=======
-               <img class="img-fluid" src="{{ asset('storage/'.$new->image) }}" width="740px">
->>>>>>> c7552d580871145b92396a5fe5ec5df318dde82d
               </div>
             </div>
 
