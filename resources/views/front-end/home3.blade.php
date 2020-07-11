@@ -240,24 +240,24 @@
                     <div class="content-box-2 car-bg-1">
                         <i class="glyph-icon flaticon-beetle"></i>
                         <a class="title" href="#">Cấp bằng lái xe cho học viên</a>
-                        <p>Sau khi thi đỗ kỳ thi sát hạch 7 ngày là bạn có thể nhận bằng về và tham gia giao thông rồi
-                            đó!</p>
+                        <h6>Sau khi thi đỗ kỳ thi sát hạch 7 ngày là bạn có thể nhận bằng về và tham gia giao thông rồi
+                            đó!</h6>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="content-box-2 car-bg-2">
                         <i class="glyph-icon flaticon-price-tag"></i>
                         <a class="title" href="#">Học thực hành lái xe ô tô</a>
-                        <p>Học một thầy một trò một xe, giáo viên nhiệt tình, hướng dẫn chi tiết đầy đủ các mục và mẹo trong
-                            bài sa hình.</p>
+                        <h6>Học một thầy một trò một xe, giáo viên nhiệt tình, hướng dẫn chi tiết đầy đủ các mục và mẹo trong
+                            bài sa hình.</h6>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="content-box-2 car-bg-3">
                         <i class="glyph-icon flaticon-reparation"></i>
                         <a class="title" href="#">Đăng ký học lái xe ô tô</a>
-                        <p>Các bước đăng ký rất đơn giản chỉ cần học viên mang theo duy nhất CMND việc còn lại trung tâm sẽ
-                            làm giúp bạn.</p>
+                        <h6>Các bước đăng ký rất đơn giản chỉ cần học viên mang theo duy nhất CMND việc còn lại trung tâm sẽ
+                            làm giúp bạn.</h6>
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
                         học học viên sử dụng.
                         Để làm được điều này một cách tốt nhất, kết hợp với các trung tâm đào tạo và dạy nghề cùng hệ thống
                         3T, công ty đã phát hành mô hình chuỗi trung tâm học lái xe phù hợp các vị trí địa lý có nhu cầu học
-                        học lái xe cao.</p>
+                        học lái xe cao.</>
                 </div>
                 <div class="col-md-6">
                     <img class="img-fluid center-block" src="{{asset('front-end\images\car\11.png')}}" alt="">
@@ -375,10 +375,10 @@
                     <div class="content-box-2 car-bg-4 text-center">
                         <i class="glyph-icon flaticon-beetle"></i>
                         <h3 class="title  text-center" href="#">KHÓA HỌC BẰNG B2</h3>
-                        <h5 class=" text-center">7.800.000đ</h5>
-                        <p class="mt-3">Học phí trọn gói 100%</p>
-                        <p>Hỗ trợ trả góp lãi suất 0%</p>
-                        <p>Lịch học linh động (T2 - CN)</p>
+                        <h5 class=" text-center ">7.800.000đ</h5>
+                        <h6 class="mt-lg-4">Học phí trọn gói 100%</h6>
+                        <h6>Hỗ trợ trả góp lãi suất 0%</h6>
+                        <h6>Lịch học linh động (T2 - CN)</h6>
                         <a class="button" href="{{route('lienhe')}}">ĐĂNG KÝ NGAY</a>
                     </div>
                 </div>
@@ -386,22 +386,26 @@
                     <div class="content-box-2 car-bg-5 text-center">
                         <i class="glyph-icon flaticon-price-tag"></i>
                         <h3 class="title " href="#">KHÓA HỌC BẰNG C</h3>
-                        <h5 class="text-center">9.300.000đ</h5>
-                        <p class="mt-3">Học phí trọn gói 100%</p>
-                        <p>Hỗ trợ trả góp lãi suất 0%</p>
-                        <p>Lịch học linh động (T2 - CN)</p>
+                        <h4 class="text-center ">9.300.000đ</h4>
+                        <h6 class="mt-lg-4">Học phí trọn gói 100%</h6>
+                        <h6>Hỗ trợ trả góp lãi suất 0%</h6>
+                        <h6>Lịch học linh động (T2 - CN)</h6>
                         <a class="button" href="{{route('lienhe')}}">ĐĂNG KÝ NGAY</a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="content-box-2 car-bg-4 text-center">
+                    <div class="content-box-2 car-bg-6 text-center ">
                         <i class="glyph-icon flaticon-reparation"></i>
                         <h3 class="title " href="#">HỌC LÁI XE CHỈ VỚI </h3>
-                        <h5 class="text-center">1.000.000đ</h5>
-                        <p class="mt-3">Giáo viên 1 kèm 1</p>
-                        <p>Thủ tục đơn giản</p>
-                        <p>Giờ học tự chọn</p>
-                        <a class="button" href="{{route('lienhe')}}">ĐĂNG KÝ NGAY</a>
+                        <h4 class="text-center ">1.000.000đ</h4>
+                        <h6 class="mt-lg-4">Giáo viên 1 kèm 1</h6>
+                        <h6>Thủ tục đơn giản</h6>
+                        <h6>Giờ học tự chọn</h6>
+                        <a class="button " href="{{route('lienhe')}}"
+                           style="
+    padding-bottom: 6px;
+"
+                        >ĐĂNG KÝ NGAY</a>
                     </div>
                 </div>
             </div>

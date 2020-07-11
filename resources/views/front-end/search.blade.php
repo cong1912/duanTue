@@ -32,10 +32,10 @@
  inner-intro -->
 
 <div class="mt-5 ml-5 mr-5">
-<img src="{{ asset('storage/'.$search->image) }}" width="1250px">
+<img src="{{ asset('storage/'.$search->image) }}" class="img-fluid">
     <p class="mt-2 mr-5 ml-5" style="font-size: 20px">{!!$search->content!!}</p>
     <br><br><br>
 </div>
-
+    <div class="table-responsive"></div>
 
 @endsection

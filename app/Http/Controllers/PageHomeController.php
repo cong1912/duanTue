@@ -41,12 +41,14 @@ class PageHomeController extends Controller
         $newki = News::where('category',1)->orderBy('id', 'desc')->paginate(4);
         $key = Keywords::all();
         $new_nav=News::where('category',1)
-        ->orderBy('id', 'desc')->limit(4)->get();
+            ->orderBy('id', 'desc')->limit(4)->get();
         return view('front-end/new',['newki'=>$newki,'new_nav'=>$new_nav,'key'=>$key]);
     }
     public function search(Request $req,$slug){
         $search = News::where('slug', $slug)->firstOrFail();
-        return view('front-end/search',['search'=>$search]);
+        $key = Keywords::all();
+        $new_nav=News::where('category',3) ->orderBy('id', 'desc')->limit(4)->get();
+        return view('front-end/search',['search'=>$search,'new_nav'=>$new_nav,'key'=>$key]);
     }
     public function tuyendung(){
         $td = News::where('category',2)->paginate(4);;
@@ -69,9 +71,9 @@ class PageHomeController extends Controller
         $new_nav=News::where('category',1)->orderBy('id', 'desc')->limit(4)->get();
         $new =News::where('category',1)->where(function($query ) use($req){
             $query->where('title','like','%'.$req->key.'%')
-            ->orwhere('content','like','%'.$req->key.'%');
+                ->orwhere('content','like','%'.$req->key.'%');
         })->get();
         return view('front-end/search_new',['new'=>$new,'new_nav'=>$new_nav,'key'=>$key,'tukhoa'=>$tukhoa]);
     }
-    
+
 }
